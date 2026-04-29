@@ -56,6 +56,29 @@ header {
     padding: 0;
 }
 
+/* ANNOUNCEMENT + CALENDAR SECTION */
+.ts-announcement {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.ts-left {
+    flex: 1;
+}
+
+.ts-right {
+    flex: 1;
+}
+
+.ts-right iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
 
 /* FOOTER */
 footer {
