@@ -65,6 +65,42 @@ header {
     gap: 40px;
     padding: 0 20px;
 }
+/* ANNOUNCEMENT EXACT STYLING */
+.ts-left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.ts-left p strong {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.ts-left p em {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.ts-left h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ts-left ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.05rem;
+}
+
+.ts-left p {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
 
 .ts-left {
     flex: 1;
