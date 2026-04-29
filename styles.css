@@ -65,24 +65,27 @@ header {
 
 .ts-left {
     flex: 1;
+    border: none !important;
+    outline: none !important;
 }
 
-.ts-right {
-    flex: 1;
+/* ALL ANNOUNCEMENT TEXT WHITE */
+.ts-left,
+.ts-left h2,
+.ts-left h3,
+.ts-left p,
+.ts-left ul,
+.ts-left li,
+.ts-left strong,
+.ts-left em {
+    color: white !important;
 }
 
-.ts-right iframe {
-    width: 100%;
-    height: 500px;
-    border-radius: 10px;
-}
-
-/* EXACT ANNOUNCEMENT STYLING */
+/* Exact announcement spacing + sizing */
 .ts-left h2 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 6px;
-    color: #000;
 }
 
 .ts-left p strong {
@@ -92,7 +95,6 @@ header {
 
 .ts-left p em {
     font-size: 1.2rem;
-    color: #444;
 }
 
 .ts-left h3 {
@@ -114,6 +116,16 @@ header {
     margin-bottom: 10px;
 }
 
+.ts-right {
+    flex: 1;
+}
+
+.ts-right iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
 /* --------------------------------------------------
    CARD GRID
 -------------------------------------------------- */
@@ -126,14 +138,14 @@ header {
     gap: 30px;
 }
 
-/* CARD STYLE — IMAGE + BLUE LABEL */
+/* CARD STYLE — IMAGE + WHITE LABEL */
 .ts-card {
     background: rgba(255, 255, 255, 0.25);
     border-radius: 18px;
     overflow: hidden;
     text-align: center;
     text-decoration: none;
-    color: #1a4fa3;
+    color: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     backdrop-filter: blur(6px);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -156,7 +168,7 @@ header {
 .ts-card p {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #1a4fa3;
+    color: white;
     padding: 15px 10px 20px 10px;
 }
 
@@ -182,16 +194,23 @@ header {
 }
 
 .ts-overlay-content {
-    background: white;
+    background: rgba(0,0,0,0.6);
     width: 100%;
     max-width: 900px;
     height: 100%;
     max-height: 95%;
     overflow-y: auto;
-    border: 4px solid #333;
+    border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
     padding: 30px;
     position: relative;
+    color: white;
+}
+
+.ts-overlay-content h2,
+.ts-overlay-content p,
+.ts-overlay-content li {
+    color: white;
 }
 
 .ts-close {
@@ -200,7 +219,7 @@ header {
     right: 20px;
     font-size: 1.8rem;
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -220,7 +239,7 @@ body.trap-skeet-bg::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.05); /* 5% white wash */
+    background: rgba(255, 255, 255, 0.05);
     z-index: -1;
 }
 
@@ -235,3 +254,4 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
