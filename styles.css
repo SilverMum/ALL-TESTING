@@ -161,6 +161,25 @@ header {
     font-weight: bold;
 }
 
+/* TRAP & SKEET PAGE BACKGROUND */
+body.trap-skeet-bg {
+    background: url('images/trap-skeet-background.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+/* White wash overlay */
+body.trap-skeet-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05); /* 5% white wash */
+    z-index: -1;
+}
+
 
 /* FOOTER */
 footer {
