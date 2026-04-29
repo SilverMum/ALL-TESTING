@@ -1,4 +1,6 @@
-/* NAVIGATION */
+/* --------------------------------------------------
+   NAVIGATION
+-------------------------------------------------- */
 header {
     width: 100%;
     background: #1a1a1a;
@@ -7,7 +9,6 @@ header {
     left: 0;
     z-index: 9999;
 }
-
 
 .main-nav {
     max-width: 1200px;
@@ -42,64 +43,24 @@ header {
     height: 70px;
 }
 
-/* PAGE HEADER IMAGE */
-.page-header {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
+/* --------------------------------------------------
+   PAGE HEADER IMAGE
+-------------------------------------------------- */
 .page-header img {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0;
-    padding: 0;
 }
 
-/* ANNOUNCEMENT + CALENDAR SECTION */
+/* --------------------------------------------------
+   ANNOUNCEMENT + CALENDAR SECTION
+-------------------------------------------------- */
 .ts-announcement {
     max-width: 1200px;
     margin: 40px auto;
     display: flex;
     gap: 40px;
     padding: 0 20px;
-}
-/* ANNOUNCEMENT EXACT STYLING */
-.ts-left h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #000;
-}
-
-.ts-left p strong {
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.ts-left p em {
-    font-size: 1.2rem;
-    color: #444;
-}
-
-.ts-left h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.ts-left ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    font-size: 1.05rem;
-}
-
-.ts-left p {
-    font-size: 1.05rem;
-    margin-bottom: 10px;
 }
 
 .ts-left {
@@ -116,7 +77,46 @@ header {
     border-radius: 10px;
 }
 
-/* CARD GRID */
+/* EXACT ANNOUNCEMENT STYLING */
+.ts-left h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #000;
+}
+
+.ts-left p strong {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.ts-left p em {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.ts-left h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 22px;
+    margin-bottom: 12px;
+}
+
+.ts-left ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.55;
+    font-size: 1.05rem;
+}
+
+.ts-left p {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+/* --------------------------------------------------
+   CARD GRID
+-------------------------------------------------- */
 .ts-card-grid {
     max-width: 1200px;
     margin: 50px auto;
@@ -126,35 +126,43 @@ header {
     gap: 30px;
 }
 
+/* CARD STYLE — IMAGE + BLUE LABEL */
 .ts-card {
-    background: white;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
     overflow: hidden;
     text-align: center;
     text-decoration: none;
-    color: black;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    color: #1a4fa3;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .ts-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
 
+/* Image area */
 .ts-card img {
     width: 100%;
-    height: 160px;
+    height: 180px;
     object-fit: cover;
+    display: block;
 }
 
+/* Label under image */
 .ts-card p {
-    padding: 15px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    color: #1a4fa3;
+    padding: 15px 10px 20px 10px;
 }
 
-/* FULLSCREEN OVERLAY */
+/* --------------------------------------------------
+   FULLSCREEN OVERLAY
+-------------------------------------------------- */
 .ts-overlay {
     position: fixed;
     top: 0;
@@ -178,14 +186,13 @@ header {
     width: 100%;
     max-width: 900px;
     height: 100%;
-    max-height: 95%;   /* ← ADD THIS HERE */
+    max-height: 95%;
     overflow-y: auto;
     border: 4px solid #333;
     border-radius: 12px;
     padding: 30px;
     position: relative;
 }
-
 
 .ts-close {
     position: absolute;
@@ -197,14 +204,15 @@ header {
     font-weight: bold;
 }
 
-/* TRAP & SKEET PAGE BACKGROUND */
+/* --------------------------------------------------
+   BACKGROUND (Trap & Skeet Only)
+-------------------------------------------------- */
 body.trap-skeet-bg {
     background: url('images/trap-skeet-background.png') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
 
-/* White wash overlay */
 body.trap-skeet-bg::before {
     content: "";
     position: fixed;
@@ -216,8 +224,9 @@ body.trap-skeet-bg::before {
     z-index: -1;
 }
 
-
-/* FOOTER */
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
 footer {
     margin-top: 60px;
     padding: 20px 0;
@@ -226,4 +235,3 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
-
