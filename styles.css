@@ -41,6 +41,22 @@ header {
     height: 70px;
 }
 
+/* PAGE HEADER IMAGE */
+.page-header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page-header img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* FOOTER */
 footer {
     margin-top: 60px;
