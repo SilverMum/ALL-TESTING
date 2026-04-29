@@ -1,5 +1,5 @@
 /* --------------------------------------------------
-   NAVIGATION
+   NAVIGATION — RIGHT ALIGNED
 -------------------------------------------------- */
 header {
     width: 100%;
@@ -18,11 +18,11 @@ header {
 
 .nav-links {
     display: flex;
-    justify-content: center;
-    gap: 28px;
+    justify-content: flex-end; /* right aligned */
+    gap: 32px; /* tab-like spacing */
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .nav-links a {
@@ -44,10 +44,11 @@ header {
 }
 
 /* --------------------------------------------------
-   PAGE HEADER IMAGE
+   PAGE HEADER IMAGE — FIX OVERFLOW
 -------------------------------------------------- */
 .page-header img {
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -254,4 +255,3 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
-
