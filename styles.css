@@ -63,17 +63,13 @@ header {
     padding: 0 20px;
 }
 
-/* LEFT SIDE — UPDATED */
 .ts-left {
     flex: 1;
-    border: none !important;
-    outline: none !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* ALL TEXT WHITE */
 .ts-left,
 .ts-left h2,
 .ts-left h3,
@@ -85,7 +81,6 @@ header {
     color: white !important;
 }
 
-/* UPDATED FONT SIZES */
 .ts-left h2 {
     font-size: 2.3rem;
     font-weight: 700;
@@ -120,7 +115,6 @@ header {
     margin-bottom: 10px;
 }
 
-/* RIGHT SIDE */
 .ts-right {
     flex: 1;
 }
@@ -164,18 +158,16 @@ header {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    display: block;
 }
 
 .ts-card p {
     font-size: 1.2rem;
     font-weight: 600;
-    color: white;
     padding: 15px 10px 20px 10px;
 }
 
 /* --------------------------------------------------
-   FULLSCREEN OVERLAY
+   FIXED‑SIZE MODAL OVERLAY (NEW + CLEAN)
 -------------------------------------------------- */
 .ts-overlay {
     position: fixed;
@@ -186,87 +178,39 @@ header {
     background: rgba(0,0,0,0.75);
     display: none;
     justify-content: center;
-
-    /* ⭐ FIX: anchor box to top */
-    align-items: flex-start;
-
-    /* ⭐ FIX: remove bottom padding */
-    padding: 40px 40px 0 40px;
-
     z-index: 99999;
-
-    /* ⭐ FIX: allow X + bottom to show */
-    overflow: visible;
 }
 
-/* Overlay content box */
+/* ⭐ FIXED SIZE BOX — ALWAYS 70% OF SCREEN */
 .ts-overlay-content {
+    width: 70vw;
+    height: 70vh;
+
+    /* ⭐ Positioning: 12.5vh from top, centered horizontally */
+    margin-top: 12.5vh;
+
     background: rgba(0,0,0,0.6);
-    width: 100%;
-    max-width: 900px;
-
-    /* ⭐ FIX: now correct because padding is fixed */
-    max-height: calc(100vh - 40px);
-
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
 
-    /* ⭐ FIX: remove bottom padding */
+    /* ⭐ Scroll INSIDE the box */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
     padding: 30px;
-
-    /* ⭐ FIX: X now anchors to the box */
     position: relative;
-
     color: white;
 }
 
-.ts-overlay-content h2,
-.ts-overlay-content p,
-.ts-overlay-content li {
-    color: white;
-}
-
-/* ⭐ Range Button Styling — UPDATED */
-.range-open-button-wrapper {
-    text-align: center;
-    margin: 20px 0;
-    pointer-events: none;
-}
-
-.range-open-button-wrapper a {
-    pointer-events: auto;
-    display: inline-block;
-}
-
-.range-open-button-img {
-    width: 70%;
-    max-width: 340px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* ⭐ Light indent for lists + notes */
-.range-indent {
-    margin-left: 12px;
-    line-height: 1.55;
-}
-
-.red-text {
-    color: #ff4d4d !important;
-}
-
-/* ⭐ FIX: X stays visible + correct position */
+/* ⭐ X BUTTON — FIXED TO BOX, ALWAYS VISIBLE */
 .ts-close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 2rem;
-    text-decoration: none;
     color: white;
     font-weight: bold;
+    text-decoration: none;
     z-index: 100000;
 }
 
@@ -276,7 +220,6 @@ header {
 body.trap-skeet-bg {
     background: url('images/trap-skeet-background.png') no-repeat center center fixed;
     background-size: cover;
-    position: relative;
 }
 
 body.trap-skeet-bg::before {
@@ -286,7 +229,7 @@ body.trap-skeet-bg::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255,255,255,0.05);
     z-index: -1;
 }
 
@@ -303,18 +246,12 @@ footer {
 }
 
 /* --------------------------------------------------
-   ⭐ MOBILE RESPONSIVE — SAFE FOR TRAP & SKEET ONLY ⭐
+   MOBILE RESPONSIVE
 -------------------------------------------------- */
-
-/* Tablets */
 @media (max-width: 992px) {
     .ts-announcement {
         flex-direction: column;
         text-align: center;
-    }
-
-    .ts-left {
-        justify-content: flex-start;
     }
 
     .ts-right iframe {
@@ -326,33 +263,7 @@ footer {
     }
 }
 
-/* Phones */
 @media (max-width: 600px) {
-    .ts-left h2 {
-        font-size: 1.9rem;
-    }
-
-    .ts-left p,
-    .ts-left ul {
-        font-size: 1.05rem;
-    }
-
-    .ts-left p strong {
-        font-size: 1.25rem;
-    }
-
-    .ts-left p em {
-        font-size: 1.15rem;
-    }
-
-    .ts-left h3 {
-        font-size: 1.25rem;
-    }
-
-    .ts-right iframe {
-        height: 380px;
-    }
-
     .ts-card-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -360,5 +271,12 @@ footer {
 
     .ts-card img {
         height: 160px;
+    }
+
+    /* Modal still works on mobile */
+    .ts-overlay-content {
+        width: 90vw;
+        height: 75vh;
+        margin-top: 10vh;
     }
 }
