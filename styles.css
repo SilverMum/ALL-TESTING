@@ -337,7 +337,7 @@ header {
 .ts-close-wrapper {
     position: fixed;
     top: calc(12.5vh + 4px);
-    right: calc(15vw - 35px);   /* moved 10px further LEFT */
+    right: calc(15vw - 15px);   /* moved 10px further LEFT */
     width: 38px;
     height: 38px;
     background: rgba(0,0,0,0.85);
