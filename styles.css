@@ -323,7 +323,6 @@ header {
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
 
-    /* ⭐ INSERTED PROPERLY */
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
@@ -447,3 +446,4 @@ footer {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
