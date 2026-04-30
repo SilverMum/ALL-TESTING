@@ -198,7 +198,7 @@ header {
     width: 100%;
     max-width: 900px;
 
-    /* ⭐ Adjusted to account for 40px top + 40px bottom padding on .ts-overlay */
+    /* ⭐ Corrected to match overlay padding */
     max-height: calc(100vh - 80px);
 
     overflow-y: auto;
@@ -349,5 +349,3 @@ footer {
         height: 160px;
     }
 }
-
-
