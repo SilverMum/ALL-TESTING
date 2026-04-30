@@ -222,9 +222,13 @@ header {
     margin: 20px 0;
 }
 
+.range-open-button-wrapper a {
+    display: inline-block; /* ensures ONLY the image is clickable */
+}
+
 .range-open-button-img {
-    width: 50%;
-    max-width: 260px;
+    width: 50%;          /* half size */
+    max-width: 260px;    /* prevents overflow */
     height: auto;
     display: block;
     margin: 0 auto;
