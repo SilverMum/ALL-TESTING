@@ -217,6 +217,11 @@ header {
     color: white;
 }
 
+.range-indent {
+    margin-left: 12px;
+    line-height: 1.55;
+}
+
 .ts-close {
     position: absolute;
     top: 15px;
