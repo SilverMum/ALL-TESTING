@@ -167,7 +167,18 @@ header {
 }
 
 /* --------------------------------------------------
-   FIXED‑SIZE MODAL OVERLAY (NEW + CLEAN)
+   RANGE OPEN BUTTON (RESTORED + 25% SMALLER)
+-------------------------------------------------- */
+.range-open-button-img {
+    width: 52.5%;        /* 25% smaller than 70% */
+    max-width: 255px;    /* 25% smaller than 340px */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------
+   FIXED‑SIZE MODAL OVERLAY
 -------------------------------------------------- */
 .ts-overlay {
     position: fixed;
@@ -186,7 +197,7 @@ header {
     width: 70vw;
     height: 70vh;
 
-    /* ⭐ Positioning: 12.5vh from top, centered horizontally */
+    /* ⭐ Positioning: 12.5vh from top */
     margin-top: 12.5vh;
 
     background: rgba(0,0,0,0.6);
@@ -195,6 +206,7 @@ header {
 
     /* ⭐ Scroll INSIDE the box */
     overflow-y: auto;
+    overflow-x: hidden; /* ⭐ remove horizontal scroll */
     -webkit-overflow-scrolling: touch;
 
     padding: 30px;
@@ -280,3 +292,4 @@ footer {
         margin-top: 10vh;
     }
 }
+
