@@ -198,8 +198,8 @@ header {
     width: 100%;
     max-width: 900px;
 
-    /* ⭐ FINAL FIX — bottom now visible */
-    max-height: calc(100vh - 120px);
+    /* ⭐ Adjusted to account for 40px top + 40px bottom padding on .ts-overlay */
+    max-height: calc(100vh - 80px);
 
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -349,4 +349,5 @@ footer {
         height: 160px;
     }
 }
+
 
