@@ -119,9 +119,11 @@
     <div class="ts-overlay-content">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
 
-        <h2>Hours of Operation</h2>
-        
-        <p>For up‑to‑date information check the “Range Schedule”</p>
+        <!-- ⭐ CENTERED TITLE -->
+        <h2 style="text-align:center;">Hours of Operation</h2>
+
+        <!-- ⭐ CENTERED SUBTEXT -->
+        <p style="text-align:center;">For up‑to‑date information check the “Range Schedule”</p>
 
         <div class="range-open-button-wrapper">
             <a href="https://teamup.com/ksqefxnfm1tv8mriaq" target="_blank">
@@ -129,7 +131,8 @@
             </a>
         </div>
 
-        <p><strong>Note:</strong> All scheduled hours are weather permitting.</p>
+        <!-- ⭐ CENTERED NOTE -->
+        <p style="text-align:center;"><strong>Note:</strong> All scheduled hours are weather permitting.</p>
 
         <br>
 
@@ -158,7 +161,11 @@
 
         <p class="range-indent"><strong>Please arrive 30 minutes prior to Last Squad time to check available space.</strong></p>
         <p class="range-indent">The range closes after the last squad finishes shooting.</p>
-        <p class="range-indent"><strong>Extended hours available for groups, events, and private parties. Use the contact section on the WSC Range page (scroll to bottom).</strong></p>
+
+        <!-- ⭐ UPDATED + RED TEXT -->
+        <p class="range-indent red-text">
+            <strong>Extended hours available for groups, events, and private parties. Use the Contact Trap & Skeet card below.</strong>
+        </p>
 
         <br>
 
@@ -222,7 +229,7 @@
     <p>© 2026 Riverside Sportsmen’s Club — Windsor, Ontario</p>
 </footer>
 
-<!-- ⭐ OVERLAY SCRIPT — JS ONLY (fixes reopen bug, locks background) -->
+<!-- ⭐ OVERLAY SCRIPT — JS ONLY -->
 <script>
 document.querySelectorAll('.ts-card').forEach(card => {
     card.addEventListener('click', function(e) {
