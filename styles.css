@@ -189,10 +189,8 @@ header {
     align-items: center;
     padding: 40px;
     z-index: 99999;
-    overflow: hidden; /* prevents background scroll */
+    overflow: hidden;
 }
-
-/* REMOVED :target — JS now controls open/close */
 
 /* Overlay content box */
 .ts-overlay-content {
@@ -205,7 +203,7 @@ header {
     -webkit-overflow-scrolling: touch;
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
-    padding: 30px 30px 40px 30px; /* improved bottom spacing */
+    padding: 30px 30px 60px 30px; /* ⭐ increased bottom padding */
     position: relative;
     color: white;
 }
@@ -216,19 +214,21 @@ header {
     color: white;
 }
 
-/* ⭐ Range Button Styling */
+/* ⭐ Range Button Styling — UPDATED */
 .range-open-button-wrapper {
     text-align: center;
     margin: 20px 0;
+    pointer-events: none; /* wrapper cannot be clicked */
 }
 
 .range-open-button-wrapper a {
-    display: inline-block; /* ensures ONLY the image is clickable */
+    pointer-events: auto; /* only the image is clickable */
+    display: inline-block;
 }
 
 .range-open-button-img {
-    width: 50%;          /* half size */
-    max-width: 260px;    /* prevents overflow */
+    width: 70%;          /* ⭐ bigger button */
+    max-width: 340px;    /* ⭐ safe max size */
     height: auto;
     display: block;
     margin: 0 auto;
@@ -342,4 +342,5 @@ footer {
         height: 160px;
     }
 }
+
 
