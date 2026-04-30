@@ -442,8 +442,7 @@ footer {
    FIX — KEEP X BUTTON FIXED WHILE SCROLLING
 -------------------------------------------------- */
 .ts-overlay-content {
-    position: relative;
-    overflow-y: auto;
-    overflow-x: hidden;
+    position: relative !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
 }
-
