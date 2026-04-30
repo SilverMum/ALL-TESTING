@@ -198,12 +198,12 @@ header {
     width: 100%;
     max-width: 900px;
     height: 100%;
-    max-height: 86%; /* ⭐ lowered from 95% to bring bottom up ~20px */
+    max-height: 86%; /* ⭐ raised bottom of box */
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
-    padding: 30px 30px 60px 30px; /* bottom padding stays */
+    padding: 30px 30px 60px 30px;
     position: relative;
     color: white;
 }
@@ -218,17 +218,17 @@ header {
 .range-open-button-wrapper {
     text-align: center;
     margin: 20px 0;
-    pointer-events: none; /* wrapper cannot be clicked */
+    pointer-events: none;
 }
 
 .range-open-button-wrapper a {
-    pointer-events: auto; /* only the image is clickable */
+    pointer-events: auto;
     display: inline-block;
 }
 
 .range-open-button-img {
-    width: 70%;          /* ⭐ bigger button */
-    max-width: 340px;    /* ⭐ safe max size */
+    width: 70%;
+    max-width: 340px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -241,11 +241,11 @@ header {
 }
 
 .red-text {
-    color: #ff4d4d !important; /* clean, readable red */
+    color: #ff4d4d !important;
 }
 
 .ts-close {
-    position: absolute;   /* back to original positioning */
+    position: absolute;
     top: 15px;
     right: 20px;
     font-size: 1.8rem;
@@ -253,10 +253,6 @@ header {
     color: white;
     font-weight: bold;
     z-index: 999999;
-}
-
-.ts-overlay {
-    position: fixed; /* ensures the close button stays visible */
 }
 
 /* --------------------------------------------------
@@ -351,5 +347,3 @@ footer {
         height: 160px;
     }
 }
-
-
