@@ -240,6 +240,10 @@ header {
     line-height: 1.55;
 }
 
+.red-text {
+    color: #ff4d4d !important; /* clean, readable red */
+}
+
 .ts-close {
     position: absolute;
     top: 15px;
