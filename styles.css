@@ -312,32 +312,42 @@ header {
     z-index: 99999;
 }
 
+/* --------------------------------------------------
+   FIXED‑SIZE MODAL OVERLAY
+-------------------------------------------------- */
+.ts-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75); /* darkened site stays the same */
+    display: none;
+    justify-content: center;
+    z-index: 99999;
+}
+
+/* --------------------------------------------------
+   MODAL BOX — BLUE BACKGROUND
+-------------------------------------------------- */
 .ts-overlay-content {
     width: 70vw;
     height: 70vh;
     margin-top: 12.5vh;
-    background: rgba(0,0,0,0.6);
-    border: 4px solid rgba(255,255,255,0.4);
-    border-radius: 12px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    padding: 30px;
-    position: relative;
-    color: white;
-}
 
-/* ⭐ MODAL BOX COLOR UPDATE */
-.ts-overlay-content {
-    background: #3b5a7a; /* pulled from your uploaded blue tone */
-    color: white;
+    /* ⭐ Blue color from your uploaded image */
+    background: #3b5a7a;
+
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
+
     overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+
     padding: 30px;
     position: relative;
+    color: white; /* keep white text */
 }
 
 /* Keep the darkened site overlay unchanged */
