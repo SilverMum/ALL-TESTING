@@ -363,6 +363,7 @@ header {
     font-weight: bold;
     text-decoration: none;
     z-index: 100000;
+    pointer-events: auto;
 }
 
 /* --------------------------------------------------
