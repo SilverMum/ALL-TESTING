@@ -221,6 +221,30 @@ header {
     color: white;
 }
 
+/* --------------------------------------------------
+   MODAL TYPOGRAPHY — GLOBAL FOR ALL BOXES
+-------------------------------------------------- */
+.ts-overlay-content p,
+.ts-overlay-content li,
+.ts-overlay-content strong,
+.ts-overlay-content em {
+    font-size: 1.25rem; /* 20px — 2 sizes bigger */
+    line-height: 1.6;
+}
+
+.ts-overlay-content h2 {
+    font-size: 2rem; /* 32px — 3 sizes bigger */
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.ts-overlay-content h3 {
+    font-size: 1.6rem; /* 26px — 3 sizes bigger */
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 /* ⭐ X BUTTON — FIXED TO BOX, ALWAYS VISIBLE */
 .ts-close {
     position: absolute;
