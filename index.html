@@ -12,18 +12,53 @@
 
 <body class="home-bg">
 
-<!-- NAVIGATION -->
+<!-- ⭐ NEW UNIFIED NAVIGATION (Trap & Skeet LOOK + Main Site FUNCTION) -->
 <header>
     <nav class="main-nav">
+
         <ul class="nav-links">
+
             <li><a href="index.html">Home</a></li>
-            <li><a href="trap-skeet.html">Range</a></li>
-            <li><a href="archery.html">Archery</a></li>
+
+            <li class="dropdown">
+                <a href="#">Events ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="index.html#club-events">Club Events</a></li>
+                    <li><a href="private-events.html">Private Events</a></li>
+                </ul>
+            </li>
+
             <li><a href="kitchen.html">Kitchen</a></li>
-            <li><a href="ofha.html">OFHA</a></li>
-            <li><a href="members.html">Members</a></li>
-            <li><a href="air-rifle.html">Air Rifle</a></li>
+
+            <li class="dropdown">
+                <a href="#">Groups ▾</a>
+                <ul class="dropdown-menu">
+
+                    <li><a href="trap-skeet.html">Range</a></li> <!-- ⭐ stays linked to Trap & Skeet -->
+                    <li><a href="archery.html">Archery</a></li>
+                    <li><a href="ofha.html">OFHA</a></li>
+                    <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
+                    <li><a href="air-rifle.html">Air Rifle</a></li>
+
+                    <li class="dropdown-sub">
+                        <a href="members.html" class="submenu-link">Members</a>
+                        <span class="submenu-toggle">▸</span>
+
+                        <ul class="submenu-right">
+                            <li><a href="staff-tv-info.html">Staff TV Info</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a href="index.html#contact-title">Contact</a></li>
+
+            <li><a href="login.html">Login</a></li>
+
         </ul>
+
     </nav>
 </header>
 
@@ -39,6 +74,27 @@
 <footer>
     <p>© 2026 Riverside Sportsmen’s Club — Windsor, Ontario</p>
 </footer>
+
+<!-- ⭐ MOBILE DROPDOWN SCRIPT -->
+<script>
+document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('open');
+        }
+    });
+});
+
+document.querySelectorAll('.dropdown-sub > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (window.innerWidth <= 900) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('open');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
