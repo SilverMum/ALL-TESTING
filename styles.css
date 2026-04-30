@@ -198,12 +198,12 @@ header {
     width: 100%;
     max-width: 900px;
     height: 100%;
-    max-height: 95%;
+    max-height: 90%; /* ⭐ lowered from 95% to bring bottom up ~20px */
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
-    padding: 30px 30px 60px 30px; /* ⭐ increased bottom padding */
+    padding: 30px 30px 60px 30px; /* bottom padding stays */
     position: relative;
     color: white;
 }
