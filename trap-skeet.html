@@ -59,7 +59,6 @@
             loading="lazy" 
             frameborder="0">
         </iframe>
-
     </div>
 </section>
 
@@ -111,7 +110,7 @@
 <!-- OVERLAYS -->
 <div id="info1" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>General Information</h2>
         <p>Your content goes here...</p>
     </div>
@@ -119,7 +118,7 @@
 
 <div id="info2" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>Hours of Operation</h2>
         <p>Your content goes here...</p>
     </div>
@@ -127,7 +126,7 @@
 
 <div id="info3" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>Fees & Memberships</h2>
         <p>Your content goes here...</p>
     </div>
@@ -135,7 +134,7 @@
 
 <div id="info4" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>2026 Member Pre‑Shot Packages</h2>
         <p>Your content goes here...</p>
     </div>
@@ -143,7 +142,7 @@
 
 <div id="info5" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>Shooter Requirements</h2>
         <p>Your content goes here...</p>
     </div>
@@ -151,7 +150,7 @@
 
 <div id="info6" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>Ammunition Types</h2>
         <p>Your content goes here...</p>
     </div>
@@ -159,7 +158,7 @@
 
 <div id="info7" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>Range Rules</h2>
         <p>Your content goes here...</p>
     </div>
@@ -167,7 +166,7 @@
 
 <div id="info8" class="ts-overlay">
     <div class="ts-overlay-content">
-        <a href="#" class="ts-close">X</a>
+        <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
         <h2>Contact Trap & Skeet</h2>
         <p>Your content goes here...</p>
     </div>
@@ -178,5 +177,20 @@
     <p>© 2026 Riverside Sportsmen’s Club — Windsor, Ontario</p>
 </footer>
 
+<!-- ⭐ OVERLAY SCRIPT (keeps scroll position + locks background) -->
+<script>
+function closeOverlay() {
+    document.querySelectorAll('.ts-overlay').forEach(o => o.style.display = 'none');
+    document.body.style.overflow = 'auto';
+}
+
+document.querySelectorAll('.ts-card').forEach(card => {
+    card.addEventListener('click', () => {
+        document.body.style.overflow = 'hidden';
+    });
+});
+</script>
+
 </body>
 </html>
+
