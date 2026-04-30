@@ -381,6 +381,11 @@ header {
     margin-bottom: 10px;
 }
 
+/* Remove extra spacing inside package blocks */
+.ts-overlay-content .package-block p {
+    margin: 4px 0;   /* tight, even spacing */
+}
+
 /* --------------------------------------------------
    BACKGROUND
 -------------------------------------------------- */
