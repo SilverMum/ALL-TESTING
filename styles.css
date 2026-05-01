@@ -238,17 +238,16 @@ header {
 
 /* ⭐ Orange card behind calendar */
 .calendar-card {
-    background: #ff9f43;      /* orange accent */
-    padding: 5px;             /* 3px border effect */
-    border-radius: 12px;      /* matches your card rounding */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* optional: matches card shadows */
+    background: #ff9f43;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-/* Keep iframe size EXACTLY the same */
 .calendar-card iframe {
     width: 100%;
     height: 600px;
-    border-radius: 10px;      /* inner rounding */
+    border-radius: 10px;
     border: none;
 }
 
@@ -408,6 +407,58 @@ header {
     margin: 4px 0;
 }
 
+/* ⭐⭐⭐ NEW BLOCK — CONTACT POPUP LEFT/RIGHT + ORANGE FORM CARD ⭐⭐⭐ */
+
+.ts-contact-flex {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.ts-contact-left {
+    flex: 0 0 40%;
+}
+
+.ts-contact-right {
+    flex: 0 0 60%;
+}
+
+.ts-contact-card {
+    background: #ff9f43;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.ts-contact-card input,
+.ts-contact-card textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.ts-contact-card label {
+    font-weight: 600;
+}
+
+.ts-contact-card button {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.ts-contact-card button:hover {
+    background: #000;
+}
+
 /* --------------------------------------------------
    BACKGROUND
 -------------------------------------------------- */
@@ -505,4 +556,5 @@ footer {
         overflow-x: hidden;
     }
 }
+
 
