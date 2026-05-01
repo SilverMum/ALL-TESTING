@@ -421,8 +421,9 @@ body.trap-skeet-bg::before {
     align-items: center;
 }
 
+/* ⭐ UPDATED: Facebook button size increased from 60px → 80px */
 .trap-skeet-bg .fb-bottom-button img {
-    width: 60px;
+    width: 80px;
     height: auto;
     transition: all 0.2s ease;
 }
