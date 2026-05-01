@@ -297,6 +297,7 @@ header {
     margin: 0 auto;
 }
 
+/* ⭐ Shotgun image fix */
 .range-restricted-image img {
     display: block;
     max-width: 100%;
@@ -415,12 +416,11 @@ body.trap-skeet-bg::before {
    Trap & Skeet – Weather at bottom
    ============================ */
 
-/* ⭐ Weather widget full-width, sitting right on top of footer */
 .trap-skeet-bg .ts-weather {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 40px auto 0 auto;  /* space above, none below */
+    margin: 40px 0 0 0;
     padding: 0;
 }
 
@@ -428,9 +428,9 @@ body.trap-skeet-bg::before {
     width: 100% !important;
 }
 
-/* ⭐ Facebook button under LEFT TEXT only, smaller */
+/* ⭐ Facebook button under LEFT TEXT only */
 .trap-skeet-bg .ts-left .fb-bottom-button img {
-    width: 120px;        /* smaller size */
+    width: 120px;
     max-width: 120px;
     height: auto;
     display: block;
@@ -447,7 +447,7 @@ body.trap-skeet-bg::before {
    FOOTER
 -------------------------------------------------- */
 footer {
-    margin-top: 0;              /* so it touches weather bottom */
+    margin-top: 0;
     padding: 20px 0;
     text-align: center;
     background: #1a1a1a;
@@ -490,3 +490,4 @@ footer {
         overflow-x: hidden;
     }
 }
+
