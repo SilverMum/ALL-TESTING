@@ -420,8 +420,8 @@ header {
 }
 
 .ts-contact-right {
-    flex: 0 0 60%;
-    margin-top: 4px; /* move card down */
+    flex: 0 0 calc(60% - 2px); /* shrink column width */
+    margin-top: 9px;
 }
 
 .ts-contact-card {
