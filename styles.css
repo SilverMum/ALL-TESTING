@@ -269,9 +269,8 @@ header {
 .ts-card-image {
     width: 100%;
     height: 180px;
-    object-fit: contain;
-    object-position: top center; /* top + centered horizontally */
-    background-color: #000; /* keeps the black behind icons */
+    object-fit: cover;          /* back to original behavior */
+    object-position: top center; /* top attached + centered */
 }
 
 .ts-card p {
