@@ -239,7 +239,7 @@ header {
 /* ⭐ Orange card behind calendar */
 .calendar-card {
     background: #ff9f43;      /* orange accent */
-    padding: 3px;             /* 3px border effect */
+    padding: 5px;             /* 3px border effect */
     border-radius: 12px;      /* matches your card rounding */
     box-shadow: 0 4px 12px rgba(0,0,0,0.25); /* optional: matches card shadows */
 }
