@@ -437,7 +437,7 @@ header {
 
 .ts-contact-card input,
 .ts-contact-card textarea {
-    width: 100%;
+    width: calc(100% - 10px); /* end 10px earlier on the right */
     padding: 10px;
     border-radius: 6px;
     border: none;
