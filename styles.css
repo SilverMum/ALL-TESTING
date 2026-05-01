@@ -407,21 +407,30 @@ body.trap-skeet-bg::before {
    Trap & Skeet – Bottom Row Layout
    ============================ */
 
+/* ⭐ Updated: bottom row now stacks vertically and allows full-width widget */
 .trap-skeet-bg .ts-bottom-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
+    flex-direction: column;   /* stack FB button above widget */
+    align-items: center;      /* center both elements */
+    width: 100%;              /* allow full page width */
+    max-width: none;          /* remove 1200px limit */
     margin: 40px auto;
     padding: 0 20px;
 }
 
+/* ⭐ Weather widget now stretches full width */
 .trap-skeet-bg .ts-weather {
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;  /* centers widget content if it has max width */
 }
 
-/* ⭐ UPDATED: Facebook button size increased from 60px → 80px */
+/* ⭐ Force internal widget container to full width */
+.trap-skeet-bg .ts-weather > div {
+    width: 100% !important;
+}
+
+/* Facebook button (unchanged except size) */
 .trap-skeet-bg .fb-bottom-button img {
     width: 80px;
     height: auto;
