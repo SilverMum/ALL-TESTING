@@ -93,7 +93,7 @@ header {
     position: absolute;
     top: 0;
     left: 100%;
-    background: #1a1a1a;
+    background: #11a1a1a;
     border: 1px solid rgba(255,255,255,0.2);
     min-width: 200px;
     padding: 8px 0;
@@ -269,8 +269,8 @@ header {
 .ts-card-image {
     width: 100%;
     height: 180px;
-    object-fit: cover;          /* back to original behavior */
-    object-position: top center; /* top attached + centered */
+    object-fit: cover;
+    object-position: top center;
 }
 
 .ts-card p {
@@ -322,23 +322,21 @@ header {
     background: rgba(0,0,0,0.6);
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
-
     position: relative;
     overflow-y: auto;
     overflow-x: hidden;
-
     -webkit-overflow-scrolling: touch;
     padding: 30px;
     color: white;
 }
 
 /* --------------------------------------------------
-   FLOATING X BUTTON (FINAL WORKING VERSION)
+   FLOATING X BUTTON
 -------------------------------------------------- */
 .ts-close-wrapper {
     position: fixed;
     top: calc(12.5vh + 7px);
-    right: calc(15vw - 12px);   /* moved 10px further LEFT */
+    right: calc(15vw - 12px);
     width: 38px;
     height: 38px;
     background: rgba(0,0,0,0.85);
@@ -382,9 +380,8 @@ header {
     margin-bottom: 10px;
 }
 
-/* Remove extra spacing inside package blocks */
 .ts-overlay-content .package-block p {
-    margin: 4px 0;   /* tight, even spacing */
+    margin: 4px 0;
 }
 
 /* --------------------------------------------------
@@ -414,20 +411,18 @@ body.trap-skeet-bg::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;      /* keeps it near the card grid width */
-    margin: 40px auto;      /* centers the whole row */
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Weather widget */
 .trap-skeet-bg .ts-weather {
     display: flex;
     align-items: center;
 }
 
-/* Facebook button */
 .trap-skeet-bg .fb-bottom-button img {
-    width: 60px;            /* clean fixed size */
+    width: 60px;
     height: auto;
     transition: all 0.2s ease;
 }
