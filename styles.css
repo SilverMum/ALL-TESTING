@@ -416,9 +416,9 @@ body.trap-skeet-bg::before {
 }
 
 .trap-skeet-page .fb-bottom-button img {
-    width: 25%;
-    min-width: 180px;
-    max-width: 260px;
+    width: 8%;          /* was 25% */
+    min-width: 60px;    /* was 180px */
+    max-width: 85px;    /* was 260px */
     height: auto;
     transition: all 0.2s ease;
     display: inline-block;
