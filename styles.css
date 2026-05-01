@@ -414,21 +414,20 @@ body.trap-skeet-bg::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
-    margin-top: 40px;
+    max-width: 1200px;      /* keeps it near the card grid width */
+    margin: 40px auto;      /* centers the whole row */
+    padding: 0 20px;
 }
 
-/* Weather widget alignment */
+/* Weather widget */
 .trap-skeet-bg .ts-weather {
     display: flex;
     align-items: center;
 }
 
-/* Facebook button (right side) */
+/* Facebook button */
 .trap-skeet-bg .fb-bottom-button img {
-    width: 8%;
-    min-width: 60px;
-    max-width: 85px;
+    width: 60px;            /* clean fixed size */
     height: auto;
     transition: all 0.2s ease;
 }
