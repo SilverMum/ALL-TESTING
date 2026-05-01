@@ -406,6 +406,29 @@ body.trap-skeet-bg::before {
     z-index: -1;
 }
 
+/* ============================
+   Trap & Skeet – Facebook Button
+   ============================ */
+
+.trap-skeet-page .fb-bottom-button {
+    text-align: center;
+    margin: 40px 0 20px 0;
+}
+
+.trap-skeet-page .fb-bottom-button img {
+    width: 25%;
+    min-width: 180px;
+    max-width: 260px;
+    height: auto;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.trap-skeet-page .fb-bottom-button img:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.1);
+}
+
 /* --------------------------------------------------
    FOOTER
 -------------------------------------------------- */
