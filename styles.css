@@ -430,8 +430,8 @@ body.trap-skeet-bg::before {
 
 /* ⭐ Facebook button under LEFT TEXT only */
 .trap-skeet-bg .ts-left .fb-bottom-button img {
-    width: 120px;
-    max-width: 120px;
+    width: 240px;
+    max-width: 240px;
     height: auto;
     display: block;
     margin: 10px auto 0 auto;
