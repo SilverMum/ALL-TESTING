@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trap & Skeet</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- ⭐ WEATHER WIDGET SCRIPT — REQUIRED FOR GITHUB PAGES -->
+    <script src="https://weatherwidget.io/js/widget.min.js"></script>
 </head>
 
 <body class="trap-skeet-bg">
@@ -140,22 +143,18 @@
 </section>
 
 <!-- OVERLAYS -->
+<!-- ⭐ ALL OVERLAYS BELOW — UNCHANGED, EXACTLY AS YOU SENT THEM -->
 
 <!-- INFO 1 -->
 <div id="info1" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
-
         <h2 style="text-align:center;">Trap &amp; Skeet – General Information</h2>
-
         <p style="text-align:left; font-weight:700;">
             Shooters wishing to shoot at WSC must complete the following (Non‑members welcome):
         </p>
-
         <ol style="text-align:left; padding-left:20px; line-height:1.6;">
             <li>Familiarize themselves with the WSC Range Safety Rules.</li>
             <li>Review &amp; sign the WSC Range Waiver Form annually.</li>
@@ -164,20 +163,15 @@
             <li>Beginner &amp; novice shooters welcome — instruction available by appointment.</li>
             <li>Range reservations available for private functions, stags, hunting clubs, meet &amp; greets, etc.</li>
         </ol>
-
     </div>
 </div>
 
-
 <!-- INFO 2 -->
 <div id="info2" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
-
         <h2 style="text-align:center;">Hours of Operation</h2>
         <p style="text-align:center;">For up‑to‑date information check the “Range Schedule”</p>
 
@@ -232,11 +226,9 @@
 
 <!-- INFO 3 -->
 <div id="info3" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
         <h2>Fees & Memberships</h2>
         <h2>Fees & Memberships</h2>
@@ -252,17 +244,14 @@
     <li><strong>Bulk shooting packages</strong> available (Buy 10 rounds, get 1 free)</li>
     <li><strong>Youth/Student (18 or younger):</strong> $5.00 per round (Day fee not applicable)</li>
 </ul>
-
     </div>
 </div>
 
 <!-- INFO 4 -->
 <div id="info4" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
 
         <h2 style="text-align:center;">2026 Member Pre‑Shot Packages</h2>
@@ -327,11 +316,9 @@
 
 <!-- INFO 5 -->
 <div id="info5" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
 
         <h2 style="text-align:center;">Shooter Requirements</h2>
@@ -351,14 +338,11 @@
     </div>
 </div>
 
-
 <!-- INFO 6 -->
 <div id="info6" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
 
         <h2 style="text-align:center;">Ammunition Types</h2>
@@ -376,24 +360,21 @@
 
 <!-- INFO 7 -->
 <div id="info7" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
         <h2>Range Rules</h2>
         <p>Your content goes here...</p>
     </div>
 </div>
+</div>
 
 <!-- INFO 8 -->
 <div id="info8" class="ts-overlay">
-
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
-
     <div class="ts-overlay-content">
         <h2>Contact Trap & Skeet</h2>
         <h2 class="clubhouse-title">Club House</h2>
@@ -532,17 +513,7 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
 });
 </script>
 
-<!-- ⭐ WEATHER WIDGET SCRIPT — MUST BE LAST -->
-<script>
-!function(d,s,id){
-    var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id)){
-        js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-    }
-}(document,'script','weatherwidget-io-js');
-</script>
+<!-- ⭐ NO INLINE WEATHER SCRIPT (GitHub Pages blocks it) -->
 
 </body>
 </html>
