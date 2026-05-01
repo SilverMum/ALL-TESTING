@@ -410,21 +410,21 @@ body.trap-skeet-bg::before {
    Trap & Skeet – Facebook Button
    ============================ */
 
-.trap-skeet-page .fb-bottom-button {
+.trap-skeet-bg .fb-bottom-button {
     text-align: center;
     margin: 40px 0 20px 0;
 }
 
-.trap-skeet-page .fb-bottom-button img {
-    width: 8%;          /* was 25% */
-    min-width: 60px;    /* was 180px */
-    max-width: 85px;    /* was 260px */
+.trap-skeet-bg .fb-bottom-button img {
+    width: 8%;
+    min-width: 60px;
+    max-width: 85px;
     height: auto;
     transition: all 0.2s ease;
     display: inline-block;
 }
 
-.trap-skeet-page .fb-bottom-button img:hover {
+.trap-skeet-bg .fb-bottom-button img:hover {
     transform: translateY(-3px);
     filter: brightness(1.1);
 }
