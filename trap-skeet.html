@@ -485,18 +485,6 @@
 
 </div>
 
-<!-- ⭐ WEATHER WIDGET SCRIPT (must be near bottom) -->
-<script>
-!function(d,s,id){
-    var js,fjs=d.getElementsByTagName(s)[0];
-    if(!d.getElementById(id)){
-        js=d.createElement(s);js.id=id;
-        js.src='https://weatherwidget.io/js/widget.min.js';
-        fjs.parentNode.insertBefore(js,fjs);
-    }
-}(document,'script','weatherwidget-io-js');
-</script>
-
 <!-- FOOTER -->
 <footer>
     <p>© 2026 Riverside Sportsmen’s Club — Windsor, Ontario</p>
@@ -539,6 +527,18 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
         }
     });
 });
+</script>
+
+<!-- ⭐ WEATHER WIDGET SCRIPT — MUST BE LAST -->
+<script>
+!function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){
+        js=d.createElement(s);js.id=id;
+        js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+    }
+}(document,'script','weatherwidget-io-js');
 </script>
 
 </body>
