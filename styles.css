@@ -411,7 +411,7 @@ header {
 
 .ts-contact-flex {
     display: flex;
-    gap: 40px;
+    gap: 30px; /* moved 10px closer */
     margin-top: 20px;
 }
 
