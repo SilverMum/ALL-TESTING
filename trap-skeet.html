@@ -6,8 +6,6 @@
     <title>Trap & Skeet</title>
     <link rel="stylesheet" href="styles.css">
 
-    <!-- ⭐ REMOVE OLD WEATHERWIDGET.IO SCRIPT -->
-    <!-- (No weather script needed in <head> for new widget) -->
 </head>
 
 <body class="trap-skeet-bg">
@@ -142,7 +140,6 @@
 
 </section>
 
-<!-- OVERLAYS (UNCHANGED) -->
 <!-- INFO 1 -->
 <div id="info1" class="ts-overlay">
     <div class="ts-close-wrapper">
@@ -446,20 +443,20 @@
 <div class="ts-bottom-row">
 
     <!-- ⭐ NEW WEATHER WIDGET (WeatherWidget.org) -->
-    <div class="ts-weather">
-        <div id="ww_d15803ec99cc4" v='1.3' loc='id'
-             a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":["wl4747"],
-             "font":"Times","sl_ics":"one_a","sl_sot":"celsius",
-             "cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF",
-             "cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107",
-             "cl_thund":"#FF5722"}'>
-            More forecasts:
-            <a href="https://oneweather.org/calgary/30_days/"
-               id="ww_d15803ec99cc4_u" target="_blank">
-               Weather forecast Calgary 30 days
-            </a>
-        </div>
+  <div class="ts-weather">
+    <div id="ww_d15803ec99cc4" v='1.3' loc='id'
+         a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl4747"],
+         "font":"Times","sl_ics":"one_a","sl_sot":"celsius",
+         "cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF",
+         "cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107",
+         "cl_thund":"#FF5722"}'>
+        More forecasts:
+        <a href="https://oneweather.org/windsor/30_days/"
+           id="ww_d15803ec99cc4_u" target="_blank">
+           Weather forecast Windsor 30 days
+        </a>
     </div>
+</div>
 
     <!-- ⭐ FACEBOOK BUTTON (unchanged) -->
     <div class="fb-bottom-button">
