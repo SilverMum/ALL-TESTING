@@ -420,7 +420,7 @@ body.trap-skeet-bg::before {
 }
 
 /* ⭐ Facebook button under LEFT TEXT only */
-.ts-left .fb-bottom-button img {
+.trap-skeet-bg .ts-left .fb-bottom-button img {
     width: 160px;        /* perfect size */
     max-width: 160px;    /* prevents stretching */
     height: auto;
@@ -429,7 +429,7 @@ body.trap-skeet-bg::before {
     transition: all 0.2s ease;
 }
 
-.ts-left .fb-bottom-button img:hover {
+.trap-skeet-bg .ts-left .fb-bottom-button img:hover {
     transform: translateY(-3px);
     filter: brightness(1.1);
 }
