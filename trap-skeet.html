@@ -464,11 +464,37 @@
     </div>
 </div>
 
+    <div class="ts-bottom-row">
+
+    <div class="ts-weather">
+        <a class="weatherwidget-io" 
+           href="https://forecast7.com/en/42d31n83d04/windsor/" 
+           data-label_1="WINDSOR" 
+           data-label_2="WEATHER" 
+           data-theme="original">
+           WINDSOR WEATHER
+        </a>
+    </div>
+
     <div class="fb-bottom-button">
-    <a href="https://www.facebook.com/profile.php?id=61575199292154" target="_blank">
-        <img src="images/facebook-button.png" alt="Facebook Button">
-    </a>
+        <a href="https://www.facebook.com/profile.php?id=61575199292154" target="_blank">
+            <img src="images/facebook-button.png" alt="Facebook Button">
+        </a>
+    </div>
+
 </div>
+
+<script>
+!function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0];
+    if(!d.getElementById(id)){
+        js=d.createElement(s);js.id=id;
+        js.src='https://weatherwidget.io/js/widget.min.js';
+        fjs.parentNode.insertBefore(js,fjs);
+    }
+}(document,'script','weatherwidget-io-js');
+</script>
+
 
 <!-- FOOTER -->
 <footer>
