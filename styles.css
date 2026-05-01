@@ -404,40 +404,32 @@ body.trap-skeet-bg::before {
 }
 
 /* ============================
-   Trap & Skeet – Bottom Row Layout
+   Trap & Skeet – Layout Updates
    ============================ */
 
-/* ⭐ Updated: bottom row now stacks vertically and allows full-width widget */
-.trap-skeet-bg .ts-bottom-row {
-    display: flex;
-    flex-direction: column;   /* stack FB button above widget */
-    align-items: center;      /* center both elements */
-    width: 100%;              /* allow full page width */
-    max-width: none;          /* remove 1200px limit */
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-/* ⭐ Weather widget now stretches full width */
+/* ⭐ Weather widget full-width (now above cards) */
 .trap-skeet-bg .ts-weather {
     width: 100%;
     display: flex;
-    justify-content: center;  /* centers widget content if it has max width */
+    justify-content: center;
+    margin-top: 40px;
 }
 
-/* ⭐ Force internal widget container to full width */
 .trap-skeet-bg .ts-weather > div {
     width: 100% !important;
 }
 
-/* Facebook button (unchanged except size) */
-.trap-skeet-bg .fb-bottom-button img {
-    width: 80px;
+/* ⭐ Facebook button under LEFT TEXT only */
+.ts-left .fb-bottom-button img {
+    width: 160px;        /* perfect size */
+    max-width: 160px;    /* prevents stretching */
     height: auto;
+    display: block;
+    margin: 10px auto 0 auto; /* centers inside LEFT column */
     transition: all 0.2s ease;
 }
 
-.trap-skeet-bg .fb-bottom-button img:hover {
+.ts-left .fb-bottom-button img:hover {
     transform: translateY(-3px);
     filter: brightness(1.1);
 }
