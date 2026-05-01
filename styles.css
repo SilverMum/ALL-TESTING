@@ -297,6 +297,14 @@ header {
     margin: 0 auto;
 }
 
+.range-restricted-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    object-fit: contain;
+}
+
 /* --------------------------------------------------
    FIXED‑SIZE MODAL OVERLAY
 -------------------------------------------------- */
