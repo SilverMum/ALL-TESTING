@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- LINK YOUR MAIN CSS FILE -->
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Riverside Sportsmen’s Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Windsor Sportsmen’s Club</title>
+    <link rel="stylesheet" href="styles.css?v=10">
 </head>
 
-<body class="home-bg">
+<body class="home">
 
-<!-- ⭐ NEW UNIFIED NAVIGATION (Trap & Skeet LOOK + Main Site FUNCTION) -->
 <header>
     <nav class="main-nav">
 
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/WINDSOR SPORTSMANS REMAKE.png" alt="Windsor Sportsmen’s Club Logo">
+        </div>
+
+        <div class="nav-spacer"></div>
+
+        <!-- Nav Links -->
         <ul class="nav-links">
 
             <li><a href="index.html">Home</a></li>
@@ -24,7 +28,7 @@
                 <a href="#">Events ▾</a>
                 <ul class="dropdown-menu">
                     <li><a href="calendar.html">Calendar</a></li>
-                    <li><a href="index.html#club-events">Club Events</a></li>
+                    <li><a href="#club-events">Club Events</a></li>
                     <li><a href="private-events.html">Private Events</a></li>
                 </ul>
             </li>
@@ -35,7 +39,13 @@
                 <a href="#">Groups ▾</a>
                 <ul class="dropdown-menu">
 
-                    <li><a href="trap-skeet.html">Range</a></li> <!-- ⭐ stays linked to Trap & Skeet -->
+                    <li class="nav-trap-skeet">
+                        <a href="trap-skeet.html">
+                            Trap &amp; Skeet<br>
+                            <span>Range</span>
+                        </a>
+                    </li>
+
                     <li><a href="archery.html">Archery</a></li>
                     <li><a href="ofha.html">OFHA</a></li>
                     <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
@@ -44,7 +54,6 @@
                     <li class="dropdown-sub">
                         <a href="members.html" class="submenu-link">Members</a>
                         <span class="submenu-toggle">▸</span>
-
                         <ul class="submenu-right">
                             <li><a href="staff-tv-info.html">Staff TV Info</a></li>
                         </ul>
@@ -53,8 +62,7 @@
                 </ul>
             </li>
 
-            <li><a href="index.html#contact-title">Contact</a></li>
-
+            <li><a href="#contact-title">Contact</a></li>
             <li><a href="login.html">Login</a></li>
 
         </ul>
@@ -62,26 +70,16 @@
     </nav>
 </header>
 
-<!-- SPACER TO PREVENT NAV OVERLAP -->
-<div class="nav-spacer"></div>
 
-<!-- INDEX HEADER IMAGE -->
-<section class="page-header">
-    <img src="images/home-header.png" alt="Sportsmen's Header">
-</section>
+<main>
 
-    <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <h1 class="hero-title home-hero-title">Welcome to the Windsor Sportsmen’s Club</h1>
+        <h2 class="home-subtitle">2401 Dougall Ave, Windsor ON N8X 1T3</h2>
+    </section>
 
-<section class="hero" id="hero">
-
-    <h1 class="hero-title home-hero-title">Welcome to the Windsor Sportsmen’s Club</h1>
-
-    <!-- New subtitle under the title -->
-    <h2 class="home-subtitle">2401 Dougall Ave, Windsor ON N8X 1T3</h2>
-
-</section>
-
-    <!-- ⭐ PLEDGE — UPDATED TO YOUR DOUBLE CARD STYLE -->
+    <!-- PLEDGE -->
     <section class="home-pledge-card outer-card">
         <div class="inner-card">
 
@@ -107,110 +105,73 @@
         </div>
     </section>
 
-</section>
+    <!-- MEMBERSHIP -->
+    <section class="home-meeting-card outer-card wide-card">
+        <img src="images/membership-meeting.png" alt="Membership Information" class="membership-image">
+    </section>
 
-<!-- ⭐ MEMBERSHIP — UPDATED TO YOUR DOUBLE CARD STYLE -->
-<section class="home-meeting-card outer-card wide-card">
-    <div class="inner-card wide-inner">
-
-        <section class="home-info-section">
-
-    <!-- Invisible spacers -->
-    <div class="info-spacer"></div>
-
-    <!-- Center logo -->
-    <div class="info-logo">
-        <img src="images/WINDSOR SPORTSMANS REMAKE.png" alt="Windsor Sportsmen's Club Logo">
-    </div>
-
-    <div class="info-spacer"></div>
-
-    <!-- Three-column content -->
-    <div class="info-columns">
-
-        <!-- CONTACT -->
-        <div class="info-col">
-    <h3 class="info-title contact-title">Contact</h3>
-
-    <p>
-        <span class="contact-bold">Clubhouse Location:</span><br>
-        <span class="contact-italic">2401 Dougall Avenue</span><br><br>
-
-        <span class="contact-bold">Mailing Address:</span>
-        <span class="contact-italic">2401 Dougall Avenue</span><br>
-        <span class="contact-italic">Windsor, ON N8X1T3</span><br>
-
-        <span class="contact-bold">Telephone:</span>
-
-        <span class="contact-italic">519-966-1600</span><br>
-
-        <span class="contact-bold">Fax:</span>
-        <span class="contact-italic">519-966-4535</span><br><br>
-
-        <span class="contact-bold">E-Mail Office:</span><br>
-        <span class="contact-italic">WSC2401@outlook.com</span>
-    </p>
-</div>
-
-        <!-- GENERAL MEMBERSHIP MEETING -->
-        <div class="info-col">
-            <h3 class="info-title meeting-title">GENERAL MEMBERSHIP MEETING</h3>
-            <p class="meeting-date"><em>MAY 25TH &nbsp; 7:00PM</em></p>
-        </div>
-
-        <!-- ACTIVITIES -->
-        <div class="info-col">
-            <h3 class="info-title activities-title">Activities</h3>
-            <ul class="activities-list">
-                <li>Archery</li>
-                <li>Horseshoes</li>
-                <li>Euchre Leagues</li>
-                <li>Cornhole League</li>
-                <li>Dart Leagues</li>
-                <li>Pool Leagues</li>
-                <li>Golf League</li>
-                <li>Trap &amp; Skeet</li>
-                <li>Bridge League</li>
-                <li>Mah-jong League</li>
-                <li>Conservation Meetings</li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-
-    </div>
-</section>
-
+    <!-- FACEBOOK CARD -->
     <section class="facebook-card outer-card">
-    <div class="inner-card">
+        <div class="inner-card">
 
-        <div class="facebook-section">
+            <div class="facebook-section">
 
-            <!-- Facebook Button -->
-            <div class="facebook-button">
-                <a href="https://www.facebook.com/groups/100671860008159/" target="_blank">
-                    <img src="images/facebook-button.png" alt="Find us on Facebook">
-                </a>
-            </div>
+                <div class="facebook-button">
+                    <a href="https://www.facebook.com/groups/100671860008159/" target="_blank">
+                        <img src="images/facebook-button.png" alt="Find us on Facebook">
+                    </a>
+                </div>
 
-            <!-- Text under the button -->
-            <div class="facebook-text">
-                <p></strong>Follow us on Facebook</strong></p>
-                <p>for Up Coming Events and Restaurant Menu</p>
+                <div class="facebook-text">
+                    <p><strong>Follow us on Facebook</strong></p>
+                    <p>for Up Coming Events and Restaurant Menu</p>
+                </div>
+
             </div>
 
         </div>
+    </section>
 
+    <!-- TRAP & SKEET HOME CARD -->
+    <section class="trap-skeet-home-card outer-card">
+        <img src="images/trapskeethome.png" alt="Trap & Skeet Home Image" class="trap-skeet-home-image">
+    </section>
+
+    <div id="club-events"></div>
+
+    <h2 class="section-title" style="color:black; text-decoration: underline; font-weight: 800;">
+        Club Events
+    </h2>
+
+    <!-- EARLY EVENT -->
+    <section class="early-event-card outer-card">
+        <img src="images/May9-10events.png" alt="Event Image" class="event-image">
+    </section>
+
+    <!-- LATER EVENT -->
+    <section class="later-event-card outer-card">
+        <img src="images/may22-29events.png" alt="Later Events Image" class="later-event-image">
+    </section>
+
+    <!-- TUESDAY NIGHTS -->
+    <div class="activities-image">
+        <img src="images/Tuesday-Nights.png" alt="Tuesday Nights">
     </div>
-</section>
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Riverside Sportsmen’s Club — Windsor, Ontario</p>
+
+    <!-- PARTNERSHIP -->
+    <section id="partnership" class="partnership-card outer-card">
+        <div class="inner-card">
+            <img src="images/Partnership.png" alt="Partnership Announcement" class="partnership-img">
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <p>©2024 Windsor Sportsmen's Club. All Rights Reserved.</p>
 </footer>
 
-<!-- ⭐ MOBILE DROPDOWN SCRIPT -->
+<!-- MOBILE NAV JS -->
 <script>
 document.querySelectorAll('.dropdown > a').forEach(link => {
     link.addEventListener('click', function(e) {
@@ -230,6 +191,23 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
     });
 });
 </script>
+
+<!-- SLIDESHOW (if used anywhere) -->
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+function showNextSlide() {
+    if (slides.length === 0) return;
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+setInterval(showNextSlide, 5000);
+</script>
+
+<script src="scripts.js"></script>
 
 </body>
 </html>
