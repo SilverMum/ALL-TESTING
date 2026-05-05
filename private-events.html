@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Private Events – Windsor Sportsmen’s Club</title>
+    <link rel="stylesheet" href="styles.css?v=10">
+</head>
+
+<body class="private-events-bg">
+
+<header>
+    <nav class="main-nav">
+
+        <div class="logo">
+            <img src="images/WINDSOR SPORTSMANS REMAKE.png" alt="Windsor Sportsmen’s Club Logo">
+        </div>
+
+        <div class="nav-spacer"></div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="#">Events ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="index.html#club-events">Club Events</a></li>
+                    <li><a href="private-events.html">Private Events</a></li>
+                </ul>
+            </li>
+
+            <li><a href="kitchen.html">Kitchen</a></li>
+
+            <li class="dropdown">
+                <a href="#">Groups ▾</a>
+                <ul class="dropdown-menu">
+
+                    <li class="nav-trap-skeet">
+                        <a href="trap-skeet.html">
+                            Trap &amp; Skeet<br>
+                            <span>Range</span>
+                        </a>
+                    </li>
+
+                    <li><a href="archery.html">Archery</a></li>
+                    <li><a href="ofha.html">OFHA</a></li>
+                    <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
+                    <li><a href="air-rifle.html">Air Rifle</a></li>
+
+                    <li class="dropdown-sub">
+                        <a href="members.html" class="submenu-link">Members</a>
+                        <span class="submenu-toggle">▸</span>
+                        <ul class="submenu-right">
+                            <li><a href="staff-tv-info.html">Staff TV Info</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a href="index.html#contact-title">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+
+        </ul>
+
+    </nav>
+</header>
+
+<!-- REMOVED SPACERS — now handled by global CSS -->
+
+<main>
+
+    <!-- HEADER IMAGE -->
+    <div class="private-events-header-image">
+        <img src="images/party.png" alt="Private Event Party Image">
+    </div>
+
+    <!-- TEXT CARD -->
+    <section class="private-events-text-card outer-card">
+        <div class="inner-card">
+            <p class="private-events-text">
+                Planning a Party, group dinner or function?<br>
+                Consider the Windsor Sportsmen's Club.<br>
+                Inside dinner seating for 25, 40 and 200 people.<br>
+                Meetings for 30, 50 or 800 people.<br>
+                Stage in main room.<br>
+                Catering by JimmyGs.<br>
+                Back area with Licensed pavilion and BBQ pit.
+            </p>
+        </div>
+    </section>
+
+    <!-- PDF LINK -->
+    <a href="documents/rental.pdf" target="_blank" class="private-events-left">
+        <img src="images/pdf-icon.png" alt="Rental PDF" class="private-events-pdf">
+    </a>
+
+</main>
+
+<!-- 4‑IMAGE GALLERY -->
+<section class="private-events-gallery">
+
+    <div class="private-events-grid">
+
+        <a href="images/Building-Layout.png" target="_blank">
+            <img src="images/Building-Layout.png" alt="Building Layout">
+        </a>
+
+        <a href="images/Range-Layout.png" target="_blank">
+            <img src="images/Range-Layout.png" alt="Range Layout">
+        </a>
+
+        <a href="images/Outdoor-Pavilion.png" target="_blank">
+            <img src="images/Outdoor-Pavilion.png" alt="Outdoor Pavilion">
+        </a>
+
+        <a href="images/Outdoor-BBQ.png" target="_blank">
+            <img src="images/Outdoor-BBQ.png" alt="Outdoor BBQ">
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+    <p>©2024 Windsor Sportsmen's Club. All Rights Reserved.</p>
+</footer>
+
+<!-- CAROUSEL SCRIPT (kept intact) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".private-events-header-carousel .carousel-slide");
+    let index = 0;
+
+    function showNextSlide() {
+        if (slides.length === 0) return;
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }
+
+    setInterval(showNextSlide, 4000);
+});
+</script>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
