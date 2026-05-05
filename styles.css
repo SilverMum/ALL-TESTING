@@ -23,8 +23,18 @@ body {
 }
 
 /* =========================================================
+   GLOBAL BACKGROUND SYSTEM (BG2)
+   ========================================================= */
+body.trap-skeet-bg {
+    background-image: url("images/trap-skeet-background.png");
+}
+
+body.members-bg {
+    background-image: url("images/members-background.jpg");
+}
+
+/* =========================================================
    GLOBAL SPACING SCALE (C2 POLISHED)
-   8px / 16px / 24px / 32px
    ========================================================= */
 :root {
     --space-xs: 8px;
@@ -33,7 +43,8 @@ body {
     --space-lg: 32px;
 
     --radius: 12px;
-    --shadow-main: 
+
+    --shadow-main:
         0 4px 14px rgba(47, 79, 62, 0.35),
         0 8px 28px rgba(47, 79, 62, 0.25);
 }
@@ -41,6 +52,10 @@ body {
 /* =========================================================
    GLOBAL NAV OFFSET (ALL NON-HOME PAGES)
    ========================================================= */
+.nav-spacer {
+    height: 160px;
+}
+
 body:not(.home) main {
     margin-top: 130px !important;
 }
@@ -55,6 +70,20 @@ h1, h2, h3, h4 {
 
 p {
     margin-bottom: var(--space-sm);
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.brown-strong {
+    color: #3a1f0a;
+    font-weight: 800;
 }
 
 /* =========================================================
@@ -240,3 +269,4 @@ label {
         padding: 0 var(--space-xs);
     }
 }
+
