@@ -299,9 +299,6 @@ body.home-bg::before {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 0;
     animation: card4fade 10s infinite;
     background-size: cover;
