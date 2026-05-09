@@ -1,387 +1,6 @@
 /* =========================================================
-   GLOBAL RESET & BASE
-   ========================================================= */
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #222;
-}
-
-/* =========================================================
-   GLOBAL BACKGROUND SYSTEM
-   ========================================================= */
-body.trap-skeet-bg {
-    background-image: url("images/trap-skeet-background.png");
-}
-
-body.members-bg {
-    background-image: url("images/members-background.jpg");
-}
-
-/* ⭐ FIX: Home background now works with either .home or .home-bg */
-body.home,
-body.home-bg {
-    background-image: url("images/home-background.png");
-}
-
-body.home::before,
-body.home-bg::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.05);
-    z-index: -1;
-}
-
-/* =========================================================
-   GLOBAL SPACING SCALE
-   ========================================================= */
-:root {
-    --space-xs: 8px;
-    --space-sm: 16px;
-    --space-md: 24px;
-    --space-lg: 32px;
-
-    --radius: 12px;
-
-    --shadow-main:
-        0 4px 14px rgba(47, 79, 62, 0.35),
-        0 8px 28px rgba(47, 79, 62, 0.25);
-}
-
-/* =========================================================
-   GLOBAL NAV OFFSET
-   ========================================================= */
-
-/* ⭐ FIX: Homepage no longer gets the 160px spacer */
-.nav-spacer {
-    height: 160px;
-}
-
-body:not(.home) main {
-    margin-top: 130px !important;
-}
-
-/* =========================================================
-   GLOBAL TYPOGRAPHY
-   ========================================================= */
-h1, h2, h3, h4 {
-    line-height: 1.2;
-    margin-bottom: var(--space-sm);
-}
-
-p {
-    margin-bottom: var(--space-sm);
-}
-
-.text-center { text-align: center; }
-.underline { text-decoration: underline; }
-.brown-strong { color: #3a1f0a; font-weight: 800; }
-
-/* =========================================================
-   GLOBAL IMAGE RULES
-   ========================================================= */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--radius);
-}
-
-.archery-header-img,
-.private-events-header-image img,
-.kitchen-title-img {
-    border-radius: 0;
-}
-
-/* =========================================================
-   GLOBAL IFRAME RULES
-   ========================================================= */
-iframe {
-    width: 100%;
-    border: none;
-    border-radius: var(--radius);
-    display: block;
-}
-
-/* =========================================================
-   GLOBAL CARD SYSTEM
-   ========================================================= */
-.outer-card {
-    width: 100%;
-    max-width: 900px;
-    margin: var(--space-lg) auto;
-    padding: 0 var(--space-sm);
-}
-
-.inner-card {
-    background: #fff;
-    padding: 30px;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-main);
-}
-
-.wide-card .inner-card {
-    max-width: 1200px;
-}
-
-/* =========================================================
-   GLOBAL BUTTONS
-   ========================================================= */
-button,
-.ac-submit {
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--radius);
-    border: none;
-    cursor: pointer;
-    background: #2f4f3e;
-    color: #fff;
-    font-size: 1rem;
-    transition: 0.2s ease;
-}
-
-button:hover,
-.ac-submit:hover {
-    background: #3b5f4a;
-}
-
-/* =========================================================
-   FORMS
-   ========================================================= */
-input,
-textarea {
-    width: 100%;
-    padding: var(--space-sm);
-    border-radius: var(--radius);
-    border: 1px solid #ccc;
-    margin-top: var(--space-xs);
-    margin-bottom: var(--space-md);
-    font-size: 1rem;
-}
-
-label { font-weight: bold; }
-
-/* =========================================================
-   PRIVATE EVENTS
-   ========================================================= */
-.private-events-text {
-    text-align: center;
-    font-size: 1.2rem;
-}
-
-.private-events-pdf {
-    width: 120px;
-    margin: var(--space-md) auto;
-}
-
-.private-events-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
-    max-width: 900px;
-    margin: var(--space-lg) auto;
-}
-
-/* =========================================================
-   ARCHERY
-   ========================================================= */
-.archery-image-wrapper {
-    display: flex;
-    gap: var(--space-md);
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* =========================================================
-   AIR RIFLE
-   ========================================================= */
-.airrifle-card .inner-card {
-    text-align: center;
-}
-
-/* =========================================================
-   KITCHEN
-   ========================================================= */
-.kitchen-layout {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    align-items: center;
-}
-
-.kitchen-fb-scroll {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-lg);
-}
-
-/* =========================================================
-   HOME PAGE
-   ========================================================= */
-.home .outer-card {
-    margin-top: var(--space-lg);
-}
-
-/* --------------------------------------------------
-   HEADER IMAGE
--------------------------------------------------- */
-.page-header img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* --------------------------------------------------
-   ANNOUNCEMENT + CALENDAR
--------------------------------------------------- */
-.home-announcement {
-    max-width: 1200px;
-    margin: 40px auto;
-    display: flex;
-    gap: 40px;
-    padding: 0 20px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.home-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.home-left,
-.home-left h2,
-.home-left h3,
-.home-left p,
-.home-left ul,
-.home-left li,
-.home-left strong,
-.home-left em {
-    color: white !important;
-}
-
-.home-right {
-    flex: 1;
-    max-width: 900px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.home-calendar-card {
-    background: #ff9f43;
-    padding: 5px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    width: 100%;
-    max-width: 900px;
-}
-
-.home-calendar-card iframe {
-    height: 600px;
-}
-
-/* --------------------------------------------------
-   CARD GRID
--------------------------------------------------- */
-.home-card-grid {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
-
-.home-card {
-    background: rgba(255, 255, 255, 0.25);
-    border-radius: 18px;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    backdrop-filter: blur(6px);
-    transition: 0.2s ease;
-}
-
-.home-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-}
-
-.home-card-image {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-.site-footer {
-    text-align: center;
-    padding: var(--space-lg) 0;
-    margin-top: var(--space-lg);
-    background: rgba(0,0,0,0.05);
-}
-
-/* =========================================================
-   MOBILE
-   ========================================================= */
-@media (max-width: 900px) {
-
-    .inner-card {
-        padding: 18px;
-    }
-
-    .private-events-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .archery-image-wrapper {
-        flex-direction: column;
-    }
-
-    .kitchen-layout {
-        flex-direction: column;
-    }
-
-    .outer-card {
-        padding: 0 var(--space-xs);
-    }
-
-    .home-announcement {
-        flex-direction: column;
-    }
-
-    .home-card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* =========================================================
-   GLOBAL NAVIGATION (FIXED, HORIZONTAL, BLACK BAR)
-   ========================================================= */
+   GLOBAL NAVIGATION — FIXED BLACK BAR (B1 LAYOUT)
+========================================================= */
 
 .main-nav {
     position: fixed;
@@ -390,25 +9,36 @@ label { font-weight: bold; }
     width: 100%;
     background: #000;
     z-index: 9999;
-    padding: 20px 0;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers the menu */
 }
 
-.main-nav ul,
+/* LOGO LEFT */
+.main-nav .nav-logo {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 55px;
+    width: auto;
+}
+
+/* MENU CENTERED */
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: flex-end;   /* right aligned */
-    align-items: center;
-    gap: 30px;
+    gap: 40px;
     margin: 0;
-    padding: 0 40px;
+    padding: 0;
 }
 
-.main-nav li {
-    display: inline-block;
+.nav-links li {
+    position: relative; /* required for dropdowns */
 }
 
-.main-nav a {
+.nav-links a {
     color: white;
     text-decoration: none;
     font-size: 1.25rem;
@@ -416,12 +46,123 @@ label { font-weight: bold; }
     transition: 0.2s ease;
 }
 
-.main-nav a:hover,
-.main-nav a.active {
+.nav-links a:hover,
+.nav-links a.active {
     color: #ff9f43;
 }
 
-/* Spacer under fixed nav */
+/* DROPDOWN MENU SUPPORT */
+.nav-links li ul {
+    display: none;
+    position: absolute;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    padding: 10px 0;
+    border-radius: 8px;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.nav-links li:hover ul {
+    display: block;
+}
+
+.nav-links li ul li {
+    padding: 8px 20px;
+    white-space: nowrap;
+}
+
+.nav-links li ul li a {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.nav-links li ul li a:hover {
+    color: #ff9f43;
+}
+
+/* SPACER BELOW FIXED NAV */
 .nav-spacer {
-    height: 120px; /* adjust if needed */
+    height: 110px;
+}
+
+/* =========================================================
+   GLOBAL FOOTER — FULL WIDTH BLACK BAR
+========================================================= */
+
+.site-footer {
+    width: 100%;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.site-footer p {
+    margin: 6px 0;
+}
+
+/* =========================================================
+   HOMEPAGE CARD COLOR OVERRIDE (DARK GREEN)
+========================================================= */
+
+.home-card-style {
+    background: #0f2a14 !important; /* very dark green */
+    border: 3px solid rgba(255,255,255,0.15);
+}
+
+/* =========================================================
+   HOMEPAGE FULL-SCREEN OVERLAYS
+========================================================= */
+
+.home-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12vh;
+    z-index: 99999;
+}
+
+.home-overlay-content {
+    width: 70vw;
+    height: 70vh;
+    background: rgba(0,0,0,0.6);
+    border: 4px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    overflow-y: auto;
+    padding: 30px;
+    color: white;
+}
+
+/* X BUTTON */
+.home-close-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    width: 42px;
+    height: 42px;
+    background: rgba(0,0,0,0.85);
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200000;
+}
+
+.home-close {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
 }
