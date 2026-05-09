@@ -161,7 +161,7 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   LEFT SIDE — PLEDGE (TIGHTER CARD + 30% OPACITY + QUOTE)
+   LEFT SIDE — PLEDGE
 ========================================================= */
 .home-left {
     flex: 1;
@@ -172,7 +172,6 @@ body.home-bg::before {
     position: relative;
 }
 
-/* Big white opening quote */
 .home-left::before {
     content: "“";
     position: absolute;
@@ -298,22 +297,23 @@ body.home-bg::before {
 
 .home-overlay-content {
     width: 70vw;
-    height: calc(70vh + 40px); /* +40px taller as requested */
+    height: calc(70vh + 40px);
     background: rgba(0,0,0,0.6);
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
     overflow-y: auto;
     padding: 30px;
-    text-align: center; /* CENTER EVERYTHING INSIDE */
+    text-align: center;
+    position: relative; /* REQUIRED for X button inside box */
 }
 
 /* =========================================================
-   X BUTTON — NOW HOVERS LIKE A BUTTON
+   X BUTTON — INSIDE POPUP BOX + HOVER EFFECT
 ========================================================= */
 .home-close-wrapper {
-    position: fixed;
-    top: 20px;
-    right: 30px;
+    position: absolute;        /* anchor to popup box */
+    top: 15px;
+    right: 15px;
     width: 42px;
     height: 42px;
     background: rgba(0,0,0,0.85);
@@ -322,7 +322,7 @@ body.home-bg::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 200000;
+    z-index: 9999;
     cursor: pointer;
     transition: 0.2s ease;
 }
@@ -360,4 +360,5 @@ body.home-bg::before {
 .site-footer p {
     margin: 6px 0;
 }
+
 
