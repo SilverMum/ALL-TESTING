@@ -139,7 +139,7 @@ body.home-bg {
     justify-content: flex-end;
 }
 
-/* RIGHT-SIDE LOGO (CALENDAR PLACEHOLDER) */
+/* Right-side logo sizing */
 .home-calendar-card img {
     width: 260px;
     height: auto;
@@ -147,6 +147,20 @@ body.home-bg {
     margin-left: auto;
     border-radius: 12px;
 }
+
+/* Meeting text under logo */
+.home-meeting-text {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.home-meeting-text p {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 600;
+    white-space: pre-line;
+}
+
 
 /* =========================================================
    4×4 CARD GRID
