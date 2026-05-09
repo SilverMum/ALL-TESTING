@@ -150,57 +150,77 @@
      FULL-SCREEN OVERLAYS
 ========================================================= -->
 
+<!-- TEMPLATE FOR ALL OVERLAYS:
+     X stays fixed
+     Content scrolls inside .home-scroll-area
+-->
+
 <!-- CARD 1 OVERLAY -->
 <div id="info1" class="home-overlay">
     <div class="home-overlay-content">
+
         <div class="home-close-wrapper" onclick="closeOverlay('info1')">
             <span class="home-close">X</span>
         </div>
 
-        <h2>CARD 1 — TITLE HERE</h2>
-        <p>INFO INSIDE CARD 1 GOES HERE.</p>
+        <div class="home-scroll-area">
+            <h2>CARD 1 — TITLE HERE</h2>
+            <p>INFO INSIDE CARD 1 GOES HERE.</p>
+        </div>
+
     </div>
 </div>
 
 <!-- CARD 2 OVERLAY -->
 <div id="info2" class="home-overlay">
     <div class="home-overlay-content">
+
         <div class="home-close-wrapper" onclick="closeOverlay('info2')">
             <span class="home-close">X</span>
         </div>
 
-        <h2>CARD 2 — TITLE HERE</h2>
-        <p>INFO INSIDE CARD 2 GOES HERE.</p>
+        <div class="home-scroll-area">
+            <h2>CARD 2 — TITLE HERE</h2>
+            <p>INFO INSIDE CARD 2 GOES HERE.</p>
+        </div>
+
     </div>
 </div>
 
 <!-- CARD 3 OVERLAY -->
 <div id="info3" class="home-overlay">
     <div class="home-overlay-content">
+
         <div class="home-close-wrapper" onclick="closeOverlay('info3')">
             <span class="home-close">X</span>
         </div>
 
-        <h2>CARD 3 — TITLE HERE</h2>
-        <p>INFO INSIDE CARD 3 GOES HERE.</p>
+        <div class="home-scroll-area">
+            <h2>CARD 3 — TITLE HERE</h2>
+            <p>INFO INSIDE CARD 3 GOES HERE.</p>
+        </div>
+
     </div>
 </div>
 
-<!-- CARD 4 OVERLAY — GRID OF GREEN SHADES -->
+<!-- CARD 4 OVERLAY -->
 <div id="info4" class="home-overlay">
     <div class="home-overlay-content">
+
         <div class="home-close-wrapper" onclick="closeOverlay('info4')">
             <span class="home-close">X</span>
         </div>
 
-        <h2 style="margin-bottom: 25px;">Card 4 — Image Gallery</h2>
+        <div class="home-scroll-area">
+            <h2 style="margin-bottom: 25px;">Card 4 — Image Gallery</h2>
 
-        <div class="card4-grid">
-            <div class="card4-grid-item slide1">Image 1</div>
-            <div class="card4-grid-item slide2">Image 2</div>
-            <div class="card4-grid-item slide3">Image 3</div>
-            <div class="card4-grid-item slide4">Image 4</div>
-            <div class="card4-grid-item slide5">Image 5</div>
+            <div class="card4-grid">
+                <div class="card4-grid-item slide1">Image 1</div>
+                <div class="card4-grid-item slide2">Image 2</div>
+                <div class="card4-grid-item slide3">Image 3</div>
+                <div class="card4-grid-item slide4">Image 4</div>
+                <div class="card4-grid-item slide5">Image 5</div>
+            </div>
         </div>
 
     </div>
@@ -209,24 +229,32 @@
 <!-- CARD 5 OVERLAY -->
 <div id="info5" class="home-overlay">
     <div class="home-overlay-content">
+
         <div class="home-close-wrapper" onclick="closeOverlay('info5')">
             <span class="home-close">X</span>
         </div>
 
-        <h2>CARD 5 — TITLE HERE</h2>
-        <p>INFO INSIDE CARD 5 GOES HERE.</p>
+        <div class="home-scroll-area">
+            <h2>CARD 5 — TITLE HERE</h2>
+            <p>INFO INSIDE CARD 5 GOES HERE.</p>
+        </div>
+
     </div>
 </div>
 
 <!-- CARD 6 OVERLAY -->
 <div id="info6" class="home-overlay">
     <div class="home-overlay-content">
+
         <div class="home-close-wrapper" onclick="closeOverlay('info6')">
             <span class="home-close">X</span>
         </div>
 
-        <h2>CARD 6 — TITLE HERE</h2>
-        <p>INFO INSIDE CARD 6 GOES HERE.</p>
+        <div class="home-scroll-area">
+            <h2>CARD 6 — TITLE HERE</h2>
+            <p>INFO INSIDE CARD 6 GOES HERE.</p>
+        </div>
+
     </div>
 </div>
 
@@ -238,36 +266,36 @@
             <span class="home-close">X</span>
         </div>
 
-        <h2 style="font-size: 2.4rem; font-weight: 700; text-decoration: underline; margin-bottom: 25px;">
-            Leagues
-        </h2>
+        <div class="home-scroll-area">
 
-        <p style="font-size: 1.4rem; line-height: 1.6; margin-bottom: 40px;">
+            <h2 style="font-size: 2.4rem; font-weight: 700; text-decoration: underline; margin-bottom: 25px;">
+                Leagues
+            </h2>
 
-            Euchre Leagues<br>
-            Cornhole Leagues<br>
-            Dart Leagues<br>
-            Pool Leagues<br>
-            Golf Leagues<br>
-            Bridge League<br>
-            Mah-Jong League<br>
+            <p style="font-size: 1.4rem; line-height: 1.6; margin-bottom: 40px;">
+                Euchre Leagues<br>
+                Cornhole Leagues<br>
+                Dart Leagues<br>
+                Pool Leagues<br>
+                Golf Leagues<br>
+                Bridge League<br>
+                Mah-Jong League<br>
+            </p>
 
-        </p>
+            <h2 style="font-size: 2.4rem; font-weight: 700; text-decoration: underline; margin-bottom: 25px;">
+                We Also Have
+            </h2>
 
-        <h2 style="font-size: 2.4rem; font-weight: 700; text-decoration: underline; margin-bottom: 25px;">
-            We Also Have
-        </h2>
+            <p style="font-size: 1.4rem; line-height: 1.6;">
+                Conservation Meetings<br>
+                Horseshoes<br>
+                Trap Shooting Range<br>
+                Skeet Shooting Range<br>
+                Air Rifle Range<br>
+                Archery Range<br>
+            </p>
 
-        <p style="font-size: 1.4rem; line-height: 1.6;">
-
-            Conservation Meetings<br>
-            Horseshoes<br>
-            Trap Shooting Range<br>
-            Skeet Shooting Range<br>
-            Air Rifle Range<br>
-            Archery Range<br>
-
-        </p>
+        </div>
 
     </div>
 </div>
@@ -275,33 +303,39 @@
 <!-- CARD 8 OVERLAY -->
 <div id="info8" class="home-overlay">
     <div class="home-overlay-content">
+
         <div class="home-close-wrapper" onclick="closeOverlay('info8')">
             <span class="home-close">X</span>
         </div>
 
-        <h2 style="font-size: 2.4rem; font-weight: 700; text-decoration: underline; margin-bottom: 25px;">
-            Contact Info
-        </h2>
+        <div class="home-scroll-area">
 
-        <p style="font-size: 1.4rem; line-height: 1.6;">
+            <h2 style="font-size: 2.4rem; font-weight: 700; text-decoration: underline; margin-bottom: 25px;">
+                Contact Info
+            </h2>
 
-            <strong>Clubhouse Location:</strong><br>
-            <em>2401 Dougall Avenue</em><br><br>
+            <p style="font-size: 1.4rem; line-height: 1.6;">
 
-            <strong>Mailing Address:</strong><br>
-            <em>2401 Dougall Avenue</em><br>
-            <em>Windsor, ON N8X1T3</em><br><br>
+                <strong>Clubhouse Location:</strong><br>
+                <em>2401 Dougall Avenue</em><br><br>
 
-            <strong>Telephone:</strong><br>
-            519-966-1600<br><br>
+                <strong>Mailing Address:</strong><br>
+                <em>2401 Dougall Avenue</em><br>
+                <em>Windsor, ON N8X1T3</em><br><br>
 
-            <strong>Fax:</strong><br>
-            519-966-4535<br><br>
+                <strong>Telephone:</strong><br>
+                519-966-1600<br><br>
 
-            <strong>E-Mail Office:</strong><br>
-            bookkeeper@windsorsportsmensclub.org
+                <strong>Fax:</strong><br>
+                519-966-4535<br><br>
 
-        </p>
+                <strong>E-Mail Office:</strong><br>
+                bookkeeper@windsorsportsmensclub.org
+
+            </p>
+
+        </div>
+
     </div>
 </div>
 
@@ -319,10 +353,12 @@
 <script>
 function openOverlay(id) {
     document.getElementById(id).style.display = "flex";
+    document.body.classList.add("no-scroll");
 }
 
 function closeOverlay(id) {
     document.getElementById(id).style.display = "none";
+    document.body.classList.remove("no-scroll");
 }
 </script>
 
