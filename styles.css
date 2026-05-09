@@ -135,7 +135,7 @@ body.home-bg::before {
 ========================================================= */
 .page-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
 
 /* Larger homepage title so it dominates over pledge title */
@@ -144,7 +144,7 @@ body.home-bg::before {
     font-size: 5rem;          /* increased from 4rem */
     font-weight: 700;
     line-height: 1.15;
-    margin-bottom: 55px;
+    margin-bottom: 75px;
     text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
 
