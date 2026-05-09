@@ -10,49 +10,66 @@
 <body class="home home-bg">
 
 <!-- =========================================================
-     NAV — FIXED BLACK BAR
+     FIXED NAVIGATION BAR (B1 LAYOUT)
 ========================================================= -->
 <header>
     <nav class="main-nav">
+
+        <!-- LOGO LEFT -->
+        <img src="images/logo.png" alt="WSC Logo" class="nav-logo">
+
+        <!-- CENTERED MENU -->
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="trap-skeet.html">Trap & Skeet</a></li>
+
+            <li>
+                <a href="trap-skeet.html">Trap & Skeet</a>
+                <ul>
+                    <li><a href="#">Dropdown Item 1</a></li>
+                    <li><a href="#">Dropdown Item 2</a></li>
+                </ul>
+            </li>
+
             <li><a href="archery.html">Archery</a></li>
             <li><a href="range.html">Range</a></li>
             <li><a href="kitchen.html">Kitchen</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="air-rifle.html">Air Rifle</a></li>
         </ul>
+
     </nav>
 </header>
 
+<!-- Spacer so content starts below fixed nav -->
 <div class="nav-spacer"></div>
 
 <!-- =========================================================
      PAGE TITLE
 ========================================================= -->
 <div class="page-header text-center">
-    <h1>Welcome to Windsor Sportsmen’s Club</h1>
+    <h1>TITLE HERE</h1>
 </div>
 
 <!-- =========================================================
-     ANNOUNCEMENT + CALENDAR
+     ANNOUNCEMENT + CALENDAR SECTION
 ========================================================= -->
 <section class="home-announcement">
 
+    <!-- LEFT SIDE TEXT -->
     <div class="home-left">
-        <h2>Announcement Title Placeholder</h2>
-        <p><strong>Important update placeholder text.</strong></p>
-        <p><em>Additional details placeholder.</em></p>
+        <h2>ANNOUNCEMENT TITLE HERE</h2>
+        <p><strong>Important announcement text goes here.</strong></p>
+        <p><em>Additional details or notes go here.</em></p>
 
-        <h3>More Information</h3>
+        <h3>SUBTITLE HERE</h3>
         <ul>
-            <li>Placeholder bullet point 1</li>
-            <li>Placeholder bullet point 2</li>
-            <li>Placeholder bullet point 3</li>
+            <li>Bullet point example 1</li>
+            <li>Bullet point example 2</li>
+            <li>Bullet point example 3</li>
         </ul>
     </div>
 
+    <!-- RIGHT SIDE CALENDAR -->
     <div class="home-right">
         <div class="home-calendar-card">
             <iframe 
@@ -65,131 +82,147 @@
 </section>
 
 <!-- =========================================================
-     4×4 CARD GRID — DARK GREEN BACKGROUND
+     4×4 CARD GRID — DARK GREEN CARDS
 ========================================================= -->
 <section class="ts-card-grid">
 
+    <!-- CARD 1 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info1')">
         <img src="images/placeholder1.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 1</p>
+        <p>CARD 1 TITLE</p>
     </a>
 
+    <!-- CARD 2 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info2')">
         <img src="images/placeholder2.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 2</p>
+        <p>CARD 2 TITLE</p>
     </a>
 
+    <!-- CARD 3 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info3')">
         <img src="images/placeholder3.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 3</p>
+        <p>CARD 3 TITLE</p>
     </a>
 
+    <!-- CARD 4 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info4')">
         <img src="images/placeholder4.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 4</p>
+        <p>CARD 4 TITLE</p>
     </a>
 
+    <!-- CARD 5 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info5')">
         <img src="images/placeholder5.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 5</p>
+        <p>CARD 5 TITLE</p>
     </a>
 
+    <!-- CARD 6 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info6')">
         <img src="images/placeholder6.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 6</p>
+        <p>CARD 6 TITLE</p>
     </a>
 
+    <!-- CARD 7 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info7')">
         <img src="images/placeholder7.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 7</p>
+        <p>CARD 7 TITLE</p>
     </a>
 
+    <!-- CARD 8 -->
     <a class="ts-card home-card-style" onclick="openOverlay('info8')">
         <img src="images/placeholder8.jpg" class="ts-card-image">
-        <p>Card Title Placeholder 8</p>
+        <p>CARD 8 TITLE</p>
     </a>
 
 </section>
 
 <!-- =========================================================
-     FULL‑SCREEN OVERLAYS (8 PLACEHOLDERS)
+     FULL-SCREEN OVERLAYS (8 CARDS)
 ========================================================= -->
 
-<!-- Overlay Template -->
+<!-- CARD 1 OVERLAY -->
 <div id="info1" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 1</h2>
-        <p>Placeholder content for info card 1.</p>
+        <h2>CARD 1 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 1 GOES HERE.</p>
+        <p>Add as much text as you want.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info1')">
         <span class="home-close">X</span>
     </div>
 </div>
 
+<!-- CARD 2 OVERLAY -->
 <div id="info2" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 2</h2>
-        <p>Placeholder content for info card 2.</p>
+        <h2>CARD 2 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 2 GOES HERE.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info2')">
         <span class="home-close">X</span>
     </div>
 </div>
 
+<!-- CARD 3 OVERLAY -->
 <div id="info3" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 3</h2>
-        <p>Placeholder content for info card 3.</p>
+        <h2>CARD 3 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 3 GOES HERE.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info3')">
         <span class="home-close">X</span>
     </div>
 </div>
 
+<!-- CARD 4 OVERLAY -->
 <div id="info4" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 4</h2>
-        <p>Placeholder content for info card 4.</p>
+        <h2>CARD 4 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 4 GOES HERE.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info4')">
         <span class="home-close">X</span>
     </div>
 </div>
 
+<!-- CARD 5 OVERLAY -->
 <div id="info5" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 5</h2>
-        <p>Placeholder content for info card 5.</p>
+        <h2>CARD 5 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 5 GOES HERE.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info5')">
         <span class="home-close">X</span>
     </div>
 </div>
 
+<!-- CARD 6 OVERLAY -->
 <div id="info6" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 6</h2>
-        <p>Placeholder content for info card 6.</p>
+        <h2>CARD 6 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 6 GOES HERE.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info6')">
         <span class="home-close">X</span>
     </div>
 </div>
 
+<!-- CARD 7 OVERLAY -->
 <div id="info7" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 7</h2>
-        <p>Placeholder content for info card 7.</p>
+        <h2>CARD 7 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 7 GOES HERE.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info7')">
         <span class="home-close">X</span>
     </div>
 </div>
 
+<!-- CARD 8 OVERLAY -->
 <div id="info8" class="home-overlay">
     <div class="home-overlay-content">
-        <h2>Info Card 8</h2>
-        <p>Placeholder content for info card 8.</p>
+        <h2>CARD 8 — TITLE HERE</h2>
+        <p>INFO INSIDE CARD 8 GOES HERE.</p>
     </div>
     <div class="home-close-wrapper" onclick="closeOverlay('info8')">
         <span class="home-close">X</span>
