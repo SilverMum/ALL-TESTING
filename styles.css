@@ -160,25 +160,29 @@ body.home-bg::before {
     padding: 0 20px;
 }
 
-/* LEFT SIDE — PLEDGE */
+/* =========================================================
+   LEFT SIDE — PLEDGE (MEDIUM SIZE + LOWERED)
+========================================================= */
 .home-left {
     flex: 1;
     text-align: center;
-    padding: 20px 40px;
+    padding: 60px 40px; /* lowered but not too much */
 }
 
 .home-left h2 {
-    font-size: 2rem;
+    font-size: 3rem;          /* medium title */
     text-decoration: underline;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .home-left p {
-    font-size: 1.4rem;
-    line-height: 1.6;
+    font-size: 2.4rem;        /* medium text */
+    line-height: 1.5;
 }
 
-/* RIGHT SIDE — LOGO + MEETING TEXT */
+/* =========================================================
+   RIGHT SIDE — LOGO + MEETING TEXT
+========================================================= */
 .home-right {
     flex: 1;
     display: flex;
@@ -206,34 +210,10 @@ body.home-bg::before {
     white-space: pre-line;
 }
 
-/* Make ONLY the first line (General Membership Meeting) bigger + underlined */
+/* First line only — General Membership Meeting */
 .home-meeting-text p::first-line {
     font-size: 2rem;
     text-decoration: underline;
-}
-
-/* =========================================================
-   LEFT SIDE — PLEDGE (BIGGER + LOWER + MORE BALANCED)
-========================================================= */
-
-/* Move the entire pledge block down 4 lines */
-.home-left {
-    flex: 1;
-    text-align: center;
-    padding: 80px 40px; /* increased top padding to push it down */
-}
-
-/* Bigger pledge title */
-.home-left h2 {
-    font-size: 4rem;          /* was 2rem — now 2rem bigger */
-    text-decoration: underline;
-    margin-bottom: 30px;
-}
-
-/* Bigger pledge text */
-.home-left p {
-    font-size: 3.4rem;        /* was 1.4rem — now 2rem bigger */
-    line-height: 1.6;
 }
 
 /* =========================================================
