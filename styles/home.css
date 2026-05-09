@@ -114,7 +114,7 @@ body.no-scroll {
 ========================================================= */
 
 body.home-bg {
-    background-image: url("images/tree line bg.png");
+    background-image: url("../images/tree line bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
