@@ -157,7 +157,7 @@ body.home-bg::before {
     align-items: flex-start;
     gap: 40px;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 60px auto; /* was 40px — adds 1 line of space under page title */
     padding: 0 20px;
 }
 
@@ -167,10 +167,10 @@ body.home-bg::before {
 .home-left {
     flex: 1;
     text-align: center;
-    padding: 40px 30px; /* tighter padding */
-    background: rgba(40, 60, 50, 0.30); /* forest-tone, 30% opacity */
+    padding: 40px 30px;
+    background: rgba(40, 60, 50, 0.30);
     border-radius: 16px;
-    position: relative; /* needed for the quote */
+    position: relative;
 }
 
 /* Big white opening quote */
@@ -179,7 +179,7 @@ body.home-bg::before {
     position: absolute;
     top: 10px;
     left: 15px;
-    font-size: 3rem; /* same size as pledge title */
+    font-size: 3rem;
     color: white;
     opacity: 1;
     line-height: 1;
@@ -188,14 +188,14 @@ body.home-bg::before {
 
 /* Pledge title */
 .home-left h2 {
-    font-size: 3rem; /* medium title */
+    font-size: 3rem;
     text-decoration: underline;
     margin-bottom: 25px;
 }
 
 /* Pledge text */
 .home-left p {
-    font-size: 2.4rem; /* medium text */
+    font-size: 2.4rem;
     line-height: 1.5;
 }
 
@@ -209,32 +209,44 @@ body.home-bg::before {
     align-items: center;
 }
 
+/* Logo — 1/5 bigger */
 .home-calendar-card img {
-    width: 260px;
+    width: 312px; /* was 260px — increased by ~20% */
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 12px;
 }
 
+/* Meeting text container */
 .home-meeting-text {
     margin-top: 20px;
     text-align: center;
 }
 
+/* Meeting text — slightly bigger */
 .home-meeting-text p {
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* was 1.4rem — small bump */
     line-height: 1.4;
     font-weight: 600;
     white-space: pre-line;
 }
 
-/* First line only — General Membership Meeting */
+/* First line — General Membership Meeting */
 .home-meeting-text p::first-line {
-    font-size: 2rem;
+    font-size: 2.2rem; /* slightly bigger than before */
     text-decoration: underline;
 }
 
+/* Italicize date + time (everything except first line) */
+.home-meeting-text p {
+    font-style: italic;
+}
+
+/* Remove italic from first line only */
+.home-meeting-text p::first-line {
+    font-style: normal;
+}
 /* =========================================================
    4×4 CARD GRID
 ========================================================= */
