@@ -213,6 +213,30 @@ body.home-bg::before {
 }
 
 /* =========================================================
+   LEFT SIDE — PLEDGE (BIGGER + LOWER + MORE BALANCED)
+========================================================= */
+
+/* Move the entire pledge block down 4 lines */
+.home-left {
+    flex: 1;
+    text-align: center;
+    padding: 80px 40px; /* increased top padding to push it down */
+}
+
+/* Bigger pledge title */
+.home-left h2 {
+    font-size: 4rem;          /* was 2rem — now 2rem bigger */
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+/* Bigger pledge text */
+.home-left p {
+    font-size: 3.4rem;        /* was 1.4rem — now 2rem bigger */
+    line-height: 1.6;
+}
+
+/* =========================================================
    4×4 CARD GRID
 ========================================================= */
 .ts-card-grid {
