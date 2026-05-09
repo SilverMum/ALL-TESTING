@@ -110,10 +110,10 @@ body.home-bg {
 
 body.home-bg {
     background-image: url("images/tree line bg.png");
-    background-size: cover;          /* fill entire screen */
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom; /* anchor bottom */
-    background-attachment: fixed;    /* background does NOT move */
+    background-position: center bottom;
+    background-attachment: fixed;
     position: relative;
 }
 
@@ -125,9 +125,9 @@ body.home-bg::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,0.20); /* 20% white wash */
-    pointer-events: none; /* allows clicking through */
-    z-index: -1; /* stays behind all content */
+    background: rgba(255,255,255,0.20);
+    pointer-events: none;
+    z-index: -1;
 }
 
 /* =========================================================
@@ -138,10 +138,9 @@ body.home-bg::before {
     margin-bottom: 65px;
 }
 
-/* Larger homepage title so it dominates over pledge title */
 .page-header h1 {
     text-align: center;
-    font-size: 5rem;          /* increased from 4rem */
+    font-size: 5rem;
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 115px;
@@ -157,7 +156,7 @@ body.home-bg::before {
     align-items: flex-start;
     gap: 40px;
     max-width: 1200px;
-    margin: 60px auto; /* was 40px — adds 1 line of space under page title */
+    margin: 60px auto;
     padding: 0 20px;
 }
 
@@ -186,14 +185,12 @@ body.home-bg::before {
     pointer-events: none;
 }
 
-/* Pledge title */
 .home-left h2 {
     font-size: 3rem;
     text-decoration: underline;
     margin-bottom: 25px;
 }
 
-/* Pledge text */
 .home-left p {
     font-size: 2.4rem;
     line-height: 1.5;
@@ -209,35 +206,31 @@ body.home-bg::before {
     align-items: center;
 }
 
-/* Logo — slightly smaller than last version */
 .home-calendar-card img {
-    width: 290px; /* was 312px — now safely visible but still bigger than 260px */
+    width: 290px;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 12px;
 }
 
-/* Meeting text container */
 .home-meeting-text {
     margin-top: 20px;
     text-align: center;
 }
 
-/* Meeting text — slightly bigger */
 .home-meeting-text p {
-    font-size: 1.6rem; /* small bump from original */
+    font-size: 1.6rem;
     line-height: 1.4;
     font-weight: 600;
     white-space: pre-line;
-    font-style: italic; /* everything italic except first line */
+    font-style: italic;
 }
 
-/* First line — General Membership Meeting */
 .home-meeting-text p::first-line {
-    font-size: 2.2rem; /* slightly bigger */
+    font-size: 2.2rem;
     text-decoration: underline;
-    font-style: normal; /* remove italic from first line */
+    font-style: normal;
 }
 
 /* =========================================================
@@ -247,13 +240,11 @@ body.home-bg::before {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
-
     display: grid !important;
     grid-template-columns: repeat(4, 1fr) !important;
     gap: 30px !important;
 }
 
-/* CARD STYLE */
 .ts-card {
     background: rgba(255, 255, 255, 0.15);
     border-radius: 18px;
@@ -283,7 +274,6 @@ body.home-bg::before {
     padding: 15px 10px 20px 10px;
 }
 
-/* HOMEPAGE DARK GREEN CARD OVERRIDE */
 .home-card-style {
     background: #0f2a14 !important;
     border: 3px solid rgba(255,255,255,0.15);
@@ -308,15 +298,18 @@ body.home-bg::before {
 
 .home-overlay-content {
     width: 70vw;
-    height: 70vh;
+    height: calc(70vh + 40px); /* +40px taller as requested */
     background: rgba(0,0,0,0.6);
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
     overflow-y: auto;
     padding: 30px;
+    text-align: center; /* CENTER EVERYTHING INSIDE */
 }
 
-/* X BUTTON */
+/* =========================================================
+   X BUTTON — NOW HOVERS LIKE A BUTTON
+========================================================= */
 .home-close-wrapper {
     position: fixed;
     top: 20px;
@@ -330,15 +323,28 @@ body.home-bg::before {
     justify-content: center;
     align-items: center;
     z-index: 200000;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.home-close-wrapper:hover {
+    background: rgba(255,255,255,0.15);
+    transform: scale(1.12);
 }
 
 .home-close {
     font-size: 1.6rem;
     font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.home-close:hover {
+    color: #ff4444;
+    transform: scale(1.2);
 }
 
 /* =========================================================
-   FOOTER — FULL WIDTH BLACK BAR
+   FOOTER
 ========================================================= */
 .site-footer {
     width: 100%;
@@ -354,3 +360,4 @@ body.home-bg::before {
 .site-footer p {
     margin: 6px 0;
 }
+
