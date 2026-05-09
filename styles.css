@@ -1,7 +1,32 @@
 /* =========================================================
-   GLOBAL NAVIGATION — FIXED BLACK BAR (B1 LAYOUT)
+   GLOBAL RESET
 ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* =========================================================
+   GLOBAL FONT + GLOBAL TEXT COLOR
+========================================================= */
+html, body, h1, h2, h3, h4, h5, h6,
+p, a, li, ul, ol, span, div, label,
+input, textarea, button, strong, em {
+    font-family: "Times New Roman", serif !important;
+    color: white !important;
+}
+
+/* =========================================================
+   BODY BACKGROUND
+========================================================= */
+body.home-bg {
+    background: #0a0a0a;
+}
+
+/* =========================================================
+   FIXED NAVIGATION BAR — B1 LAYOUT
+========================================================= */
 .main-nav {
     position: fixed;
     top: 0;
@@ -12,11 +37,11 @@
     padding: 12px 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* centers the menu */
+    justify-content: center;
 }
 
 /* LOGO LEFT */
-.main-nav .nav-logo {
+.nav-logo {
     position: absolute;
     left: 30px;
     top: 50%;
@@ -25,21 +50,18 @@
     width: auto;
 }
 
-/* MENU CENTERED */
+/* CENTERED MENU */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 40px;
-    margin: 0;
-    padding: 0;
 }
 
 .nav-links li {
-    position: relative; /* required for dropdowns */
+    position: relative;
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 600;
@@ -48,10 +70,10 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #ff9f43;
+    color: #ff9f43 !important;
 }
 
-/* DROPDOWN MENU SUPPORT */
+/* DROPDOWN MENUS */
 .nav-links li ul {
     display: none;
     position: absolute;
@@ -71,16 +93,10 @@
 
 .nav-links li ul li {
     padding: 8px 20px;
-    white-space: nowrap;
-}
-
-.nav-links li ul li a {
-    font-size: 1.1rem;
-    color: white;
 }
 
 .nav-links li ul li a:hover {
-    color: #ff9f43;
+    color: #ff9f43 !important;
 }
 
 /* SPACER BELOW FIXED NAV */
@@ -89,37 +105,101 @@
 }
 
 /* =========================================================
-   GLOBAL FOOTER — FULL WIDTH BLACK BAR
+   PAGE HEADER
 ========================================================= */
-
-.site-footer {
-    width: 100%;
-    background: #000;
-    color: white;
+.page-header {
     text-align: center;
-    padding: 40px 0;
-    margin-top: 60px;
-    font-size: 1.1rem;
-    line-height: 1.5;
+    margin-bottom: 40px;
 }
 
-.site-footer p {
-    margin: 6px 0;
+.page-header h1 {
+    font-size: 2.4rem;
 }
 
 /* =========================================================
-   HOMEPAGE CARD COLOR OVERRIDE (DARK GREEN)
+   HOMEPAGE ANNOUNCEMENT (LEFT / RIGHT)
 ========================================================= */
+.home-announcement {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
+.home-left {
+    flex: 1;
+}
+
+.home-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* RIGHT-SIDE LOGO (CALENDAR PLACEHOLDER) */
+.home-calendar-card img {
+    width: 260px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    border-radius: 12px;
+}
+
+/* =========================================================
+   4×4 CARD GRID
+========================================================= */
+.ts-card-grid {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 30px !important;
+}
+
+/* CARD STYLE */
+.ts-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ts-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+.ts-card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.ts-card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 10px 20px 10px;
+}
+
+/* HOMEPAGE DARK GREEN CARD OVERRIDE */
 .home-card-style {
-    background: #0f2a14 !important; /* very dark green */
+    background: #0f2a14 !important;
     border: 3px solid rgba(255,255,255,0.15);
 }
 
 /* =========================================================
-   HOMEPAGE FULL-SCREEN OVERLAYS
+   FULL-SCREEN OVERLAYS
 ========================================================= */
-
 .home-overlay {
     position: fixed;
     top: 0;
@@ -142,7 +222,6 @@
     border-radius: 12px;
     overflow-y: auto;
     padding: 30px;
-    color: white;
 }
 
 /* X BUTTON */
@@ -163,17 +242,23 @@
 
 .home-close {
     font-size: 1.6rem;
-    color: white;
     font-weight: bold;
 }
 
 /* =========================================================
-   GLOBAL FONT + GLOBAL TEXT COLOR (SITE‑WIDE)
+   FOOTER — FULL WIDTH BLACK BAR
 ========================================================= */
+.site-footer {
+    width: 100%;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
 
-html, body, h1, h2, h3, h4, h5, h6,
-p, a, li, ul, ol, span, div, label,
-input, textarea, button, strong, em {
-    font-family: "Times New Roman", serif !important;
-    color: white !important;
+.site-footer p {
+    margin: 6px 0;
 }
