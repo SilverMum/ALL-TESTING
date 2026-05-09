@@ -176,6 +176,62 @@ body.home-bg {
     white-space: pre-line;
 }
 
+/* =========================================================
+   CENTER LEFT + RIGHT SECTIONS
+========================================================= */
+
+/* Center the pledge text block */
+.home-left {
+    flex: 1;
+    text-align: center;
+}
+
+/* Center the right-side logo + meeting text */
+.home-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers logo + text */
+    justify-content: flex-start;
+}
+
+/* Center the logo itself */
+.home-calendar-card img {
+    width: 260px;
+    height: auto;
+    display: block;
+    margin: 0 auto;        /* centers the logo */
+    border-radius: 12px;
+}
+
+/* Center the meeting text under the logo */
+.home-meeting-text {
+    margin-top: 20px;
+    text-align: center;    /* center the text */
+}
+
+/* =========================================================
+   UNDERLINES FOR TITLES
+========================================================= */
+
+/* Underline "Conservation Pledge" */
+.home-left h2 {
+    text-decoration: underline;
+}
+
+/* Underline ONLY the title "General Membership Meeting" */
+.home-meeting-text p {
+    white-space: pre-line;
+}
+
+.home-meeting-text p br:first-of-type + br {
+    /* no change needed, just keeping structure */
+}
+
+/* Apply underline to the first line only */
+.home-meeting-text p::first-line {
+    text-decoration: underline;
+}
 
 /* =========================================================
    4×4 CARD GRID
