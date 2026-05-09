@@ -23,7 +23,7 @@ body {
 }
 
 /* =========================================================
-   GLOBAL BACKGROUND SYSTEM (BG2)
+   GLOBAL BACKGROUND SYSTEM
    ========================================================= */
 body.trap-skeet-bg {
     background-image: url("images/trap-skeet-background.png");
@@ -33,8 +33,26 @@ body.members-bg {
     background-image: url("images/members-background.jpg");
 }
 
+/* ⭐ FIX: Home background now works with either .home or .home-bg */
+body.home,
+body.home-bg {
+    background-image: url("images/home-background.png");
+}
+
+body.home::before,
+body.home-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    z-index: -1;
+}
+
 /* =========================================================
-   GLOBAL SPACING SCALE (C2 POLISHED)
+   GLOBAL SPACING SCALE
    ========================================================= */
 :root {
     --space-xs: 8px;
@@ -50,8 +68,10 @@ body.members-bg {
 }
 
 /* =========================================================
-   GLOBAL NAV OFFSET (ALL NON-HOME PAGES)
+   GLOBAL NAV OFFSET
    ========================================================= */
+
+/* ⭐ FIX: Homepage no longer gets the 160px spacer */
 .nav-spacer {
     height: 160px;
 }
@@ -72,19 +92,9 @@ p {
     margin-bottom: var(--space-sm);
 }
 
-/* Utility classes */
-.text-center {
-    text-align: center;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.brown-strong {
-    color: #3a1f0a;
-    font-weight: 800;
-}
+.text-center { text-align: center; }
+.underline { text-decoration: underline; }
+.brown-strong { color: #3a1f0a; font-weight: 800; }
 
 /* =========================================================
    GLOBAL IMAGE RULES
@@ -96,7 +106,6 @@ img {
     border-radius: var(--radius);
 }
 
-/* Header/Banner images */
 .archery-header-img,
 .private-events-header-image img,
 .kitchen-title-img {
@@ -114,7 +123,7 @@ iframe {
 }
 
 /* =========================================================
-   GLOBAL CARD SYSTEM (UNIFIED)
+   GLOBAL CARD SYSTEM
    ========================================================= */
 .outer-card {
     width: 100%;
@@ -130,7 +139,6 @@ iframe {
     box-shadow: var(--shadow-main);
 }
 
-/* Wide cards */
 .wide-card .inner-card {
     max-width: 1200px;
 }
@@ -169,9 +177,7 @@ textarea {
     font-size: 1rem;
 }
 
-label {
-    font-weight: bold;
-}
+label { font-weight: bold; }
 
 /* =========================================================
    PRIVATE EVENTS
@@ -234,27 +240,17 @@ label {
     margin-top: var(--space-lg);
 }
 
-/* ------------------------------
-   HOMEPAGE
---------------------------------*/
-
 /* --------------------------------------------------
    HEADER IMAGE
 -------------------------------------------------- */
 .page-header img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Add 20px space between nav and header image on Home page */
-.home-bg .page-header {
-    margin-top: 20px;
-}
-
 /* --------------------------------------------------
-   ANNOUNCEMENT + CALENDAR SECTION
+   ANNOUNCEMENT + CALENDAR
 -------------------------------------------------- */
 .home-announcement {
     max-width: 1200px;
@@ -284,40 +280,6 @@ label {
     color: white !important;
 }
 
-.home-left h2 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-
-.home-left p strong {
-    font-size: 1.45rem;
-    font-weight: 700;
-}
-
-.home-left p em {
-    font-size: 1.3rem;
-}
-
-.home-left h3 {
-    font-size: 1.45rem;
-    font-weight: 700;
-    margin-top: 22px;
-    margin-bottom: 12px;
-}
-
-.home-left ul {
-    margin-left: 20px;
-    margin-bottom: 20px;
-    line-height: 1.55;
-    font-size: 1.15rem;
-}
-
-.home-left p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
 .home-right {
     flex: 1;
     max-width: 900px;
@@ -325,48 +287,17 @@ label {
     justify-content: flex-start;
 }
 
-.home-right iframe {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Orange card behind calendar */
 .home-calendar-card {
     background: #ff9f43;
-    padding: 5px 5px 3px 5px;
+    padding: 5px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     width: 100%;
     max-width: 900px;
-    margin-left: 0;
-    margin-right: auto;
 }
 
 .home-calendar-card iframe {
-    width: 100%;
     height: 600px;
-    border-radius: 10px;
-    border: none;
-}
-
-.home-bottom-button {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-.home-bottom-button img {
-    width: 240px;
-    max-width: 240px;
-    height: auto;
-    display: block;
-    transition: all 0.2s ease;
-}
-
-.home-bottom-button img:hover {
-    transform: translateY(-3px);
-    filter: brightness(1.1);
 }
 
 /* --------------------------------------------------
@@ -390,7 +321,7 @@ label {
     color: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
     backdrop-filter: blur(6px);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: 0.2s ease;
 }
 
 .home-card:hover {
@@ -402,234 +333,6 @@ label {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    object-position: top center;
-}
-
-.home-card p {
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 15px 10px 20px 10px;
-}
-
-/* --------------------------------------------------
-   TEXT UTILITIES
--------------------------------------------------- */
-.red-text {
-    color: #ff4d4d !important;
-}
-
-/* --------------------------------------------------
-   RANGE OPEN BUTTON
--------------------------------------------------- */
-.range-open-button-img {
-    width: 52.5%;
-    max-width: 255px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Shotgun image fix */
-.range-restricted-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-    object-fit: contain;
-}
-
-/* --------------------------------------------------
-   FIXED‑SIZE MODAL OVERLAY
--------------------------------------------------- */
-.home-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.75);
-    display: none;
-    justify-content: center;
-    z-index: 99999;
-}
-
-/* --------------------------------------------------
-   MODAL BOX
--------------------------------------------------- */
-.home-overlay-content {
-    width: 70vw;
-    height: 70vh;
-    margin-top: 12.5vh;
-    background: rgba(0,0,0,0.6);
-    border: 4px solid rgba(255,255,255,0.4);
-    border-radius: 12px;
-    position: relative;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
-    padding: 30px;
-    color: white;
-}
-
-/* --------------------------------------------------
-   FLOATING X BUTTON
--------------------------------------------------- */
-.home-close-wrapper {
-    position: fixed;
-    top: calc(12.5vh + 7px);
-    right: calc(15vw - 12px + 26px);
-    width: 38px;
-    height: 38px;
-    background: rgba(0,0,0,0.85);
-    border: 2px solid rgba(255,255,255,0.6);
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 200000;
-}
-
-.home-close {
-    font-size: 1.6rem;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    line-height: 1;
-}
-
-/* --------------------------------------------------
-   MODAL TYPOGRAPHY
--------------------------------------------------- */
-.home-overlay-content p,
-.home-overlay-content li,
-.home-overlay-content strong,
-.home-overlay-content em {
-    font-size: 1.25rem;
-    line-height: 1.6;
-}
-
-.home-overlay-content h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.home-overlay-content h3 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.home-overlay-content .package-block p {
-    margin: 4px 0;
-}
-
-/* --------------------------------------------------
-   CONTACT POPUP + ORANGE FORM CARD
--------------------------------------------------- */
-.home-contact-flex {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.home-contact-left {
-    flex: 0 0 40%;
-}
-
-.home-contact-right {
-    flex: 0 0 60%;
-}
-
-.home-contact-card {
-    background: #ff9f43;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    margin-top: 9px;
-    margin-left: -15px;
-    margin-right: 4px;
-}
-
-.home-contact-card input,
-.home-contact-card textarea {
-    width: calc(100% - 10px);
-    padding: 10px;
-    border-radius: 6px;
-    border: none;
-    margin-top: 5px;
-    margin-bottom: 15px;
-}
-
-.home-contact-card label {
-    font-weight: 600;
-}
-
-.home-contact-card button {
-    width: 100%;
-    padding: 12px;
-    background: #1a1a1a;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-.home-contact-card button:hover {
-    background: #000;
-}
-
-/* --------------------------------------------------
-   PACKAGE TITLES
--------------------------------------------------- */
-.package-title {
-    font-size: 2rem;
-    font-weight: 700;
-    text-decoration: underline;
-    margin-bottom: 8px;
-    text-align: center;
-    color: white !important;
-}
-
-/* --------------------------------------------------
-   BACKGROUND
--------------------------------------------------- */
-body.home-bg {
-    background: url('images/home-background.png') no-repeat center center fixed;
-    background-size: cover;
-}
-
-body.home-bg::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255,255,255,0.05);
-    z-index: -1;
-}
-
-/* --------------------------------------------------
-   FORM COLOR FIXES
--------------------------------------------------- */
-.home-contact-card label,
-.home-contact-card h3,
-.home-contact-card .field-checkbox label {
-    color: white !important;
-}
-
-.home-contact-card input,
-.home-contact-card textarea {
-    background: white !important;
-    color: black !important;
-}
-
-.home-contact-card input::placeholder,
-.home-contact-card textarea::placeholder {
-    color: black !important;
 }
 
 /* =========================================================
@@ -643,7 +346,7 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   MOBILE (UNIFIED)
+   MOBILE
    ========================================================= */
 @media (max-width: 900px) {
 
@@ -666,5 +369,14 @@ body.home-bg::before {
     .outer-card {
         padding: 0 var(--space-xs);
     }
+
+    .home-announcement {
+        flex-direction: column;
+    }
+
+    .home-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
+
 
