@@ -162,32 +162,41 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   LEFT SIDE — PLEDGE (MEDIUM SIZE + LOWERED)
+   LEFT SIDE — PLEDGE (TIGHTER CARD + 30% OPACITY + QUOTE)
 ========================================================= */
 .home-left {
     flex: 1;
     text-align: center;
-    padding: 60px 40px; /* lowered but not too much */
+    padding: 40px 30px; /* tighter padding */
+    background: rgba(40, 60, 50, 0.30); /* forest-tone, 30% opacity */
+    border-radius: 16px;
+    position: relative; /* needed for the quote */
 }
 
+/* Big white opening quote */
+.home-left::before {
+    content: "“";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 3rem; /* same size as pledge title */
+    color: white;
+    opacity: 1;
+    line-height: 1;
+    pointer-events: none;
+}
+
+/* Pledge title */
 .home-left h2 {
-    font-size: 3rem;          /* medium title */
+    font-size: 3rem; /* medium title */
     text-decoration: underline;
     margin-bottom: 25px;
 }
 
+/* Pledge text */
 .home-left p {
-    font-size: 2.4rem;        /* medium text */
+    font-size: 2.4rem; /* medium text */
     line-height: 1.5;
-}
-
-/* Pledge background card — forest tone, 20% opacity */
-.home-left {
-    flex: 1;
-    text-align: center;
-    padding: 60px 40px;
-    background: rgba(40, 60, 50, 0.20); /* pulled from forest image */
-    border-radius: 16px;
 }
 
 /* =========================================================
