@@ -105,35 +105,13 @@ body.home-bg {
 }
 
 /* =========================================================
-   PAGE HEADER
+   PAGE TITLE — TWO LINES + SHADOW
 ========================================================= */
 .page-header {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.page-header h1 {
-    font-size: 2.4rem;
-}
-
-/* =========================================================
-   HOMEPAGE TITLE — CENTERED + DARK GREY SHADOW
-========================================================= */
-
-.page-header h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-
-    /* Dark grey shadow */
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
-}
-
-/* =========================================================
-   PAGE TITLE — TWO LINES + SHADOW
-========================================================= */
 .page-header h1 {
     text-align: center;
     font-size: 3.2rem;
@@ -156,29 +134,43 @@ body.home-bg {
     padding: 0 20px;
 }
 
+/* LEFT SIDE — PLEDGE */
 .home-left {
     flex: 1;
+    text-align: center;
+    padding: 20px 40px;
 }
 
+.home-left h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.home-left p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* RIGHT SIDE — LOGO + MEETING TEXT */
 .home-right {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Right-side logo sizing */
 .home-calendar-card img {
     width: 260px;
     height: auto;
     display: block;
-    margin-left: auto;
+    margin: 0 auto;
     border-radius: 12px;
 }
 
-/* Meeting text under logo */
 .home-meeting-text {
     margin-top: 20px;
-    text-align: right;
+    text-align: center;
 }
 
 .home-meeting-text p {
@@ -188,91 +180,10 @@ body.home-bg {
     white-space: pre-line;
 }
 
-/* =========================================================
-   CENTER LEFT + RIGHT SECTIONS
-========================================================= */
-
-/* Center the pledge text block */
-.home-left {
-    flex: 1;
-    text-align: center;
-}
-
-/* Center the right-side logo + meeting text */
-.home-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* centers logo + text */
-    justify-content: flex-start;
-}
-
-/* Center the logo itself */
-.home-calendar-card img {
-    width: 260px;
-    height: auto;
-    display: block;
-    margin: 0 auto;        /* centers the logo */
-    border-radius: 12px;
-}
-
-/* Center the meeting text under the logo */
-.home-meeting-text {
-    margin-top: 20px;
-    text-align: center;    /* center the text */
-}
-
-/* =========================================================
-   UNDERLINES FOR TITLES
-========================================================= */
-
-/* Underline "Conservation Pledge" */
-.home-left h2 {
-    text-decoration: underline;
-}
-
-/* Underline ONLY the title "General Membership Meeting" */
-.home-meeting-text p {
-    white-space: pre-line;
-}
-
-.home-meeting-text p br:first-of-type + br {
-    /* no change needed, just keeping structure */
-}
-
-/* Apply underline to the first line only */
-.home-meeting-text p::first-line {
-    text-decoration: underline;
-}
-
-/* Left title (Conservation Pledge) */
-.home-left h2 {
-    font-size: 2rem;
-    text-decoration: underline;
-    margin-bottom: 20px;
-}
-
-/* Right title (General Membership Meeting) — first line only */
+/* Make ONLY the first line (General Membership Meeting) bigger + underlined */
 .home-meeting-text p::first-line {
     font-size: 2rem;
     text-decoration: underline;
-}
-
-/* More spacing inside the pledge block */
-.home-left {
-    padding: 20px 40px;
-}
-
-/* Center pledge block */
-.home-left {
-    text-align: center;
-}
-
-/* Center logo + meeting text */
-.home-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 /* =========================================================
