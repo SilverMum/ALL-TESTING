@@ -108,9 +108,15 @@
         <p>CARD 3 TITLE</p>
     </a>
 
-    <!-- CARD 4 -->
+    <!-- CARD 4 — CAROUSEL -->
     <a class="ts-card home-card-style" onclick="openOverlay('info4')">
-        <img src="images/placeholder4.jpg" class="ts-card-image">
+        <div class="card4-carousel">
+            <div class="card4-slide slide1">Image 1</div>
+            <div class="card4-slide slide2">Image 2</div>
+            <div class="card4-slide slide3">Image 3</div>
+            <div class="card4-slide slide4">Image 4</div>
+            <div class="card4-slide slide5">Image 5</div>
+        </div>
         <p>CARD 4 TITLE</p>
     </a>
 
@@ -180,15 +186,23 @@
     </div>
 </div>
 
-<!-- CARD 4 OVERLAY -->
+<!-- CARD 4 OVERLAY — GRID OF GREEN SHADES -->
 <div id="info4" class="home-overlay">
     <div class="home-overlay-content">
         <div class="home-close-wrapper" onclick="closeOverlay('info4')">
             <span class="home-close">X</span>
         </div>
 
-        <h2>CARD 4 — TITLE HERE</h2>
-        <p>INFO INSIDE CARD 4 GOES HERE.</p>
+        <h2 style="margin-bottom: 25px;">Card 4 — Image Gallery</h2>
+
+        <div class="card4-grid">
+            <div class="card4-grid-item slide1">Image 1</div>
+            <div class="card4-grid-item slide2">Image 2</div>
+            <div class="card4-grid-item slide3">Image 3</div>
+            <div class="card4-grid-item slide4">Image 4</div>
+            <div class="card4-grid-item slide5">Image 5</div>
+        </div>
+
     </div>
 </div>
 
