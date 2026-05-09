@@ -299,22 +299,42 @@ body.home-bg::before {
     left: 0;
     width: 100%;
     height: 100%;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
     animation: card4fade 10s infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* 5 different green shades */
-.slide1 { background: #0f3d0f; animation-delay: 0s; }
-.slide2 { background: #145214; animation-delay: 2s; }
-.slide3 { background: #1a661a; animation-delay: 4s; }
-.slide4 { background: #207a20; animation-delay: 6s; }
-.slide5 { background: #269026; animation-delay: 8s; }
+/* REAL IMAGES FOR SLIDE 1 + SLIDE 2 */
+.slide1 {
+    background-image: url("../images/wildgamedinnersmall.png");
+    animation-delay: 0s;
+}
+
+.slide2 {
+    background-image: url("../images/ribschickensmall.png");
+    animation-delay: 2s;
+}
+
+/* REMAINING SLIDES — KEEP ORIGINAL GREEN SHADES */
+.slide3 {
+    background: #1a661a;
+    animation-delay: 4s;
+}
+
+.slide4 {
+    background: #207a20;
+    animation-delay: 6s;
+}
+
+.slide5 {
+    background: #269026;
+    animation-delay: 8s;
+}
 
 @keyframes card4fade {
     0%   { opacity: 0; }
@@ -342,6 +362,31 @@ body.home-bg::before {
     align-items: center;
     font-size: 1.4rem;
     font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* REAL IMAGES FOR GRID ITEMS 1 + 2 */
+.card4-grid-item.slide1 {
+    background-image: url("../images/wildgamedinnersmall.png");
+}
+
+.card4-grid-item.slide2 {
+    background-image: url("../images/ribschickensmall.png");
+}
+
+/* REMAINING GRID ITEMS — KEEP ORIGINAL GREEN SHADES */
+.card4-grid-item.slide3 {
+    background: #1a661a;
+}
+
+.card4-grid-item.slide4 {
+    background: #207a20;
+}
+
+.card4-grid-item.slide5 {
+    background: #269026;
 }
 
 /* =========================================================
