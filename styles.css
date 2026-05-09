@@ -105,6 +105,32 @@ body.home-bg {
 }
 
 /* =========================================================
+   HOME PAGE BACKGROUND IMAGE (TREE LINE)
+========================================================= */
+
+body.home-bg {
+    background-image: url("images/tree line bg.png");
+    background-size: cover;          /* fill entire screen */
+    background-repeat: no-repeat;
+    background-position: center bottom; /* anchor bottom */
+    background-attachment: fixed;    /* background does NOT move */
+    position: relative;
+}
+
+/* White wash overlay (20% opacity) */
+body.home-bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.20); /* 20% white wash */
+    pointer-events: none; /* allows clicking through */
+    z-index: -1; /* stays behind all content */
+}
+
+/* =========================================================
    PAGE TITLE — TWO LINES + SHADOW
 ========================================================= */
 .page-header {
