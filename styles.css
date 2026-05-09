@@ -138,12 +138,13 @@ body.home-bg::before {
     margin-bottom: 40px;
 }
 
+/* Larger homepage title so it dominates over pledge title */
 .page-header h1 {
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 5rem;          /* increased from 4rem */
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 40px;
+    line-height: 1.15;
+    margin-bottom: 55px;
     text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
 
@@ -178,6 +179,15 @@ body.home-bg::before {
 .home-left p {
     font-size: 2.4rem;        /* medium text */
     line-height: 1.5;
+}
+
+/* Pledge background card — forest tone, 20% opacity */
+.home-left {
+    flex: 1;
+    text-align: center;
+    padding: 60px 40px;
+    background: rgba(40, 60, 50, 0.20); /* pulled from forest image */
+    border-radius: 16px;
 }
 
 /* =========================================================
