@@ -132,6 +132,18 @@ body.home-bg {
 }
 
 /* =========================================================
+   PAGE TITLE — TWO LINES + SHADOW
+========================================================= */
+.page-header h1 {
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+}
+
+/* =========================================================
    HOMEPAGE ANNOUNCEMENT (LEFT / RIGHT)
 ========================================================= */
 .home-announcement {
@@ -231,6 +243,36 @@ body.home-bg {
 /* Apply underline to the first line only */
 .home-meeting-text p::first-line {
     text-decoration: underline;
+}
+
+/* Left title (Conservation Pledge) */
+.home-left h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* Right title (General Membership Meeting) — first line only */
+.home-meeting-text p::first-line {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/* More spacing inside the pledge block */
+.home-left {
+    padding: 20px 40px;
+}
+
+/* Center pledge block */
+.home-left {
+    text-align: center;
+}
+
+/* Center logo + meeting text */
+.home-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* =========================================================
