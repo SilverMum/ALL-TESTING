@@ -379,4 +379,49 @@ label { font-weight: bold; }
     }
 }
 
+/* =========================================================
+   GLOBAL NAVIGATION (FIXED, HORIZONTAL, BLACK BAR)
+   ========================================================= */
 
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 9999;
+    padding: 20px 0;
+}
+
+.main-nav ul,
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;   /* right aligned */
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0 40px;
+}
+
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #ff9f43;
+}
+
+/* Spacer under fixed nav */
+.nav-spacer {
+    height: 120px; /* adjust if needed */
+}
