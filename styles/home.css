@@ -426,9 +426,8 @@ body.home-bg::before {
    MAP HOVER EFFECT
 ========================================================= */
 .map-wrapper {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
+    width: 50%;              /* same width as 2 cards */
+    margin: 30px auto 0;     /* center it perfectly */
     border-radius: 12px;
     overflow: hidden;
     position: relative;
