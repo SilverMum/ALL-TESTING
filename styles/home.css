@@ -329,7 +329,7 @@ body.home-bg::before {
 }
 
 .card4-grid-item {
-    height: 260px;
+    height: 300px; /* taller as requested */
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -365,7 +365,7 @@ body.home-bg::before {
     z-index: 99999;
 }
 
-/* Poster overlays: no scroll */
+/* Poster overlays: no box, no scroll */
 #poster1 .home-overlay-content,
 #poster2 .home-overlay-content,
 #poster3 .home-overlay-content {
@@ -394,7 +394,6 @@ body.home-bg::before {
     padding: 30px;
     overflow: hidden;
 }
-
 
 /* Full-screen poster image */
 .poster-full {
@@ -445,8 +444,8 @@ body.home-bg::before {
    MAP HOVER EFFECT
 ========================================================= */
 .map-wrapper {
-    width: 50%;              /* same width as 2 cards */
-    margin: 30px auto 0;     /* center it perfectly */
+    width: 50%;
+    margin: 30px auto 0;
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -498,3 +497,4 @@ body.home-bg::before {
 .site-footer p {
     margin: 6px 0;
 }
+
