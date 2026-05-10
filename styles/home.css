@@ -350,6 +350,21 @@ body.home-bg::before {
 }
 
 /* =========================================================
+   PDF BUTTON AND LINK
+========================================================= */
+.pdf-button {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.pdf-button:hover {
+    transform: scale(1.08);
+    opacity: 0.85;
+}
+
+/* =========================================================
    FULL-SCREEN OVERLAYS
 ========================================================= */
 .home-overlay {
