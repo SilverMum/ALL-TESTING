@@ -410,6 +410,10 @@ body.home-bg::before {
     overflow: hidden;
 }
 
+#info3 .home-overlay-content {
+    position: relative;
+}
+
 /* Full-screen poster image */
 .poster-full {
     height: 100vh;
