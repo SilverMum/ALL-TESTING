@@ -377,6 +377,25 @@ body.home-bg::before {
     overflow: hidden !important;
 }
 
+/* Restore box for normal overlays */
+#info1 .home-overlay-content,
+#info2 .home-overlay-content,
+#info3 .home-overlay-content,
+#info4 .home-overlay-content,
+#info5 .home-overlay-content,
+#info6 .home-overlay-content,
+#info7 .home-overlay-content,
+#info8 .home-overlay-content {
+    width: 70vw;
+    height: calc(70vh + 40px);
+    background: rgba(0,0,0,0.6);
+    border: 4px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+
 /* Full-screen poster image */
 .poster-full {
     height: 100vh;
