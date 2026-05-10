@@ -109,38 +109,38 @@
     </a>
 
     <!-- CARD 4 — UPDATED 3‑IMAGE CAROUSEL -->
-    <a class="ts-card home-card-style" onclick="openOverlay('info4')">
-        <div class="card4-carousel">
-            <div class="card4-slide slide1"></div>
-            <div class="card4-slide slide2"></div>
-            <div class="card4-slide slide3"></div>
-        </div>
-        <p>Events This Month</p>
-    </a>
+<a class="ts-card home-card-style" onclick="openOverlay('info4')">
+    <div class="card4-carousel">
+        <div class="card4-slide slide1"></div>
+        <div class="card4-slide slide2"></div>
+        <div class="card4-slide slide3"></div>
+    </div>
+    <p>Events This Month</p>
+</a>
 
-    <!-- CARD 5 -->
-    <a class="ts-card home-card-style" onclick="openOverlay('info5')">
-        <img src="images/placeholder5.jpg" class="ts-card-image">
-        <p>CARD 5 TITLE</p>
-    </a>
+<!-- CARD 5 -->
+<a class="ts-card home-card-style" onclick="openOverlay('info5')">
+    <img src="images/placeholder5.jpg" class="ts-card-image">
+    <p>CARD 5 TITLE</p>
+</a>
 
-    <!-- CARD 6 -->
-    <a class="ts-card home-card-style" onclick="openOverlay('info6')">
-        <img src="images/placeholder6.jpg" class="ts-card-image">
-        <p>CARD 6 TITLE</p>
-    </a>
+<!-- CARD 6 -->
+<a class="ts-card home-card-style" onclick="openOverlay('info6')">
+    <img src="images/placeholder6.jpg" class="ts-card-image">
+    <p>CARD 6 TITLE</p>
+</a>
 
-    <!-- CARD 7 -->
-    <a class="ts-card home-card-style" onclick="openOverlay('info7')">
-        <img src="images/placeholder7.jpg" class="ts-card-image">
-        <p>Leagues & Clubs</p>
-    </a>
+<!-- CARD 7 -->
+<a class="ts-card home-card-style" onclick="openOverlay('info7')">
+    <img src="images/placeholder7.jpg" class="ts-card-image">
+    <p>Leagues & Clubs</p>
+</a>
 
-    <!-- CARD 8 — CONTACT INFO -->
-    <a class="ts-card home-card-style" onclick="openOverlay('info8')">
-        <img src="images/contactclub.png" class="ts-card-image" alt="Contact Info">
-        <p>Contact Info</p>
-    </a>
+<!-- CARD 8 — CONTACT INFO -->
+<a class="ts-card home-card-style" onclick="openOverlay('info8')">
+    <img src="images/contactclub.png" class="ts-card-image" alt="Contact Info">
+    <p>Contact Info</p>
+</a>
 
 </section>
 
@@ -196,7 +196,7 @@
     </div>
 </div>
 
-<!-- CARD 4 OVERLAY — UPDATED WITH 3 POSTERS -->
+<!-- CARD 4 OVERLAY — UPDATED WITH <img> TAGS -->
 <div id="info4" class="home-overlay">
     <div class="home-overlay-content">
 
@@ -208,9 +208,19 @@
             <h2 style="margin-bottom: 25px;">Event Posters</h2>
 
             <div class="card4-grid">
-                <div class="card4-grid-item poster1" onclick="openOverlay('poster1')"></div>
-                <div class="card4-grid-item poster2" onclick="openOverlay('poster2')"></div>
-                <div class="card4-grid-item poster3" onclick="openOverlay('poster3')"></div>
+
+                <div class="card4-grid-item" onclick="openOverlay('poster1')">
+                    <img src="images/519bandposter.png">
+                </div>
+
+                <div class="card4-grid-item" onclick="openOverlay('poster2')">
+                    <img src="images/wildgamedinner.png">
+                </div>
+
+                <div class="card4-grid-item" onclick="openOverlay('poster3')">
+                    <img src="images/ribposter.png">
+                </div>
+
             </div>
         </div>
 
@@ -342,7 +352,7 @@
             <span class="home-close">X</span>
         </div>
 
-        <img src="images/519bandposter.png" style="width:100%; height:auto; border-radius:10px;">
+        <img src="images/519bandposter.png" class="poster-full">
     </div>
 </div>
 
@@ -354,7 +364,7 @@
             <span class="home-close">X</span>
         </div>
 
-        <img src="images/wildgamedinner.png" style="width:100%; height:auto; border-radius:10px;">
+        <img src="images/wildgamedinner.png" class="poster-full">
     </div>
 </div>
 
@@ -366,7 +376,7 @@
             <span class="home-close">X</span>
         </div>
 
-        <img src="images/ribposter.png" style="width:100%; height:auto; border-radius:10px;">
+        <img src="images/ribposter.png" class="poster-full">
     </div>
 </div>
 
