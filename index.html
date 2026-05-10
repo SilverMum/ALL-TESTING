@@ -108,14 +108,12 @@
         <p>CARD 3 TITLE</p>
     </a>
 
-    <!-- CARD 4 — CAROUSEL -->
+    <!-- CARD 4 — UPDATED 3‑IMAGE CAROUSEL -->
     <a class="ts-card home-card-style" onclick="openOverlay('info4')">
         <div class="card4-carousel">
             <div class="card4-slide slide1"></div>
             <div class="card4-slide slide2"></div>
             <div class="card4-slide slide3"></div>
-            <div class="card4-slide slide4"></div>
-            <div class="card4-slide slide5"></div>
         </div>
         <p>Events This Month</p>
     </a>
@@ -149,11 +147,6 @@
 <!-- =========================================================
      FULL-SCREEN OVERLAYS
 ========================================================= -->
-
-<!-- TEMPLATE FOR ALL OVERLAYS:
-     X stays fixed
-     Content scrolls inside .home-scroll-area
--->
 
 <!-- CARD 1 OVERLAY -->
 <div id="info1" class="home-overlay">
@@ -203,7 +196,7 @@
     </div>
 </div>
 
-<!-- CARD 4 OVERLAY -->
+<!-- CARD 4 OVERLAY — UPDATED WITH 3 POSTERS -->
 <div id="info4" class="home-overlay">
     <div class="home-overlay-content">
 
@@ -337,7 +330,51 @@
     </div>
 </div>
 
-    <a class="map-wrapper" 
+<!-- =========================================================
+     POSTER OVERLAYS (FULL SCREEN)
+========================================================= -->
+
+<!-- POSTER 1 -->
+<div id="poster1" class="home-overlay">
+    <div class="home-overlay-content">
+
+        <div class="home-close-wrapper" onclick="closeOverlay('poster1')">
+            <span class="home-close">X</span>
+        </div>
+
+        <img src="images/519bandposter.png" style="width:100%; height:auto; border-radius:10px;">
+    </div>
+</div>
+
+<!-- POSTER 2 -->
+<div id="poster2" class="home-overlay">
+    <div class="home-overlay-content">
+
+        <div class="home-close-wrapper" onclick="closeOverlay('poster2')">
+            <span class="home-close">X</span>
+        </div>
+
+        <img src="images/wildgamedinner.png" style="width:100%; height:auto; border-radius:10px;">
+    </div>
+</div>
+
+<!-- POSTER 3 -->
+<div id="poster3" class="home-overlay">
+    <div class="home-overlay-content">
+
+        <div class="home-close-wrapper" onclick="closeOverlay('poster3')">
+            <span class="home-close">X</span>
+        </div>
+
+        <img src="images/ribposter.png" style="width:100%; height:auto; border-radius:10px;">
+    </div>
+</div>
+
+<!-- =========================================================
+     MAP UNDER CARDS 7 + 8
+========================================================= -->
+
+<a class="map-wrapper" 
    href="https://maps.google.com/?q=Windsor+Sportsmen's+Club" 
    target="_blank">
     <iframe 
