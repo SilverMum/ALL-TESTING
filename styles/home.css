@@ -350,6 +350,10 @@ body.home-bg::before {
     100% { opacity: 0; }
 }
 
+.card4-slide {
+    pointer-events: none;
+}
+
 /* =========================================================
    CARD 4 — OVERLAY GRID (3 posters only)
 ========================================================= */
