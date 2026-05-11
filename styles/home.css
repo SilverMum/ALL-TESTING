@@ -250,7 +250,7 @@ body.home-bg::before {
 }
 
 .ts-card {
-    position: relative; /* ← THIS is the missing piece */
+    position: relative;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 18px;
     overflow: hidden;
@@ -299,7 +299,7 @@ body.home-bg::before {
 #info3 .home-scroll-area {
     max-height: calc(70vh - 40px);
     overflow-y: auto;
-    padding-right: 10px; /* keeps text from touching the edge */
+    padding-right: 10px;
 }
 
 /* =========================================================
@@ -316,6 +316,7 @@ body.home-bg::before {
     transform: scale(1.08);
     opacity: 0.85;
 }
+
 /* =========================================================
    CARD 4 — CAROUSEL (3 images only)
 ========================================================= */
@@ -324,7 +325,7 @@ body.home-bg::before {
     height: 180px;
     position: relative;
     overflow: hidden;
-    pointer-events: none; /* ← ADD THIS */
+    pointer-events: none;
 }
 
 .card4-slide {
@@ -352,6 +353,17 @@ body.home-bg::before {
     100% { opacity: 0; }
 }
 
+/* Invisible click layer */
+.card4-click-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    cursor: pointer;
+}
+
 /* =========================================================
    CARD 4 — OVERLAY GRID (3 posters only)
 ========================================================= */
@@ -363,7 +375,7 @@ body.home-bg::before {
 }
 
 .card4-grid-item {
-    height: 300px; /* taller as requested */
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -381,16 +393,6 @@ body.home-bg::before {
     height: 100%;
     width: auto;
     display: block;
-}
-
-.card4-click-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 5; /* above carousel */
-    cursor: pointer;
 }
 
 /* =========================================================
@@ -547,9 +549,9 @@ body.home-bg::before {
 }
 
 .map-card {
-    width: 50%; /* same width as 2 cards */
+    width: 50%;
     margin: 40px auto 0;
-    background: rgba(40, 60, 50, 0.30); /* same as pledge */
+    background: rgba(40, 60, 50, 0.30);
     border-radius: 16px;
     padding: 20px;
     backdrop-filter: blur(4px);
