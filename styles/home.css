@@ -3,10 +3,10 @@
 ========================================================= */
 body.home-bg {
     background-image: url("../images/naturenomad-trees-8274904.jpg");
-    background-size: cover;
+    background-size: 120% auto;      /* zoomed OUT compared to cover */
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-attachment: fixed;
+    background-position: left bottom; /* always show bottom-left */
+    background-attachment: fixed;     /* image does NOT move */
     position: relative;
 }
 
