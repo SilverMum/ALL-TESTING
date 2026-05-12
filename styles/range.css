@@ -1,0 +1,253 @@
+/* --------------------------------------------------
+   INFO 8 — FORM COLOR FIXES (LEFTOVER FROM OLD FORM)
+   These no longer affect the new Google Form, but
+   they do NOT break anything, so we keep them.
+-------------------------------------------------- */
+
+.ts-contact-card label,
+.ts-contact-card h3,
+.ts-contact-card .field-checkbox label {
+    color: white !important;
+}
+
+.ts-contact-card input,
+.ts-contact-card textarea {
+    background: white !important;
+    color: black !important;
+}
+
+.ts-contact-card input::placeholder,
+.ts-contact-card textarea::placeholder {
+    color: black !important;
+}
+
+/* --------------------------------------------------
+   CONTACT POPUP LEFT/RIGHT + ORANGE FORM CARD
+-------------------------------------------------- */
+
+.ts-contact-flex {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.ts-contact-left {
+    flex: 0 0 40%;
+}
+
+.ts-contact-right {
+    flex: 0 0 60%;
+}
+
+.ts-contact-card {
+    background: #ff9f43;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+    margin-top: 9px;
+    margin-left: -15px;
+    margin-right: 4px;
+}
+
+/* --------------------------------------------------
+   NEW GOOGLE FORM SYSTEM (MASK + IFRAME + OVERLAY)
+-------------------------------------------------- */
+
+.form-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.google-form-frame {
+    width: 100%;
+    height: 900px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+}
+
+/* Mask card over the form */
+.form-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    border-radius: 12px;
+    pointer-events: none;
+
+    background: rgba(10, 20, 40, 0.96);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    color: white;
+    text-align: center;
+
+    /* PERFECTED CUTOUT WINDOW */
+    -webkit-clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 28%,
+        8% 28%,
+        8% 88%,
+        92% 88%,
+        92% 28%,
+        0 28%
+    );
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 28%,
+        8% 28%,
+        8% 88%,
+        92% 88%,
+        92% 28%,
+        0 28%
+    );
+}
+
+/* Title + subtitle inside mask */
+.mask-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mask-subtitle {
+    font-size: 1.7rem;
+    font-weight: 400;
+    opacity: 0.95;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Thank You overlay */
+#thankyou-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    z-index: 999;
+}
+
+.thankyou-card {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    max-width: 480px;
+}
+
+/* --------------------------------------------------
+   FIXED‑SIZE MODAL OVERLAY
+-------------------------------------------------- */
+
+.ts-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    z-index: 99999;
+}
+
+/* --------------------------------------------------
+   MODAL BOX
+-------------------------------------------------- */
+
+.ts-overlay-content {
+    width: 70vw;
+    height: 70vh;
+    margin-top: 12.5vh;
+    background: rgba(0,0,0,0.6);
+    border: 4px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 30px;
+    color: white;
+}
+
+/* --------------------------------------------------
+   FLOATING X BUTTON
+-------------------------------------------------- */
+
+.ts-close-wrapper {
+    position: fixed;
+    top: calc(12.5vh + 7px);
+    right: calc(15vw - 12px + 26px);
+    width: 38px;
+    height: 38px;
+    background: rgba(0,0,0,0.85);
+    border: 2px solid rgba(255,255,255,0.6);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200000;
+}
+
+.ts-close {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1;
+}
+
+/* --------------------------------------------------
+   MODAL TYPOGRAPHY
+-------------------------------------------------- */
+
+.ts-overlay-content p,
+.ts-overlay-content li,
+.ts-overlay-content strong,
+.ts-overlay-content em {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.ts-overlay-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.ts-overlay-content h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ts-overlay-content .package-block p {
+    margin: 4px 0;
+}
