@@ -1,1 +1,75 @@
-placeholder
+/* =========================================================
+   FIXED NAVIGATION BAR — NEW LAYOUT
+========================================================= */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0a1a3a;
+    z-index: 9999;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO LEFT */
+.nav-logo {
+    height: 55px;
+    width: auto;
+    margin-left: 30px;
+}
+
+/* WSC TEXT (NOT CLICKABLE) */
+.nav-wsc {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+/* RIGHT‑ALIGNED NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: 30px;
+    gap: 35px;
+    align-items: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+    color: white;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff9f43;
+}
+
+/* JOIN NOW BUTTON */
+.join-btn {
+    background: #2e8b57;
+    padding: 10px 22px;
+    border-radius: 6px;
+    color: white !important;
+    transition: 0.25s ease;
+}
+
+.join-btn:hover {
+    background: #3fae6f;
+    transform: translateY(-2px);
+}
+
+/* SPACER BELOW FIXED NAV */
+.nav-spacer {
+    height: 110px;
+}
