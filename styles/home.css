@@ -165,23 +165,29 @@ body.home-bg::before {
 }
 
 /* ---------------------------------------------
-   GREEN BUTTON
+   BUTTONS
 --------------------------------------------- */
 .home-member-btn-wrapper {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.home-member-btn {
-    background: #2e8b57; /* nice natural green */
-    color: white;
+.home-member-btn,
+.home-activities-btn {
+    display: inline-block;
     padding: 14px 32px;
     font-size: 1.25rem;
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
-    display: inline-block;
     transition: 0.25s ease;
+    margin: 0 10px;
+}
+
+/* Green button */
+.home-member-btn {
+    background: #2e8b57;
+    color: white;
 }
 
 .home-member-btn:hover {
@@ -189,55 +195,53 @@ body.home-bg::before {
     transform: translateY(-2px);
 }
 
+/* Grey button */
+.home-activities-btn {
+    background: rgba(255, 255, 255, 0.10);
+    color: white;
+}
+
+.home-activities-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
 /* ---------------------------------------------
    PLEDGE CARD
 --------------------------------------------- */
 .pledge-card {
+    position: relative;
     width: 75%;
     margin: 0 auto;
-    background: rgba(10, 26, 58, 0.10); /* your nav/footer blue at 10% opacity */
+    background: rgba(10, 26, 58, 0.10);
     padding: 30px 40px;
     border-radius: 12px;
     backdrop-filter: blur(2px);
 }
 
-/* Leaf + Title Row */
-.pledge-leaf-title {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 15px;
-}
-
-.pledge-leaf {
-    width: 28px;
-    height: auto;
-}
-
-.pledge-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-/* Pledge Text */
-.pledge-text {
-    font-size: 1.25rem; /* same as subtext */
-    line-height: 1.6;
-}
-
-/* Add this inside your pledge-card section */
-.pledge-card {
-    position: relative;
-}
-
-/* Tiny leaf in top-right corner */
+/* Tiny leaf top-right */
 .pledge-leaf-topright {
     position: absolute;
     top: 20px;
     right: 25px;
-    width: 28px; /* adjust smaller if needed */
+    width: 28px;
     height: auto;
+}
+
+/* Title */
+.pledge-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* Text */
+.pledge-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: white;
+    font-style: italic;
 }
 
 /* =========================================================
