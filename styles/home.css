@@ -727,41 +727,41 @@ body.home-bg::before {
 
 /* Bigger title + subtitle */
 .mask-title {
-    font-size: 2.6rem;
-    margin-bottom: 10px;
+    font-size: 2.8rem;
+    margin-bottom: 12px;
 }
 
 .mask-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     opacity: 0.9;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-/* NEW cutout window — moved up to reveal Name label */
+/* NEW cutout window — moved up to hide the required text */
 .form-mask {
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
-        0 18%,
-        8% 18%,
+        0 12%,
+        8% 12%,
         8% 88%,
         92% 88%,
-        92% 18%,
-        0 18%
+        92% 12%,
+        0 12%
     );
     clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
-        0 18%,
-        8% 18%,
+        0 12%,
+        8% 12%,
         8% 88%,
         92% 88%,
-        92% 18%,
-        0 18%
+        92% 12%,
+        0 12%
     );
 }
 
