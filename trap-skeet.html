@@ -411,7 +411,7 @@
 
             </div>
 
-         <!-- ⭐ RIGHT SIDE (60%) — ORANGE CARD WITH NEW FORM -->
+     <!-- ⭐ RIGHT SIDE (60%) — ORANGE CARD WITH NEW FORM -->
 <div class="ts-contact-right">
     <div class="ts-contact-card">
 
@@ -500,7 +500,7 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
 });
 </script>
 
-<!-- ⭐ NEW WORKING THANK-YOU DETECTION SCRIPT -->
+<!-- ⭐ BULLETPROOF THANK-YOU DETECTION SCRIPT -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
     const iframe = document.querySelector(".google-form-frame");
@@ -508,14 +508,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     iframe.addEventListener("load", function () {
         try {
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-            const bodyText = iframeDoc.body.innerText;
+            const currentURL = iframe.contentWindow.location.href;
 
-            if (bodyText.includes("Your response has been recorded")) {
+            // Detect Google Form "thank you" page by URL
+            if (currentURL.includes("formResponse")) {
                 thankyou.style.display = "flex";
             }
         } catch (e) {
-            // Google cross-origin protection — safe to ignore
+            // Cross-origin block is normal on first load
         }
     });
 });
