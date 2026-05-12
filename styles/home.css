@@ -688,10 +688,82 @@ body.home-bg::before {
     opacity: 0.9;
 }
 
+/* Wrapper for iframe + mask */
+.form-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .google-form-frame {
     width: 100%;
     height: 900px;
     border: none;
     border-radius: 12px;
     background: white;
+}
+
+/* Card over the form, with a window where fields show */
+.form-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    border-radius: 12px;
+    pointer-events: none;
+
+    background: rgba(10, 20, 40, 0.96);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+
+    /* Window cutout */
+    -webkit-clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 35%,
+        8% 35%,
+        8% 90%,
+        92% 90%,
+        92% 35%,
+        0 35%
+    );
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0 35%,
+        8% 35%,
+        8% 90%,
+        92% 90%,
+        92% 35%,
+        0 35%
+    );
+}
+
+/* Thank You overlay */
+#thankyou-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.thankyou-card {
+    background: white;
+    padding: 40px 60px;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.4rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    max-width: 480px;
 }
