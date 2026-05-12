@@ -143,6 +143,7 @@
 }
 
 /* Thank You overlay */
+/* Thank You overlay */
 #thankyou-overlay {
     position: absolute;
     top: 0;
@@ -154,7 +155,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    z-index: 999;
+    z-index: 999999;
 }
 
 .thankyou-card {
