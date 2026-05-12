@@ -128,7 +128,7 @@ body.home-bg::before {
 /* --- CENTERED SECTION HEADER --- */
 .activities-header {
     text-align: center;
-    margin-left: 0;
+    margin-top: 40px;      /* restores original visual spacing */
     margin-bottom: 25px;
 }
 
