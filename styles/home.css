@@ -111,12 +111,12 @@ body.home-bg::before {
 
 /* --- GREY BUTTON (EXPLORE ACTIVITIES) --- */
 .home-activities-btn {
-    background: rgba(255, 255, 255, 0.60);
+    background: rgba(50, 50, 50, 0.60); /* dark grey, same opacity */
     color: white;
 }
 
 .home-activities-btn:hover {
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(50, 50, 50, 0.75);
     transform: translateY(-2px);
 }
 
