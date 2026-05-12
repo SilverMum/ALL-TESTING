@@ -226,6 +226,20 @@ body.home-bg::before {
     line-height: 1.6;
 }
 
+/* Add this inside your pledge-card section */
+.pledge-card {
+    position: relative;
+}
+
+/* Tiny leaf in top-right corner */
+.pledge-leaf-topright {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 28px; /* adjust smaller if needed */
+    height: auto;
+}
+
 /* =========================================================
    HOMEPAGE ANNOUNCEMENT (LEFT / RIGHT)
 ========================================================= */
