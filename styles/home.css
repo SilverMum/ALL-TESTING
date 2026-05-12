@@ -717,30 +717,37 @@ body.home-bg::before {
     background: rgba(10, 20, 40, 0.96);
     box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 
-    /* Window cutout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+
+    /* NEW WINDOW POSITION — moved up so Name label is visible */
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
-        0 35%,
-        8% 35%,
-        8% 90%,
-        92% 90%,
-        92% 35%,
-        0 35%
+        0 22%,
+        8% 22%,
+        8% 88%,
+        92% 88%,
+        92% 22%,
+        0 22%
     );
     clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
-        0 35%,
-        8% 35%,
-        8% 90%,
-        92% 90%,
-        92% 35%,
-        0 35%
+        0 22%,
+        8% 22%,
+        8% 88%,
+        92% 88%,
+        92% 22%,
+        0 22%
     );
 }
 
