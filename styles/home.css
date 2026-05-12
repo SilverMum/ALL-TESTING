@@ -1,35 +1,4 @@
 /* =========================================================
-   GLOBAL RESET
-========================================================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* =========================================================
-   GLOBAL FONT + GLOBAL TEXT COLOR
-========================================================= */
-html, body, h1, h2, h3, h4, h5, h6,
-p, a, li, ul, ol, span, div, label,
-input, textarea, button, strong, em {
-    font-family: "Times New Roman", serif !important;
-    color: white !important;
-}
-
-/* =========================================================
-   BODY BACKGROUND
-========================================================= */
-body.home-bg {
-    background: #0a0a0a;
-}
-
-/* Prevent background scroll when overlay is open */
-body.no-scroll {
-    overflow: hidden;
-}
-
-/* =========================================================
    HOME PAGE BACKGROUND IMAGE (TREE LINE)
 ========================================================= */
 
