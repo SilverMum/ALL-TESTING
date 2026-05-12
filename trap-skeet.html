@@ -368,77 +368,76 @@
     </div>
 </div>
 
+<!-- INFO 8 -->
 <div id="info8" class="ts-overlay">
     <div class="ts-close-wrapper">
         <a href="javascript:void(0)" class="ts-close" onclick="closeOverlay()">X</a>
     </div>
 
     <div class="ts-overlay-content">
-        <h2 class="text-center">Contact Trap & Skeet</h2>
 
+        <h2 style="text-align:center;">Contact Trap & Skeet</h2>
+
+        <!-- ⭐ LEFT / RIGHT FLEX WRAPPER -->
         <div class="ts-contact-flex">
 
+            <!-- ⭐ LEFT SIDE (40%) -->
             <div class="ts-contact-left">
+
                 <h2 class="clubhouse-title">Club House</h2>
+
                 <p class="clubhouse-sub">Restaurant & bar (Hours vary)</p>
-                <p class="clubhouse-sub">Check WSC website<br>or call for current hours</p>
+                <p class="clubhouse-sub">
+                    Check WSC website<br>
+                    or call for current hours
+                </p>
                 <p class="clubhouse-sub">Phone: 519.966.1600</p>
 
                 <h2>Range Facilities</h2>
+
                 <p><strong>1 × Trap Field</strong></p>
                 <p><strong>1 × Skeet Field</strong></p>
                 <p><strong>1 × Pattern Board</strong></p>
+
+                <br>
 
                 <p><strong>We do not sell shotgun shells</strong></p>
                 <p><strong>We do not rent firearms</strong></p>
 
             </div>
 
+            <!-- ⭐ RIGHT SIDE (60%) — ORANGE CARD WITH NEW FORM -->
             <div class="ts-contact-right">
                 <div class="ts-contact-card">
-                    <h3 class="text-center">Send a Message</h3>
 
-                    <form class="trap-skeet-form" action="https://formsubmit.co/jcanzoneri@gmail.com" method="POST">
+                    <!-- Your new masked Google Form -->
+                    <div class="form-wrapper">
 
-                        <div class="field-row">
-                            <label for="ts-name">Name</label>
-                            <input type="text" id="ts-name" name="name" placeholder="Your Name" required>
+                        <div class="form-mask">
+                            <h2 class="mask-title">Contact Us</h2>
+                            <p class="mask-subtitle">Please fill in your information and we’ll get back to you shortly.</p>
                         </div>
 
-                        <div class="field-row">
-                            <label for="ts-email">Email</label>
-                            <input type="email" id="ts-email" name="email" placeholder="Your Email" required>
+                        <iframe 
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSen48HAhF8ET3vDXjHQhLdcrEAZKtCid7BFvctzsZcdJhryUg/viewform?embedded=true" 
+                            class="google-form-frame">
+                        </iframe>
+
+                        <div id="thankyou-overlay">
+                            <div class="thankyou-card">
+                                <h2>Thank You!</h2>
+                                <p>We will get back to you as soon as we can!</p>
+                                <p style="font-size:0.9rem;opacity:0.7;">Refresh the page to send another message.</p>
+                            </div>
                         </div>
 
-                        <div class="field-row">
-                            <label for="ts-phone">Phone Number</label>
-                            <input type="text" id="ts-phone" name="phone" placeholder="Your Phone Number" required>
-                        </div>
+                    </div>
 
-                        <div class="field-row">
-                            <label for="ts-message">Message</label>
-                            <textarea id="ts-message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-                        </div>
-
-                        <div class="field-row field-inline">
-                            <label for="ts-captcha">3 + 4 = ?</label>
-                            <input type="text" id="ts-captcha" name="captcha" placeholder="Your answer" required>
-                        </div>
-
-                        <div class="field-row field-checkbox">
-                            <label>
-                                <input type="checkbox" name="consent" required>
-                                I agree that my information may be used to process this inquiry.
-                            </label>
-                        </div>
-
-                        <button type="submit" class="ts-submit">Send Message</button>
-
-                    </form>
                 </div>
             </div>
 
         </div>
+
     </div>
 </div>
 
