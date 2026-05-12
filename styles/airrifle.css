@@ -200,3 +200,25 @@ iframe[src*="google.com/calendar"] {
 .airrifle-card.outer-card.calendar-card .inner-card {
     padding: 35px;
 }
+
+/* Air Rifle – Cancellation Notice */
+.airrifle-cancel-notice {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.airrifle-cancel-notice-title {
+    font-size: 2.2rem;      /* title size */
+    font-weight: 800;       /* bold */
+    color: white;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 8px;
+}
+
+.airrifle-cancel-notice-dates {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
