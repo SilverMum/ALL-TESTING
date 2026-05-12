@@ -79,7 +79,7 @@
     border-radius: 12px;
     pointer-events: none;
 
-    background: rgba(10, 20, 40, 0.96);
+    background: #ff9f43;
     box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 
     display: flex;
