@@ -33,33 +33,23 @@ body.home-bg::before {
 }
 
 .page-header h1 {
-    text-align: center;
+    text-align: left !important;
     font-size: 5rem;
     font-weight: 700;
-    line-height: 1.15;
-    margin-bottom: 115px;
+    line-height: 1.05; /* tighter line spacing between Windsor + Sportsmen's Club */
+    margin-bottom: 25px; /* was 115px — now only 1 line of space before subtitle */
     text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
-}
-
-.page-header h1 {
-    text-align: left !important;
 }
 
 /* ---------------------------------------------
    HOMEPAGE SUBTEXT
---------------------------------------------- */
+--------------------------------------------- */    
 .home-subtext {
-    font-size: 1.25rem; /* matches your normal body size */
-    text-align: center;
-    max-width: 900px;
-    margin: 20px auto 30px auto;
-    line-height: 1.6;
-}
-
-.page-header,
-.home-subtext {
+    font-size: 1.25rem;
     text-align: left;
-    margin-left: 12.5%; /* matches 75% card centering */
+    max-width: 50%; /* forces mid‑screen wrap */
+    margin: 10px 0 30px 12.5%; /* aligns with title */
+    line-height: 1.5;
 }
 
 /* ---------------------------------------------
