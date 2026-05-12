@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
     <title>Windsor Sportsmen’s Club</title>
+
+    <!-- Updated stylesheet version -->
     <link rel="stylesheet" href="styles.css?v=9">
     <link rel="stylesheet" href="styles/airrifle.css">
 </head>
 
 <body class="air-rifle-bg">
 
+<!-- ⭐ FULL NAV BAR -->
 <header>
     <nav class="main-nav">
 
+        <!-- Logo stays exactly where it was -->
         <div class="logo">
             <img src="images/WINDSOR SPORTSMANS REMAKE.png" alt="Windsor Sportsmen’s Club Logo">
         </div>
@@ -38,21 +43,18 @@
                 <a href="#">Groups ▾</a>
                 <ul class="dropdown-menu">
 
-                    <li class="nav-trap-skeet">
-                        <a href="trap-skeet.html">
-                            Trap &amp; Skeet<br>
-                            <span>Range</span>
-                        </a>
-                    </li>
+                    <!-- ⭐ Two-line Trap & Skeet link -->
+                    <li><a href="trap-skeet.html">Trap & Skeet</a></li>
 
                     <li><a href="archery.html">Archery</a></li>
                     <li><a href="ofha.html">OFHA</a></li>
-                    <li><a href="cheese-cracker.html">Cheese & Cracker Club</a></li>
+                    <li><a href="cheese-cracker.html">Cheese & Cracker</a></li>
                     <li><a href="air-rifle.html">Air Rifle</a></li>
 
                     <li class="dropdown-sub">
                         <a href="members.html" class="submenu-link">Members</a>
                         <span class="submenu-toggle">▸</span>
+
                         <ul class="submenu-right">
                             <li><a href="staff-tv-info.html">Staff TV Info</a></li>
                         </ul>
@@ -62,6 +64,7 @@
             </li>
 
             <li><a href="index.html#contact-title">Contact</a></li>
+
             <li><a href="login.html">Login</a></li>
 
         </ul>
@@ -69,17 +72,19 @@
     </nav>
 </header>
 
-<!-- Spacer under fixed nav (kept exactly as-is visually) -->
+<!-- ⭐ Correct spacer under fixed nav -->
 <section style="height: 140px;"></section>
 
+<!-- ⭐ PAGE CONTENT -->
 <main class="content-section">
 
 <section class="airrifle-wrapper">
 
-    <!-- CARD 1 -->
+    <!-- CARD 1 — Title + Intro -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <h1 class="airrifle-title">Windsor Sportsmen's Air Rifle Range</h1>
+
             <p class="airrifle-text">
                 Sharpen Your Skills, Have Some Fun!<br>
                 Windsor Sportsmen's Club, 2401 Dougall, Windsor, Ontario.<br>
@@ -88,7 +93,7 @@
         </div>
     </div>
 
-    <!-- CARD 2 -->
+    <!-- CARD 2 — About the Range -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <h2 class="airrifle-subheader">About the Range</h2>
@@ -98,7 +103,7 @@
         </div>
     </div>
 
-    <!-- CARD 3 -->
+    <!-- CARD 3 — Schedule -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <h2 class="airrifle-subheader">Schedule</h2>
@@ -110,7 +115,7 @@
         </div>
     </div>
 
-    <!-- CARD 4 -->
+    <!-- CARD 4 — What to Expect -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <h2 class="airrifle-subheader">What to Expect</h2>
@@ -124,7 +129,7 @@
         </div>
     </div>
 
-    <!-- CARD 5 -->
+    <!-- CARD 5 — Pricing -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <h2 class="airrifle-subheader">Pricing</h2>
@@ -135,7 +140,7 @@
         </div>
     </div>
 
-    <!-- CARD 6 -->
+    <!-- CARD 6 — Range Details (Paper Targets) -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <h2 class="airrifle-subheader">Range Details</h2>
@@ -145,7 +150,7 @@
         </div>
     </div>
 
-    <!-- CARD 7 -->
+    <!-- CARD 7 — Range Details (Knock‑Down Targets) -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <p class="airrifle-text">
@@ -154,7 +159,7 @@
         </div>
     </div>
 
-    <!-- CARD 8 -->
+    <!-- CARD 8 — Experience the Difference -->
     <div class="airrifle-card outer-card">
         <div class="inner-card">
             <p class="airrifle-text">
@@ -165,7 +170,7 @@
 
 </section>
 
-<!-- CALENDAR CARD -->
+<!-- AIR RIFLE CALENDAR (now wrapped in card) -->
 <div class="airrifle-card outer-card calendar-card">
     <div class="inner-card">
 
@@ -181,66 +186,60 @@
     </div>
 </div>
 
-<!-- CONTACT SECTION -->
+<!-- CONTACT AIR-RIFLE (unchanged) -->
 <section class="airrifle-cancellations">
     <h2 class="airrifle-cancel-title">Contact Air Rifle</h2>
 </section>
 
 <section class="airrifle-cancel">
+  <h2>Contact Air Rifle</h2>
+  <p class="airrifle-cancel-intro">
+    Have a question about Air Rifle? Send us a message below and it will be delivered directly to the coordinator.
+  </p>
 
-    <h2>Contact Air Rifle</h2>
+  <form class="airrifle-cancel-form" action="https://formsubmit.co/WSC-Air-Rifle@outlook.com" method="POST">
+    <div class="field-row">
+      <label for="ar-name">Name</label>
+      <input type="text" id="ar-name" name="name" placeholder="Your Name" required>
+    </div>
 
-    <p class="airrifle-cancel-intro">
-        Have a question about Air Rifle? Send us a message below and it will be delivered directly to the coordinator.
-    </p>
+    <div class="field-row">
+      <label for="ar-email">Email</label>
+      <input type="email" id="ar-email" name="email" placeholder="Your Email" required>
+    </div>
 
-    <form class="airrifle-cancel-form" action="https://formsubmit.co/WSC-Air-Rifle@outlook.com" method="POST">
+    <div class="field-row">
+      <label for="ar-subject">Subject</label>
+      <input type="text" id="ar-subject" name="subject" placeholder="e.g. Question about Air Rifle" required>
+    </div>
 
-        <div class="field-row">
-            <label for="ar-name">Name</label>
-            <input type="text" id="ar-name" name="name" placeholder="Your Name" required>
-        </div>
+    <div class="field-row">
+      <label for="ar-message">Message</label>
+      <textarea id="ar-message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+    </div>
 
-        <div class="field-row">
-            <label for="ar-email">Email</label>
-            <input type="email" id="ar-email" name="email" placeholder="Your Email" required>
-        </div>
+    <div class="field-row field-inline">
+      <label for="ar-captcha">3 + 4 = ?</label>
+      <input type="text" id="ar-captcha" name="captcha" placeholder="Your answer" required>
+    </div>
 
-        <div class="field-row">
-            <label for="ar-subject">Subject</label>
-            <input type="text" id="ar-subject" name="subject" placeholder="e.g. Question about Air Rifle" required>
-        </div>
+    <div class="field-row field-checkbox">
+      <label>
+        <input type="checkbox" name="consent" required>
+        I agree that my information may be used to process this inquiry.
+      </label>
+    </div>
 
-        <div class="field-row">
-            <label for="ar-message">Message</label>
-            <textarea id="ar-message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
-        </div>
-
-        <div class="field-row field-inline">
-            <label for="ar-captcha">3 + 4 = ?</label>
-            <input type="text" id="ar-captcha" name="captcha" placeholder="Your answer" required>
-        </div>
-
-        <div class="field-row field-checkbox">
-            <label>
-                <input type="checkbox" name="consent" required>
-                I agree that my information may be used to process this inquiry.
-            </label>
-        </div>
-
-        <button type="submit" class="ac-submit">Send Message</button>
-
-    </form>
-
+    <button type="submit" class="ac-submit">Send Message</button>
+  </form>
 </section>
 
 </main>
 
+<!-- ⭐ FOOTER -->
 <footer class="site-footer">
     <p>©2024 Windsor Sportsmen's Club. All Rights Reserved.</p>
 </footer>
-
 <script src="scripts.js"></script>
-
 </body>
 </html>
