@@ -29,12 +29,17 @@
     margin-top: 20px;
 }
 
+/* LEFT COLUMN (TEXT) */
 .ts-contact-left {
     flex: 0 0 40%;
 }
 
+/* RIGHT COLUMN (CARD + FORM) — STICKY */
 .ts-contact-right {
     flex: 0 0 60%;
+    position: sticky;
+    top: 0;              /* keeps the card+form from moving when content scrolls */
+    align-self: flex-start;
 }
 
 .ts-contact-card {
@@ -45,7 +50,7 @@
 
     margin-top: 9px;
 
-    /* widened card */
+    /* widened card a bit on both sides */
     margin-left: -19px;
     margin-right: 8px;
 }
@@ -59,9 +64,6 @@
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-
-    /* prevent scrolling under mask */
-    overflow: hidden;
 }
 
 .google-form-frame {
@@ -70,10 +72,6 @@
     border: none;
     border-radius: 12px;
     background: white;
-
-    /* lock iframe in place */
-    position: relative;
-    top: 0;
 }
 
 /* Mask card over the form */
@@ -97,16 +95,17 @@
     color: white;
     text-align: center;
 
-    /* CUTOUT WINDOW — more reveal left/right */
+    /* CUTOUT WINDOW — ONLY LEFT/RIGHT OPENED MORE
+       Top (28%) and bottom (88%) are unchanged */
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
         0 28%,
-        5% 28%,     /* more open on left */
+        5% 28%,      /* more open on left */
         5% 88%,
-        95% 88%,    /* more open on right */
+        95% 88%,     /* more open on right */
         95% 28%,
         0 28%
     );
@@ -182,9 +181,6 @@
     display: none;
     justify-content: center;
     z-index: 99999;
-
-    /* prevent scrolling inside modal */
-    overflow: hidden;
 }
 
 /* --------------------------------------------------
@@ -199,10 +195,9 @@
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
     position: relative;
-
-    /* prevent scroll inside content */
-    overflow: hidden;
-
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     padding: 30px;
     color: white;
 }
