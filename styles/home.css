@@ -46,7 +46,7 @@ body.home-bg::before {
 .page-pretitle span {
     font-size: 1.25rem;   /* same as old subtitle size */
     font-weight: 700;
-    color: #2e8b57;       /* same green as JOIN NOW button */
+    color: #2e8b57;       /* SAME GREEN AS JOIN NOW BUTTON */
     letter-spacing: 1px;
     text-transform: uppercase; /* ALL CAPS */
 }
