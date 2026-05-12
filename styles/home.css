@@ -158,17 +158,16 @@ body.home-bg::before {
     margin: 60px auto;
 }
 
-/* --- MINI CARDS ROW --- */
+/* --- MINI CARDS ROW (UPDATED TO 8 PER ROW) --- */
 .activity-mini-row {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 cards in one row */
     gap: 20px;
     margin-bottom: 25px;
 }
 
 /* --- MINI CARD STYLE --- */
 .mini-card {
-    flex: 1;
     background: rgba(10, 26, 58, 0.50);
     padding: 20px 0;
     text-align: center;
