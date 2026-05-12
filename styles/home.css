@@ -32,9 +32,9 @@ body.home-bg::before {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-left: 6.25%;   /* aligns with title */
-    margin-top: 2px;      /* sits 2px under nav */
-    margin-bottom: 18px;  /* same spacing as subtitle under title */
+    margin-left: 6.25%;
+    margin-top: 2px;       /* stays the same — perfect under nav */
+    margin-bottom: 30px;   /* was 18px — adds one clean line of space */
 }
 
 .pretitle-leaf {
