@@ -512,7 +512,7 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
 });
 </script>
 
-<!-- ⭐ FORMSPREE SUBMISSION SCRIPT -->
+<!-- ⭐ UPDATED FORMSPREE SUBMISSION SCRIPT (HIDES HEADER + SUBTITLE TOO) -->
 <script>
 document.querySelector('.wsc-contact-form').addEventListener('submit', async function(e) {
     e.preventDefault();
@@ -527,7 +527,18 @@ document.querySelector('.wsc-contact-form').addEventListener('submit', async fun
     });
 
     if (response.ok) {
+
+        /* Hide the form */
         form.style.display = 'none';
+
+        /* Hide the Contact Us title + subtitle */
+        const title = document.querySelector('.mask-title');
+        const subtitle = document.querySelector('.mask-subtitle');
+
+        if (title) title.style.display = 'none';
+        if (subtitle) subtitle.style.display = 'none';
+
+        /* Show the thank-you card */
         document.getElementById('thankyou-message').style.display = 'block';
     }
 });
