@@ -152,7 +152,7 @@ iframe[src*="google.com/calendar"] {
 .air-rifle-bg {
     position: relative;
     min-height: 100vh;
-    background: url('images/air-rifle-background.jpg') center center / cover no-repeat fixed;
+    background: url('../images/air-rifle-background.jpg') center center / cover no-repeat fixed;
 }
 
 .air-rifle-bg::before {
