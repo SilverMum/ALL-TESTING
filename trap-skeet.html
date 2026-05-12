@@ -415,37 +415,37 @@
 <div class="ts-contact-right">
     <div class="ts-contact-card">
 
-        <!-- Your new masked Google Form -->
+        <!-- ⭐ NEW FORMSPREE FORM (NO IFRAME, NO GOOGLE) -->
         <div class="form-wrapper">
 
-            <div class="form-mask">
-                <h2 class="mask-title">Contact Us</h2>
-                <p class="mask-subtitle">Please fill in your information and we’ll get back to you shortly.</p>
-            </div>
+            <h2 class="mask-title" style="text-align:center;">Contact Us</h2>
+            <p class="mask-subtitle" style="text-align:center;">Please fill in your information and we’ll get back to you shortly.</p>
 
-            <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSen48HAhF8ET3vDXjHQhLdcrEAZKtCid7BFvctzsZcdJhryUg/viewform?embedded=true" 
-                class="google-form-frame">
-            </iframe>
+            <form action="https://formspree.io/f/xlgzzzev" method="POST" class="wsc-contact-form" style="margin-top:40px;">
 
-            <!-- ⭐ THANK YOU OVERLAY (NOW ABOVE MASK) -->
-            <div id="thankyou-overlay" style="
-                position:absolute;
-                top:0;
-                left:0;
-                width:100%;
-                height:900px;
-                background:rgba(0,0,0,0.75);
-                display:none;
-                justify-content:center;
-                align-items:center;
-                border-radius:12px;
-                z-index:999999; /* ⭐ ABOVE THE MASK */
-            ">
-                <div class="thankyou-card">
+                <label>Name *</label>
+                <input type="text" name="name" required>
+
+                <label>Email *</label>
+                <input type="email" name="email" required>
+
+                <label>Message *</label>
+                <textarea name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <!-- ⭐ THANK YOU MESSAGE -->
+            <div id="thankyou-message" style="display:none; text-align:center; padding:40px;">
+                <div class="thankyou-card" style="
+                    background:#ff9f43;
+                    padding:40px;
+                    border-radius:12px;
+                    color:white;
+                    font-size:1.4rem;
+                ">
                     <h2>Thank You!</h2>
                     <p>We will get back to you as soon as we can!</p>
-                    <p style="font-size:0.9rem;opacity:0.7;">Refresh the page to send another message.</p>
                 </div>
             </div>
 
@@ -455,7 +455,6 @@
 </div>
 
 </div>
-
 </div>
 </div>
 
@@ -513,28 +512,27 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
 });
 </script>
 
-<!-- ⭐ BULLETPROOF THANK-YOU DETECTION SCRIPT -->
+<!-- ⭐ FORMSPREE SUBMISSION SCRIPT -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-    const iframe = document.querySelector(".google-form-frame");
-    const thankyou = document.getElementById("thankyou-overlay");
+document.querySelector('.wsc-contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
 
-    iframe.addEventListener("load", function () {
-        try {
-            const currentURL = iframe.contentWindow.location.href;
+    const form = e.target;
+    const data = new FormData(form);
 
-            // ⭐ Detect Google Form "thank you" page by URL
-            if (currentURL.includes("formResponse")) {
-                thankyou.style.display = "flex";
-            }
-        } catch (e) {
-            // Cross-origin block is normal on first load
-        }
+    const response = await fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
     });
+
+    if (response.ok) {
+        form.style.display = 'none';
+        document.getElementById('thankyou-message').style.display = 'block';
+    }
 });
 </script>
 
 <script src="scripts.js"></script>
 </body>
 </html>
-
