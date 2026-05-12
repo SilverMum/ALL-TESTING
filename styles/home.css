@@ -107,8 +107,89 @@ body.home-bg::before {
     transform: translateY(-2px);
 }
 
+/* =========================================================
+   ACTIVITY SECTION (UNDER PLEDGE)
+========================================================= */
+
+.activity-section {
+    width: 75%;
+    margin: 60px auto;
+}
+
+/* TOP MINI CARDS */
+.activity-mini-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.mini-card {
+    flex: 1;
+    background: rgba(10, 26, 58, 0.50); /* pledge card color */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    user-select: none;
+}
+
+.mini-card:hover {
+    background: rgba(10, 26, 58, 0.70);
+    transform: translateY(-3px);
+}
+
+/* BIG CARD */
+.activity-big-card {
+    background: rgba(10, 26, 58, 0.50);
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* Info blocks */
+.activity-info {
+    display: none;
+}
+
+.activity-info.active {
+    display: block;
+}
+
+.activity-info h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.activity-info p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+/* Learn More button */
+.activity-learn-btn {
+    margin-top: 25px;
+    background: #2e8b57; /* same as JOIN NOW */
+    padding: 14px 32px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s ease;
+    border: none;
+    color: white;
+}
+
+.activity-learn-btn:hover {
+    background: #3fae6f;
+    transform: translateY(-2px);
+}
+
 /* ---------------------------------------------
-   PLEDGE CARD
+   OLD OLD OLD PLEDGE CARD
 --------------------------------------------- */
 .pledge-card {
     position: relative;
