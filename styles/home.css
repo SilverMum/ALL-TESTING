@@ -37,7 +37,7 @@ body.no-scroll {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000;
+    background: #0a1a3a; /* updated */
     z-index: 9999;
     padding: 12px 0;
     display: flex;
@@ -71,6 +71,7 @@ body.no-scroll {
     font-size: 1.25rem;
     font-weight: 600;
     transition: 0.2s ease;
+    color: white; /* ensure readable on dark blue */
 }
 
 .nav-links a:hover,
@@ -85,7 +86,7 @@ body.no-scroll {
     top: 38px;
     left: 50%;
     transform: translateX(-50%);
-    background: #111;
+    background: #0a1a3a; /* updated */
     padding: 10px 0;
     border-radius: 8px;
     min-width: 180px;
@@ -563,7 +564,7 @@ body.home-bg::before {
 ========================================================= */
 .site-footer {
     width: 100%;
-    background: #000;
+    background: #0a1a3a; /* updated */
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -575,4 +576,3 @@ body.home-bg::before {
 .site-footer p {
     margin: 6px 0;
 }
-
