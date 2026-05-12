@@ -88,12 +88,12 @@ body.home-bg::before {
 
 /* Grey button */
 .home-activities-btn {
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.60); /* darker grey */
     color: white;
 }
 
 .home-activities-btn:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.75); /* slightly brighter on hover */
     transform: translateY(-2px);
 }
 
