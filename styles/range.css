@@ -59,6 +59,9 @@
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+
+    /* prevent scrolling under mask */
+    overflow: hidden;
 }
 
 .google-form-frame {
@@ -67,6 +70,10 @@
     border: none;
     border-radius: 12px;
     background: white;
+
+    /* lock iframe in place */
+    position: relative;
+    top: 0;
 }
 
 /* Mask card over the form */
@@ -90,17 +97,17 @@
     color: white;
     text-align: center;
 
-    /* CUTOUT WINDOW — 2px more reveal left/right */
+    /* CUTOUT WINDOW — more reveal left/right */
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
         0 28%,
-        5.4% 28%,     /* more open on left */
-        5.4% 88%,
-        94.6% 88%,    /* more open on right */
-        94.6% 28%,
+        5% 28%,     /* more open on left */
+        5% 88%,
+        95% 88%,    /* more open on right */
+        95% 28%,
         0 28%
     );
     clip-path: polygon(
@@ -109,10 +116,10 @@
         100% 100%,
         0 100%,
         0 28%,
-        5.4% 28%,
-        5.4% 88%,
-        94.6% 88%,
-        94.6% 28%,
+        5% 28%,
+        5% 88%,
+        95% 88%,
+        95% 28%,
         0 28%
     );
 }
@@ -175,6 +182,9 @@
     display: none;
     justify-content: center;
     z-index: 99999;
+
+    /* prevent scrolling inside modal */
+    overflow: hidden;
 }
 
 /* --------------------------------------------------
@@ -189,9 +199,10 @@
     border: 4px solid rgba(255,255,255,0.4);
     border-radius: 12px;
     position: relative;
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+
+    /* prevent scroll inside content */
+    overflow: hidden;
+
     padding: 30px;
     color: white;
 }
@@ -251,3 +262,4 @@
 .ts-overlay-content .package-block p {
     margin: 4px 0;
 }
+
