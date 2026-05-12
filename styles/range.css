@@ -1,7 +1,5 @@
 /* --------------------------------------------------
    INFO 8 — FORM COLOR FIXES (LEFTOVER FROM OLD FORM)
-   These no longer affect the new Google Form, but
-   they do NOT break anything, so we keep them.
 -------------------------------------------------- */
 
 .ts-contact-card label,
@@ -91,7 +89,6 @@
     text-align: center;
 
     /* PERFECTED CUTOUT WINDOW */
-    .form-mask {
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
