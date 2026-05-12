@@ -91,16 +91,17 @@
     text-align: center;
 
     /* PERFECTED CUTOUT WINDOW */
+   .form-mask {
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
         0 28%,
-        8% 28%,
-        8% 88%,
-        92% 88%,
-        92% 28%,
+        7.5% 28%,   /* slightly more open on left */
+        7.5% 88%,
+        92.5% 88%,  /* slightly more open on right */
+        92.5% 28%,
         0 28%
     );
     clip-path: polygon(
@@ -109,10 +110,10 @@
         100% 100%,
         0 100%,
         0 28%,
-        8% 28%,
-        8% 88%,
-        92% 88%,
-        92% 28%,
+        7.5% 28%,
+        7.5% 88%,
+        92.5% 88%,
+        92.5% 28%,
         0 28%
     );
 }
