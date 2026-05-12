@@ -720,25 +720,12 @@ body.home-bg::before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    justify-content: flex-start;
+    padding-top: 60px;
     color: white;
     text-align: center;
-}
 
-/* Bigger title + subtitle */
-.mask-title {
-    font-size: 2.8rem;
-    margin-bottom: 12px;
-}
-
-.mask-subtitle {
-    font-size: 1.5rem;
-    opacity: 0.9;
-    margin-bottom: 25px;
-}
-
-/* NEW cutout window — moved up to hide the required text */
-.form-mask {
+    /* Cutout window — PERFECTED */
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
@@ -765,14 +752,32 @@ body.home-bg::before {
     );
 }
 
+/* Bigger, centered title + subtitle */
+.mask-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-/* Thank You overlay — now only covers the form area */
+.mask-subtitle {
+    font-size: 1.7rem;
+    font-weight: 400;
+    opacity: 0.95;
+    margin-top: 12px;
+    margin-bottom: 25px;
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Thank You overlay — covers only the form area */
 #thankyou-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 900px; /* same height as the iframe */
+    height: 900px;
     background: rgba(0,0,0,0.75);
     display: none;
     justify-content: center;
@@ -790,3 +795,4 @@ body.home-bg::before {
     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     max-width: 480px;
 }
+
