@@ -135,6 +135,7 @@ body.home-bg::before {
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
+    margin-bottom: 20px; /* adds one clean line of space */
 }
 
 /* Text */
