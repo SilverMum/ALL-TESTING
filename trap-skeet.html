@@ -411,39 +411,39 @@
 
             </div>
 
-            <!-- ⭐ RIGHT SIDE (60%) — ORANGE CARD WITH NEW FORM -->
-            <div class="ts-contact-right">
-                <div class="ts-contact-card">
+         <!-- ⭐ RIGHT SIDE (60%) — ORANGE CARD WITH NEW FORM -->
+<div class="ts-contact-right">
+    <div class="ts-contact-card">
 
-                    <!-- Your new masked Google Form -->
-                    <div class="form-wrapper">
+        <!-- Your new masked Google Form -->
+        <div class="form-wrapper">
 
-                        <div class="form-mask">
-                            <h2 class="mask-title">Contact Us</h2>
-                            <p class="mask-subtitle">Please fill in your information and we’ll get back to you shortly.</p>
-                        </div>
+            <div class="form-mask">
+                <h2 class="mask-title">Contact Us</h2>
+                <p class="mask-subtitle">Please fill in your information and we’ll get back to you shortly.</p>
+            </div>
 
-                        <iframe 
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSen48HAhF8ET3vDXjHQhLdcrEAZKtCid7BFvctzsZcdJhryUg/viewform?embedded=true" 
-                            class="google-form-frame">
-                        </iframe>
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSen48HAhF8ET3vDXjHQhLdcrEAZKtCid7BFvctzsZcdJhryUg/viewform?embedded=true" 
+                class="google-form-frame">
+            </iframe>
 
-                        <div id="thankyou-overlay">
-                            <div class="thankyou-card">
-                                <h2>Thank You!</h2>
-                                <p>We will get back to you as soon as we can!</p>
-                                <p style="font-size:0.9rem;opacity:0.7;">Refresh the page to send another message.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
+            <div id="thankyou-overlay">
+                <div class="thankyou-card">
+                    <h2>Thank You!</h2>
+                    <p>We will get back to you as soon as we can!</p>
+                    <p style="font-size:0.9rem;opacity:0.7;">Refresh the page to send another message.</p>
                 </div>
             </div>
 
         </div>
 
     </div>
+</div>
+
+</div>
+
+</div>
 </div>
 
 <!-- WEATHER WIDGET -->
@@ -495,6 +495,27 @@ document.querySelectorAll('.dropdown-sub > a').forEach(link => {
         if (window.innerWidth <= 900) {
             e.preventDefault();
             this.parentElement.classList.toggle('open');
+        }
+    });
+});
+</script>
+
+<!-- ⭐ NEW WORKING THANK-YOU DETECTION SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const iframe = document.querySelector(".google-form-frame");
+    const thankyou = document.getElementById("thankyou-overlay");
+
+    iframe.addEventListener("load", function () {
+        try {
+            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            const bodyText = iframeDoc.body.innerText;
+
+            if (bodyText.includes("Your response has been recorded")) {
+                thankyou.style.display = "flex";
+            }
+        } catch (e) {
+            // Google cross-origin protection — safe to ignore
         }
     });
 });
