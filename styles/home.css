@@ -116,8 +116,9 @@ body.home-bg::before {
 }
 
 .home-activities-btn:hover {
-    background: rgba(50, 50, 50, 0.75);
+    background: rgba(50, 50, 50, 0.75); /* your darker hover */
     transform: translateY(-2px);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.25); /* soft white glow */
 }
 
 /* =========================================================
