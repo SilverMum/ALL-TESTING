@@ -88,17 +88,17 @@
     color: white;
     text-align: center;
 
-    /* PERFECTED CUTOUT WINDOW — 2px more reveal */
+    /* PERFECTED CUTOUT WINDOW — slightly more reveal */
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
         0 28%,
-        6.3% 28%,     /* more open on left */
-        6.3% 88%,
-        93.7% 88%,    /* more open on right */
-        93.7% 28%,
+        5.7% 28%,     /* more open on left */
+        5.7% 88%,
+        94.3% 88%,    /* more open on right */
+        94.3% 28%,
         0 28%
     );
     clip-path: polygon(
@@ -107,10 +107,10 @@
         100% 100%,
         0 100%,
         0 28%,
-        6.3% 28%,
-        6.3% 88%,
-        93.7% 88%,
-        93.7% 28%,
+        5.7% 28%,
+        5.7% 88%,
+        94.3% 88%,
+        94.3% 28%,
         0 28%
     );
 }
