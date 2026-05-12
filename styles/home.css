@@ -41,6 +41,10 @@ body.home-bg::before {
     text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
 
+.page-header h1 {
+    text-align: left !important;
+}
+
 /* ---------------------------------------------
    HOMEPAGE SUBTEXT
 --------------------------------------------- */
@@ -119,8 +123,8 @@ body.home-bg::before {
 
 .pledge-leaf-topright {
     position: absolute;
-    top: 20px;
-    left: 25px; /* moved from right → left */
+    top: 10px;   /* was 20px */
+    left: 10px;  /* was 25px */
     width: 28px;
     height: auto;
 }
