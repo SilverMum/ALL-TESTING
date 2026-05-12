@@ -1,4 +1,3 @@
-<script>
 document.querySelectorAll('.mini-card').forEach(card => {
     card.addEventListener('click', () => {
         const target = card.getAttribute('data-target');
@@ -10,4 +9,3 @@ document.querySelectorAll('.mini-card').forEach(card => {
         document.getElementById(target).classList.add('active');
     });
 });
-</script>
