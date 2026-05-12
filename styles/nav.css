@@ -81,3 +81,13 @@
     height: 110px;
 }
 
+/* =========================================================
+   OFFSET ANCHOR SCROLL FOR FIXED NAV
+========================================================= */
+#activities-section {
+    scroll-margin-top: 120px; /* prevents title from being cut off */
+}
+
+#top {
+    scroll-margin-top: 120px;
+}
