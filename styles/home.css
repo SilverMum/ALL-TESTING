@@ -30,25 +30,26 @@ body.home-bg::before {
 .page-header {
     text-align: center;
     margin-bottom: 65px;
+    margin-left: 6.25%; /* NEW — halfway between old title and pledge card */
 }
 
 .page-header h1 {
     text-align: left !important;
     font-size: 5rem;
     font-weight: 700;
-    line-height: 1.05; /* tighter line spacing between Windsor + Sportsmen's Club */
-    margin-bottom: 25px; /* was 115px — now only 1 line of space before subtitle */
+    line-height: 1.05;
+    margin-bottom: 25px;
     text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
 
 /* ---------------------------------------------
    HOMEPAGE SUBTEXT
---------------------------------------------- */    
+--------------------------------------------- */
 .home-subtext {
     font-size: 1.25rem;
     text-align: left;
-    max-width: 50%; /* forces mid‑screen wrap */
-    margin: 10px 0 30px 12.5%; /* aligns with title */
+    max-width: 50%;
+    margin: 10px 0 30px 6.25%; /* NEW — matches title */
     line-height: 1.5;
 }
 
@@ -56,11 +57,10 @@ body.home-bg::before {
    BUTTONS
 --------------------------------------------- */
 .home-member-btn-wrapper {
-    text-align: left; /* was center */
+    text-align: left;
     margin-bottom: 40px;
     width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 6.25%; /* NEW — aligns with title + subtext */
 }
 
 .home-member-btn,
@@ -88,19 +88,18 @@ body.home-bg::before {
 
 /* Grey button */
 .home-activities-btn {
-    background: rgba(255, 255, 255, 0.60); /* darker grey */
+    background: rgba(255, 255, 255, 0.60);
     color: white;
 }
 
 .home-activities-btn:hover {
-    background: rgba(255, 255, 255, 0.75); /* slightly brighter on hover */
+    background: rgba(255, 255, 255, 0.75);
     transform: translateY(-2px);
 }
 
 /* =========================================================
    ACTIVITY SECTION (UNDER PLEDGE)
 ========================================================= */
-
 .activity-section {
     width: 75%;
     margin: 60px auto;
@@ -116,7 +115,7 @@ body.home-bg::before {
 
 .mini-card {
     flex: 1;
-    background: rgba(10, 26, 58, 0.50); /* pledge card color */
+    background: rgba(10, 26, 58, 0.50);
     padding: 20px 0;
     text-align: center;
     font-size: 2rem;
@@ -162,7 +161,7 @@ body.home-bg::before {
 /* Learn More button */
 .activity-learn-btn {
     margin-top: 25px;
-    background: #2e8b57; /* same as JOIN NOW */
+    background: #2e8b57;
     padding: 14px 32px;
     font-size: 1.25rem;
     font-weight: 600;
@@ -178,24 +177,24 @@ body.home-bg::before {
     transform: translateY(-2px);
 }
 
-/* ---------------------------------------------
-   OLD OLD OLD PLEDGE CARD
---------------------------------------------- */
+/* =========================================================
+   PLEDGE CARD
+========================================================= */
 .pledge-card {
     position: relative;
     width: 75%;
-    margin: 0 auto;
-    background: rgba(10, 26, 58, 0.50); /* was 0.10 */
+    margin-left: 6.25%; /* NEW — aligns with title, subtext, buttons */
+    background: rgba(10, 26, 58, 0.50);
     padding: 30px 40px;
     border-radius: 12px;
     backdrop-filter: blur(2px);
-    text-align: left; /* NEW */
+    text-align: left;
 }
 
 .pledge-leaf-topright {
     position: absolute;
-    top: 10px;   /* was 20px */
-    left: 10px;  /* was 25px */
+    top: 10px;
+    left: 10px;
     width: 28px;
     height: auto;
 }
@@ -206,7 +205,7 @@ body.home-bg::before {
     font-weight: 700;
     letter-spacing: 1px;
     color: white;
-    margin-bottom: 20px; /* adds one clean line of space */
+    margin-bottom: 20px;
 }
 
 /* Text */
@@ -223,7 +222,7 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   HOMEPAGE ANNOUNCEMENT (LEFT / RIGHT)
+   OLD OLD OLD HOMEPAGE ANNOUNCEMENT (LEFT / RIGHT)
 ========================================================= */
 .home-announcement {
     display: flex;
