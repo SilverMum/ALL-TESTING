@@ -44,8 +44,10 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 
     margin-top: 9px;
-    margin-left: -15px;
-    margin-right: 4px;
+
+    /* widened card */
+    margin-left: -19px;
+    margin-right: 8px;
 }
 
 /* --------------------------------------------------
@@ -88,17 +90,17 @@
     color: white;
     text-align: center;
 
-    /* PERFECTED CUTOUT WINDOW — slightly more reveal */
+    /* CUTOUT WINDOW — 2px more reveal left/right */
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
         100% 100%,
         0 100%,
         0 28%,
-        5.7% 28%,     /* more open on left */
-        5.7% 88%,
-        94.3% 88%,    /* more open on right */
-        94.3% 28%,
+        5.4% 28%,     /* more open on left */
+        5.4% 88%,
+        94.6% 88%,    /* more open on right */
+        94.6% 28%,
         0 28%
     );
     clip-path: polygon(
@@ -107,10 +109,10 @@
         100% 100%,
         0 100%,
         0 28%,
-        5.7% 28%,
-        5.7% 88%,
-        94.3% 88%,
-        94.3% 28%,
+        5.4% 28%,
+        5.4% 88%,
+        94.6% 88%,
+        94.6% 28%,
         0 28%
     );
 }
