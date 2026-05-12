@@ -1,7 +1,6 @@
 /* =========================================================
    HOME PAGE BACKGROUND IMAGE (TREE LINE)
 ========================================================= */
-
 body.home-bg {
     background-image: url("../images/tree line bg.png");
     background-size: cover;
@@ -11,7 +10,7 @@ body.home-bg {
     position: relative;
 }
 
-/* White wash overlay (20% opacity) */
+/* --- DARK GREEN WASH OVERLAY --- */
 body.home-bg::before {
     content: "";
     position: fixed;
@@ -25,14 +24,17 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   PAGE TITLE — TWO LINES + SHADOW
+   PAGE TITLE + SUBTITLE + BUTTONS (TOP SECTION)
 ========================================================= */
+
+/* --- PAGE TITLE CONTAINER --- */
 .page-header {
     text-align: center;
     margin-bottom: 65px;
-    margin-left: 6.25%; /* NEW — halfway between old title and pledge card */
+    margin-left: 6.25%;
 }
 
+/* --- PAGE TITLE TEXT (WINDSOR / SPORTSMEN'S CLUB) --- */
 .page-header h1 {
     text-align: left !important;
     font-size: 5rem;
@@ -42,27 +44,24 @@ body.home-bg::before {
     text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
 }
 
-/* ---------------------------------------------
-   HOMEPAGE SUBTEXT
---------------------------------------------- */
+/* --- HOMEPAGE SUBTEXT UNDER TITLE --- */
 .home-subtext {
     font-size: 1.25rem;
     text-align: left;
     max-width: 50%;
-    margin: 10px 0 30px 6.25%; /* NEW — matches title */
+    margin: 10px 0 30px 6.25%;
     line-height: 1.5;
 }
 
-/* ---------------------------------------------
-   BUTTONS
---------------------------------------------- */
+/* --- BUTTON WRAPPER (JOIN + EXPLORE) --- */
 .home-member-btn-wrapper {
     text-align: left;
     margin-bottom: 40px;
     width: 75%;
-    margin-left: 6.25%; /* NEW — aligns with title + subtext */
+    margin-left: 6.25%;
 }
 
+/* --- BUTTON BASE STYLE --- */
 .home-member-btn,
 .home-activities-btn {
     display: inline-block;
@@ -75,7 +74,7 @@ body.home-bg::before {
     margin: 0 10px;
 }
 
-/* Green button */
+/* --- GREEN BUTTON (JOIN NOW) --- */
 .home-member-btn {
     background: #2e8b57;
     color: white;
@@ -86,7 +85,7 @@ body.home-bg::before {
     transform: translateY(-2px);
 }
 
-/* Grey button */
+/* --- GREY BUTTON (EXPLORE ACTIVITIES) --- */
 .home-activities-btn {
     background: rgba(255, 255, 255, 0.60);
     color: white;
@@ -98,17 +97,17 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   ACTIVITY SECTION (UNDER PLEDGE)
+   ACTIVITIES SECTION — TITLE + SUBTITLE
 ========================================================= */
-/* =========================================================
-   ACTIVITIES SECTION TITLE
-========================================================= */
+
+/* --- CENTERED SECTION HEADER --- */
 .activities-header {
-    text-align: center;      /* centered title + subtitle */
-    margin-left: 0;          /* remove left gutter */
+    text-align: center;
+    margin-left: 0;
     margin-bottom: 25px;
 }
 
+/* --- ACTIVITIES TITLE --- */
 .activities-header h2 {
     font-size: 3rem;
     font-weight: 700;
@@ -116,6 +115,7 @@ body.home-bg::before {
     margin-bottom: 8px;
 }
 
+/* --- ACTIVITIES SUBTITLE --- */
 .activities-header p {
     font-size: 1.3rem;
     color: white;
@@ -123,12 +123,17 @@ body.home-bg::before {
     line-height: 1.4;
 }
 
+/* =========================================================
+   ACTIVITY CARDS (MINI + BIG)
+========================================================= */
+
+/* --- ACTIVITY SECTION WRAPPER --- */
 .activity-section {
     width: 75%;
     margin: 60px auto;
 }
 
-/* TOP MINI CARDS */
+/* --- MINI CARDS ROW --- */
 .activity-mini-row {
     display: flex;
     justify-content: space-between;
@@ -136,6 +141,7 @@ body.home-bg::before {
     margin-bottom: 25px;
 }
 
+/* --- MINI CARD STYLE --- */
 .mini-card {
     flex: 1;
     background: rgba(10, 26, 58, 0.50);
@@ -154,7 +160,7 @@ body.home-bg::before {
     transform: translateY(-3px);
 }
 
-/* BIG CARD */
+/* --- BIG CARD --- */
 .activity-big-card {
     background: rgba(10, 26, 58, 0.50);
     padding: 40px;
@@ -162,7 +168,7 @@ body.home-bg::before {
     position: relative;
 }
 
-/* Info blocks */
+/* --- BIG CARD CONTENT BLOCKS --- */
 .activity-info {
     display: none;
 }
@@ -181,7 +187,7 @@ body.home-bg::before {
     line-height: 1.6;
 }
 
-/* Learn More button */
+/* --- LEARN MORE BUTTON --- */
 .activity-learn-btn {
     margin-top: 25px;
     background: #2e8b57;
@@ -203,10 +209,12 @@ body.home-bg::before {
 /* =========================================================
    PLEDGE CARD
 ========================================================= */
+
+/* --- PLEDGE CARD BOX --- */
 .pledge-card {
     position: relative;
     width: 75%;
-    margin-left: 6.25%; /* NEW — aligns with title, subtext, buttons */
+    margin-left: 6.25%;
     background: rgba(10, 26, 58, 0.50);
     padding: 30px 40px;
     border-radius: 12px;
@@ -214,6 +222,7 @@ body.home-bg::before {
     text-align: left;
 }
 
+/* --- LEAF ICON --- */
 .pledge-leaf-topright {
     position: absolute;
     top: 10px;
@@ -222,7 +231,7 @@ body.home-bg::before {
     height: auto;
 }
 
-/* Title */
+/* --- PLEDGE TITLE --- */
 .pledge-title {
     font-size: 1.4rem;
     font-weight: 700;
@@ -231,7 +240,7 @@ body.home-bg::before {
     margin-bottom: 20px;
 }
 
-/* Text */
+/* --- PLEDGE TEXT --- */
 .pledge-text {
     font-size: 1.25rem;
     line-height: 1.6;
@@ -245,8 +254,10 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   OLD OLD OLD HOMEPAGE ANNOUNCEMENT (LEFT / RIGHT)
+   (OLDER SECTIONS BELOW — STILL VALID)
 ========================================================= */
+
+/* --- OLD ANNOUNCEMENT LAYOUT --- */
 .home-announcement {
     display: flex;
     justify-content: space-between;
@@ -257,9 +268,7 @@ body.home-bg::before {
     padding: 0 20px;
 }
 
-/* =========================================================
-   LEFT SIDE — PLEDGE
-========================================================= */
+/* --- LEFT SIDE (OLD PLEDGE) --- */
 .home-left {
     flex: 1;
     text-align: center;
@@ -292,9 +301,7 @@ body.home-bg::before {
     line-height: 1.5;
 }
 
-/* =========================================================
-   RIGHT SIDE — LOGO + MEETING TEXT
-========================================================= */
+/* --- RIGHT SIDE (OLD MEETING CARD) --- */
 .home-right {
     flex: 1;
     display: flex;
@@ -377,25 +384,19 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   CARD 2 SCROLL
+   SCROLL AREAS (CARDS 2, 3, 7, 8)
 ========================================================= */
-#info2 .home-scroll-area {
+#info2 .home-scroll-area,
+#info3 .home-scroll-area,
+#info7 .home-scroll-area,
+#info8 .home-scroll-area {
     max-height: calc(70vh - 40px);
     overflow-y: auto;
     padding-right: 10px;
 }
 
 /* =========================================================
-   CARD 3 SCROLL
-========================================================= */
-#info3 .home-scroll-area {
-    max-height: calc(70vh - 40px);
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-/* =========================================================
-   CARD 3 PDF BUTTON AND LINK
+   PDF BUTTON
 ========================================================= */
 .pdf-button {
     width: 120px;
@@ -410,7 +411,7 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   CARD 4 — CAROUSEL (3 images only)
+   CARD 4 — IMAGE CAROUSEL
 ========================================================= */
 .card4-carousel {
     width: 100%;
@@ -445,7 +446,7 @@ body.home-bg::before {
     100% { opacity: 0; }
 }
 
-/* Invisible click layer */
+/* --- CLICK LAYER --- */
 .card4-click-layer {
     position: absolute;
     top: 0;
@@ -457,7 +458,7 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   CARD 4 — OVERLAY GRID (3 posters only)
+   CARD 4 — POSTER GRID
 ========================================================= */
 .card4-grid {
     display: grid;
@@ -488,24 +489,6 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   CARD 7 SCROLL
-========================================================= */
-#info7 .home-scroll-area {
-    max-height: calc(70vh - 40px);
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-/* =========================================================
-   CARD 8 SCROLL
-========================================================= */
-#info8 .home-scroll-area {
-    max-height: calc(70vh - 40px);
-    overflow-y: auto;
-    padding-right: 10px;
-}
-
-/* =========================================================
    FULL-SCREEN OVERLAYS
 ========================================================= */
 .home-overlay {
@@ -521,7 +504,7 @@ body.home-bg::before {
     z-index: 99999;
 }
 
-/* Poster overlays: no box, no scroll */
+/* --- POSTER OVERLAYS (NO BOX) --- */
 #poster1 .home-overlay-content,
 #poster2 .home-overlay-content,
 #poster3 .home-overlay-content {
@@ -533,7 +516,7 @@ body.home-bg::before {
     overflow: hidden !important;
 }
 
-/* Restore box for normal overlays */
+/* --- NORMAL OVERLAYS (INFO CARDS) --- */
 #info1 .home-overlay-content,
 #info2 .home-overlay-content,
 #info3 .home-overlay-content,
@@ -555,7 +538,7 @@ body.home-bg::before {
     position: relative;
 }
 
-/* Full-screen poster image */
+/* --- FULL POSTER IMAGE --- */
 .poster-full {
     height: 100vh;
     width: auto;
@@ -565,7 +548,7 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   X BUTTON — FIXED IN PLACE
+   OVERLAY CLOSE BUTTON
 ========================================================= */
 .home-close-wrapper {
     position: absolute;
@@ -601,7 +584,7 @@ body.home-bg::before {
 }
 
 /* =========================================================
-   MAP HOVER EFFECT
+   MAP SECTION
 ========================================================= */
 .map-wrapper {
     width: 50%;
