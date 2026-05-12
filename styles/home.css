@@ -44,11 +44,11 @@ body.home-bg::before {
 }
 
 .page-pretitle span {
-    font-size: 1.25rem;   /* same as old subtitle size */
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #2e8b57;       /* SAME GREEN AS JOIN NOW BUTTON */
+    color: #2e8b57 !important; /* FORCE green */
     letter-spacing: 1px;
-    text-transform: uppercase; /* ALL CAPS */
+    text-transform: uppercase;
 }
 
 /* --- PAGE TITLE CONTAINER --- */
