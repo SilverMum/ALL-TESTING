@@ -91,7 +91,6 @@
     text-align: center;
 
     /* PERFECTED CUTOUT WINDOW */
-   .form-mask {
     -webkit-clip-path: polygon(
         0 0,
         100% 0,
