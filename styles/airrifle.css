@@ -332,10 +332,9 @@
     font-weight: 600;
     margin: 15px 0;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25); /* subtle divider */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/* Slightly dimmer white for final line */
 .soft-white {
     color: rgba(255, 255, 255, 0.85);
 }
@@ -381,6 +380,7 @@
     opacity: 0.9;
     color: white;
 }
+
 
 /* -----------------------------------------
    PRICING — FULL WIDTH WRAPPER CARD
@@ -445,7 +445,7 @@
 }
 
 /* -----------------------------------------
-   RANGE DETAIL SUB-CARDS (stacked inside main card)
+   RANGE DETAIL SUB-CARDS
 ----------------------------------------- */
 .detail-card {
     background: rgba(60, 40, 25, 0.55);
@@ -453,45 +453,37 @@
     border-radius: 12px;
     margin-bottom: 25px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.35);
-    border-left: 8px solid transparent; /* color applied per card */
+    border-left: 8px solid transparent;
 }
 
-/* Title styling */
 .detail-title {
     font-size: 1.6rem;
     font-weight: 800;
     margin-bottom: 12px;
 }
 
-/* ORANGE-YELLOW TITLE + BORDER */
-.detail-title-orange {
-    color: #ffcc66; /* warm orange-yellow */
-}
+.detail-title-orange { color: #ffcc66; }
+.detail-orange { border-left-color: #ffcc66; }
 
-.detail-orange {
-    border-left-color: #ffcc66;
-}
+.detail-title-blue { color: #66b3ff; }
+.detail-blue { border-left-color: #66b3ff; }
 
-/* BLUE TITLE + BORDER */
-.detail-title-blue {
-    color: #66b3ff; /* soft bright blue */
-}
-
-.detail-blue {
-    border-left-color: #66b3ff;
-}
 
 /* =========================================================
    EXPERIENCE BLOCK
 ========================================================= */
 .experience-green {
-    background: #2e5c2e;
+    background: rgba(46, 92, 46, 0.55); /* softened opacity */
     padding: 20px;
     border-radius: 10px;
     margin-top: 25px;
     color: white;
     font-size: 1.2rem;
     line-height: 1.6;
+}
+
+.exp-green-title {
+    color: #7cd67c; /* green title text */
 }
 
 
