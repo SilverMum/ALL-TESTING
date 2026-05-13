@@ -1,238 +1,155 @@
-/* ------------------------------
-   AIR RIFLE — PAGE WRAPPER
---------------------------------*/
-.airrifle-wrapper {
-    max-width: 900px;
+/* PAGE WRAPPER */
+.airrifle-page {
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px 20px 60px;
+    padding: 40px 20px;
     text-align: center;
 }
 
-/* ------------------------------
-   TITLES & TEXT
---------------------------------*/
-.airrifle-title {
-    font-size: 3.8rem;
+/* HERO SECTION */
+.hero-title {
+    font-size: 4rem;
     font-weight: 800;
     color: white;
-    margin-bottom: 25px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    margin-bottom: 10px;
 }
 
-.airrifle-subtitle {
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* TWO CARD SECTION */
+.two-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 45%;
+    background: rgba(60, 40, 25, 0.45);
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    text-align: left;
+}
+
+.card-title {
     font-size: 1.8rem;
     font-weight: 700;
     color: white;
-    margin-bottom: 30px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-}
-
-.airrifle-subheader {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-top: 40px;
     margin-bottom: 15px;
-    color: white;
 }
 
-.airrifle-text {
-    font-size: 1.3rem;
+.card-text {
+    font-size: 1.2rem;
+    color: white;
     line-height: 1.6;
-    color: white;
-    margin-bottom: 20px;
 }
 
-/* ------------------------------
-   CALENDAR TITLE
---------------------------------*/
-.airrifle-calendar-title {
-    text-align: center;
+/* CALENDAR SECTION */
+.calendar-title {
     font-size: 2.2rem;
     font-weight: 700;
+    color: white;
     margin-bottom: 20px;
     text-decoration: underline;
-    text-decoration-color: white !important;
     text-underline-offset: 6px;
 }
 
-/* ------------------------------
-   CALENDAR IFRAME
---------------------------------*/
-iframe[src*="google.com/calendar"] {
-    display: block;
-    margin: 0 auto;
+.calendar-card {
+    background: rgba(60, 40, 25, 0.45);
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    margin-bottom: 60px;
+}
+
+.calendar-iframe {
     width: 100%;
-    max-width: 900px;
     height: 600px;
-    border: 0;
-}
-
-/* ------------------------------
-   CANCELLATION FORM
---------------------------------*/
-.airrifle-cancel {
-    max-width: 700px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(60, 40, 25, 1); /* solid dark oak */
+    border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    color: white;
 }
 
-.airrifle-cancel h2,
-.airrifle-cancel-intro {
-    text-align: center;
-    margin-bottom: 20px;
-    color: white;
+/* CANCELLATIONS */
+.cancellations {
+    margin-bottom: 60px;
 }
 
-.airrifle-cancel-form .field-row {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.airrifle-cancel-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: white;
-}
-
-.airrifle-cancel-form input,
-.airrifle-cancel-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
-    background: white;
+.cancel-title {
+    font-size: 32px;
+    font-weight: 800;
     color: black;
+    margin-bottom: 15px;
 }
 
-.airrifle-cancel-form .field-inline {
+.cancel-dates {
+    font-size: 22px;
+    color: white;
+    line-height: 1.6;
+}
+
+/* FORM CARD */
+.form-card {
+    background: rgba(60, 40, 25, 0.45);
+    padding: 40px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    text-align: left;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.cancel-form label {
+    color: white;
+    font-weight: 600;
+    margin-top: 15px;
+    display: block;
+}
+
+.cancel-form input,
+.cancel-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.checkbox-row {
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.airrifle-cancel-form .field-checkbox {
-    display: flex;
-    align-items: center;
+    margin-top: 20px;
     color: white;
 }
 
-.ac-submit {
+.submit-btn {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background: #b30000;
     color: white;
     border: none;
-    border-radius: 6px;
-    font-size: 18px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-top: 25px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.ac-submit:hover {
+.submit-btn:hover {
     background: #8a0000;
-}
-
-/* ------------------------------
-   PAGE BACKGROUND
---------------------------------*/
-.air-rifle-bg {
-    position: relative;
-    min-height: 100vh;
-    background: url('../images/air-rifle-background.jpg') center center / cover no-repeat fixed;
-}
-
-.air-rifle-bg::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.3);
-    z-index: -1;
-}
-
-/* Make all text white except nav */
-.air-rifle-bg *:not(.main-nav):not(.main-nav *):not(.main-nav a) {
-    color: white !important;
-}
-
-/* ------------------------------
-   DARK OAK CARD STYLE
---------------------------------*/
-.airrifle-card.outer-card {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: rgba(60, 40, 25, 0.40);
-    border-radius: 12px;
-    backdrop-filter: blur(4px);
-}
-
-.airrifle-card .inner-card {
-    background: rgba(80, 55, 35, 0.55);
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow:
-        0 4px 14px rgba(40, 25, 15, 0.45),
-        0 8px 28px rgba(40, 25, 15, 0.35);
-}
-
-/* ------------------------------
-   WIDE CALENDAR CARD (OPTIONAL)
---------------------------------*/
-.airrifle-card.outer-card.calendar-card {
-    max-width: 1050px;
-    padding: 25px 30px;
-}
-
-.airrifle-card.outer-card.calendar-card .inner-card {
-    padding: 35px;
-}
-
-/* Air Rifle – Cancellation Notice */
-.airrifle-cancel-notice {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.airrifle-cancel-notice-title {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: white;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    margin-bottom: 8px;
-}
-
-.airrifle-cancel-notice-dates {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: white;
-}
-
-/* ------------------------------
-   AIR RIFLE CANCELLATIONS — MATCH ARCHERY STYLE
---------------------------------*/
-.airrifle-cancellations {
-    text-align: center;
-    margin: 40px auto;
-    padding: 20px 0;
-}
-
-.airrifle-cancel-title {
-    font-size: 32px;        /* Matches Archery title size */
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: black;           /* kept from your original */
-    margin-top: 40px;       /* kept from your original */
-}
-
-.airrifle-dates {
-    font-size: 22px;        /* Matches Archery date text size */
-    line-height: 1.6;
-    white-space: pre-line;
 }
 
