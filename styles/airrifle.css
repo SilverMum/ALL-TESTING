@@ -172,20 +172,21 @@
 .hero { text-align: center; margin-bottom: 40px; }
 
 .hero-title {
-    font-size: 4.2rem;
-    font-weight: 800;
+    font-size: 4.5rem; /* 72px */
+    font-weight: 700; /* bold */
     color: white;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.55);
-    margin-bottom: 5px;
-    letter-spacing: 1px;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+    margin-bottom: 0;
+    letter-spacing: 0;
 }
 
 .hero-subtitle {
-    font-size: 3.2rem;
+    font-size: 4.5rem; /* match size for stacked title */
     font-weight: 700;
     color: white;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.55);
-    margin-bottom: 15px;
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+    margin-top: 0;
+    letter-spacing: 0;
 }
 
 .hero-tagline {
