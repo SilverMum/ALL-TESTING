@@ -230,6 +230,22 @@ body.home-bg::before {
     transform: translateY(-2px);
 }
 
+.join-community {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.join-community h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.join-community p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
 /* =========================================================
    PLEDGE CARD
 ========================================================= */
@@ -655,144 +671,5 @@ body.home-bg::before {
     padding: 20px;
     backdrop-filter: blur(4px);
     border: 3px solid rgba(255,255,255,0.15);
-}
-
-.contact-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 60px 0;
-    background: linear-gradient(135deg, #0a1a3a, #1f3d7a);
-}
-
-.contact-container {
-    width: 75%;
-    max-width: 900px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(8px);
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-    color: white;
-    text-align: left;
-}
-
-.contact-container h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.contact-container p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-    opacity: 0.9;
-}
-
-/* Wrapper for iframe + mask */
-.form-wrapper {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.google-form-frame {
-    width: 100%;
-    height: 900px;
-    border: none;
-    border-radius: 12px;
-    background: white;
-}
-
-/* Card over the form, with a window where fields show */
-.form-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 900px;
-    border-radius: 12px;
-    pointer-events: none;
-
-    background: rgba(10, 20, 40, 0.96);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 60px;
-    color: white;
-    text-align: center;
-
-    /* Cutout window — PERFECTED */
-    -webkit-clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 100%,
-        0 100%,
-        0 28%,
-        8% 28%,
-        8% 88%,
-        92% 88%,
-        92% 28%,
-        0 28%
-    );
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 100%,
-        0 100%,
-        0 28%,
-        8% 28%,
-        8% 88%,
-        92% 88%,
-        92% 28%,
-        0 28%
-    );
-}
-
-/* Bigger, centered title + subtitle */
-.mask-title {
-    font-size: 3.2rem;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.mask-subtitle {
-    font-size: 1.7rem;
-    font-weight: 400;
-    opacity: 0.95;
-    margin-top: 12px;
-    margin-bottom: 25px;
-    text-align: center;
-    max-width: 80%;
-}
-
-/* Thank You overlay — covers only the form area */
-#thankyou-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 900px;
-    background: rgba(0,0,0,0.75);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    z-index: 999;
-}
-
-.thankyou-card {
-    background: white;
-    padding: 40px 60px;
-    border-radius: 16px;
-    text-align: center;
-    font-size: 1.4rem;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-    max-width: 480px;
 }
 
