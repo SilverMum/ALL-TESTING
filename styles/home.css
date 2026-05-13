@@ -235,7 +235,7 @@ body.home-bg::before {
 ========================================================= */
 .membership-badge {
     text-align: center;
-    margin: 25px auto 10px auto; /* added top spacing */
+    margin: 35px auto 10px auto; /* increased top spacing */
 }
 .membership-badge span {
     display: inline-block;
@@ -256,21 +256,23 @@ body.home-bg::before {
     margin-bottom: 20px;
 }
 .join-community h2 {
-    font-size: 2rem; /* match Club Activities */
-    font-weight: bold;
+    font-size: 2.2rem; /* EXACT match to Club Activities */
+    font-weight: 700;
     margin-bottom: 8px;
 }
 .join-community p {
     font-size: 1.2rem;
     margin-top: 0;
+    text-align: center;
 }
 
 /* =========================================================
    MEMBERSHIP CARDS (VERTICAL STACK)
 ========================================================= */
 .membership-vertical {
-    display: flex !important;          /* force vertical */
-    flex-direction: column !important; /* force vertical */
+    display: flex !important;             /* override global flex */
+    flex-direction: column !important;    /* force vertical */
+    flex-wrap: nowrap !important;         /* prevent row wrapping */
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -278,8 +280,12 @@ body.home-bg::before {
     box-sizing: border-box;
 }
 
+/* =========================================================
+   INDIVIDUAL CARD
+========================================================= */
 .membership-vertical-card {
-    width: 100%;
+    width: 100% !important;               /* stop shrinking */
+    display: block !important;            /* override flex children */
     background: #ffffff;
     border-radius: 14px;
     padding: 25px;
