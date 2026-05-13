@@ -187,7 +187,7 @@
 .air-rifle-bg {
     position: relative;
     min-height: 100vh;
-    background: url('../images/airriflebgnew.png') center center / cover no-repeat fixed;
+    background: url('../images/airriflebgnew.png') center top / cover no-repeat fixed;
 }
 
 /* Soft white wash overlay */
