@@ -345,6 +345,41 @@
 }
 
 /* -----------------------------------------
+   ABOUT THE RANGE — FULL WIDTH CARD
+----------------------------------------- */
+.about-range {
+    background: rgba(60, 40, 25, 0.45);
+    padding: 40px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    margin: 60px 0;
+    text-align: left;
+}
+
+/* -----------------------------------------
+   TWO-CARD LAYOUT BELOW (Schedule + Expect)
+----------------------------------------- */
+.schedule-card,
+.expect-card {
+    width: 45%;
+    background: rgba(60, 40, 25, 0.45);
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    text-align: left;
+}
+
+/* Ensure spacing between the two cards */
+.two-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+/* -----------------------------------------
    PRICING SECTION — GREEN LEFT CARD, GREY RIGHT CARD
 ----------------------------------------- */
 .pricing-section {
