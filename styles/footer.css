@@ -3,14 +3,14 @@
 ========================================================= */
 .site-footer {
     width: 100%;
-    background: #1a1a1a; /* same as nav + homepage footer */
+    background: #1a1a1a; /* match nav color */
     color: white;
     text-align: center;
     padding: 40px 0;
     margin: 0; /* remove all spacing above/below */
     font-size: 1.1rem;
     line-height: 1.5;
-    border-top: 1px solid #ddd; /* matches nav border */
+    /* border-top removed to eliminate white line */
 }
 
 .site-footer p {
