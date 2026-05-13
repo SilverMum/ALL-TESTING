@@ -37,7 +37,7 @@
 }
 
 /* -----------------------------------------
-   TWO-CARD LAYOUT
+   TWO-CARD LAYOUT (ABOUT + SCHEDULE)
 ----------------------------------------- */
 .two-cards {
     display: flex;
@@ -60,6 +60,7 @@
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 15px;
+    color: white;
 }
 
 .card-text {
@@ -68,7 +69,33 @@
 }
 
 /* -----------------------------------------
-   WIDE CARD (FULL-WIDTH CONTENT BLOCKS)
+   GREEN HIGHLIGHT TEXT (Guardian must be present)
+----------------------------------------- */
+.green-highlight {
+    background: #2e5c2e;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+}
+
+/* -----------------------------------------
+   SCHEDULE CARD — GREEN TIME BLOCK
+----------------------------------------- */
+.schedule-time {
+    background: #2e5c2e;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 700;
+    color: white;
+    margin-top: 15px;
+}
+
+/* -----------------------------------------
+   WHAT TO EXPECT — RIGHT CARD
 ----------------------------------------- */
 .wide-card {
     background: rgba(60, 40, 25, 0.45);
@@ -80,6 +107,77 @@
     text-align: left;
 }
 
+.expect-italic-green {
+    color: #7cd67c;
+    font-style: italic;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+/* -----------------------------------------
+   PRICING SECTION — GREEN LEFT CARD, GREY RIGHT CARD
+----------------------------------------- */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px 0;
+}
+
+.price-card {
+    width: 45%;
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.price-card.green {
+    background: #2e5c2e;
+}
+
+.price-card.grey {
+    background: #4a4a4a;
+}
+
+.price-card .card-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 10px 0;
+    color: white;
+}
+
+.per {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color: white;
+}
+
+/* -----------------------------------------
+   RANGE DETAILS SECTION
+----------------------------------------- */
+.range-details {
+    background: rgba(60, 40, 25, 0.45);
+    padding: 40px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    margin: 60px 0;
+    text-align: left;
+}
+
+.range-details .card-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 .card-subtitle {
     font-size: 1.4rem;
     font-weight: 700;
@@ -87,13 +185,9 @@
     margin-bottom: 10px;
 }
 
-/* -----------------------------------------
-   BULLET LISTS
------------------------------------------ */
 .bullet-list {
     margin: 20px 0;
     padding-left: 20px;
-    text-align: left;
 }
 
 .bullet-list li {
@@ -102,35 +196,39 @@
 }
 
 /* -----------------------------------------
-   PRICING CARDS
+   GREEN EXPERIENCE BLOCK
 ----------------------------------------- */
-.price {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 10px 0;
-}
-
-.per {
+.experience-green {
+    background: #2e5c2e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    color: white;
     font-size: 1.2rem;
-    opacity: 0.9;
+    line-height: 1.6;
 }
 
 /* -----------------------------------------
-   CANCELLATIONS SECTION
+   CANCELLATIONS — RED CARD
 ----------------------------------------- */
 .cancellations {
+    background: rgba(120, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 14px;
     margin: 60px 0;
+    text-align: center;
 }
 
 .cancel-title {
-    font-size: 32px;
+    font-size: 2.2rem;
     font-weight: 800;
-    color: black;
+    color: white;
     margin-bottom: 15px;
 }
 
 .cancel-dates {
-    font-size: 22px;
+    font-size: 1.6rem;
     line-height: 1.6;
+    color: white;
 }
 
