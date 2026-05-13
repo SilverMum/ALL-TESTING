@@ -774,3 +774,16 @@ body.home-bg::before {
     border: 3px solid rgba(255,255,255,0.15);
 }
 
+/* FORCE the membership section to ignore global flex rules */
+.membership-vertical {
+    display: block !important;
+    width: 100% !important;
+}
+
+/* FORCE the cards to stack vertically */
+.membership-vertical-card {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+}
