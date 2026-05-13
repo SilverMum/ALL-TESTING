@@ -379,6 +379,66 @@
     margin: 60px 0;
 }
 
+/* Main schedule card (outer container) */
+.schedule-card {
+    background: rgba(60, 40, 25, 0.45);
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* Wrapper for the two inner cards */
+.schedule-inner {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* space between the two inner cards */
+    align-items: center;
+}
+
+/* Top brown card */
+.schedule-top-card {
+    background: rgba(60, 40, 25, 0.75);
+    padding: 15px 20px;
+    border-radius: 10px;
+    width: 85%; /* slightly inset from the main card */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+}
+
+/* Text inside top card */
+.schedule-day {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 2px; /* removes big gap */
+}
+
+.schedule-weather {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: white;
+    opacity: 0.9;
+    margin: 0; /* no extra spacing */
+}
+
+/* Bottom green card */
+.schedule-time-card {
+    background: #2e5c2e;
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 85%; /* same width as top card */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+}
+
+.schedule-time {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
 /* -----------------------------------------
    PRICING SECTION — GREEN LEFT CARD, GREY RIGHT CARD
 ----------------------------------------- */
