@@ -4361,3 +4361,16 @@ body.home main {
         border-radius: 8px;
     }
 }
+
+/* FINAL OVERRIDE — FORCE VERTICAL STACKING ONLY ON THIS PAGE */
+#membershiphomesectionvertical3 .membership-vertical {
+    display: block !important;
+    width: 100% !important;
+}
+
+#membershiphomesectionvertical3 .membership-vertical-card {
+    display: block !important;
+    width: 100% !important;
+    float: none !important;
+    clear: both !important;
+}
