@@ -222,3 +222,21 @@ iframe[src*="google.com/calendar"] {
     color: white;
 }
 
+/* AIR RIFLE CANCELLATIONS — MATCH ARCHERY STYLE */
+.airrifle-cancellations {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+.airrifle-cancel-title {
+    font-size: 32px;        /* Matches Archery title size */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.airrifle-dates {
+    font-size: 22px;        /* Matches Archery date text size */
+    line-height: 1.6;       /* Ensures vertical stacking with spacing */
+    white-space: pre-line;  /* Allows line breaks to render properly */
+}
