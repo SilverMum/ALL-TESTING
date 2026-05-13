@@ -1,6 +1,6 @@
-/* ------------------------------
+/* =========================================================
    NAVIGATION
---------------------------------*/
+========================================================= */
 .main-nav {
     position: fixed;
     top: 0;
@@ -9,7 +9,7 @@
     z-index: 2000;
     display: flex;
     align-items: center;
-    justify-content: center; /* centered nav */
+    justify-content: center;
     padding: 10px 0;
     background-color: #1a1a1a;
     border-bottom: 1px solid #ddd;
@@ -37,7 +37,6 @@
     position: relative;
 }
 
-/* Base nav link style */
 .nav-links a {
     padding: 10px 14px;
     font-size: 1.2rem;
@@ -49,27 +48,21 @@
     white-space: nowrap;
 }
 
-/* Dark hover style for TOP NAV (matches dropdown) */
 .nav-links > li > a:hover {
     background-color: #333 !important;
     color: #fff !important;
-    box-shadow: none;
     transform: translateY(-2px);
 }
 
-/* Make the Members submenu arrow white */
 .submenu-toggle {
     color: #fff !important;
 }
 
-/* ------------------------------
-   TRAP & SKEET TWO-LINE ITEM
---------------------------------*/
+/* Trap & Skeet two-line item */
 .nav-trap-skeet a {
     font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
-    text-decoration: none;
     padding: 10px 14px;
     line-height: 1.1;
     display: inline-block;
@@ -83,12 +76,8 @@
     color: #fff;
 }
 
-/* ------------------------------
-   DROPDOWN MENU (Unified Dark Theme)
---------------------------------*/
-.dropdown {
-    position: relative;
-}
+/* Dropdown menus */
+.dropdown { position: relative; }
 
 .dropdown-menu {
     display: none;
@@ -104,9 +93,7 @@
     z-index: 2100;
 }
 
-.dropdown:hover > .dropdown-menu {
-    display: block;
-}
+.dropdown:hover > .dropdown-menu { display: block; }
 
 .dropdown-menu a {
     display: block;
@@ -114,8 +101,6 @@
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff !important;
-    text-decoration: none;
-    transition: all 0.2s ease;
     white-space: normal;
 }
 
@@ -124,16 +109,8 @@
     color: #fff;
 }
 
-/* ------------------------------
-   RIGHT-SIDE SUBMENU (Members)
---------------------------------*/
-.nav-links li.dropdown-sub {
-    position: relative;
-}
-
-.dropdown-sub > a {
-    padding-right: 18px;
-}
+/* Right-side submenu */
+.dropdown-sub { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
 
 .submenu-right {
     display: none;
@@ -142,48 +119,25 @@
     left: 100%;
     min-width: 200px;
     padding: 8px 0;
-    list-style: none;
     background-color: #1a1a1a !important;
     border: none !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     z-index: 2200;
 }
 
-.dropdown-sub:hover > .submenu-right {
-    display: block;
-}
+.dropdown-sub:hover > .submenu-right { display: block; }
 
 .submenu-right a {
-    display: block;
     padding: 10px 18px;
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff !important;
-    text-decoration: none;
-    white-space: nowrap;
 }
 
-.submenu-right a:hover {
-    background-color: #333;
-    color: #fff;
-}
 
-/* Keep Members text + arrow aligned */
-.dropdown-sub {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-}
-
-.submenu-link,
-.submenu-toggle {
-    display: inline-block;
-}
-
-/* -----------------------------------------
-   PAGE BACKGROUND — UPDATED
------------------------------------------ */
+/* =========================================================
+   PAGE BACKGROUND
+========================================================= */
 .air-rifle-bg {
     position: relative;
     min-height: 100vh;
@@ -194,13 +148,14 @@
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(60, 40, 25, 0.20); /* 20% brown wash */
+    background: rgba(60, 40, 25, 0.20);
     z-index: -1;
 }
 
-/* -----------------------------------------
+
+/* =========================================================
    PAGE WRAPPER
------------------------------------------ */
+========================================================= */
 .airrifle-desktop {
     max-width: 1100px;
     margin: 0 auto;
@@ -210,16 +165,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* -----------------------------------------
-   HERO SECTION (Matches reference image)
------------------------------------------ */
 
-.hero {
-    text-align: center;
-    margin-bottom: 40px;
-}
+/* =========================================================
+   HERO SECTION
+========================================================= */
+.hero { text-align: center; margin-bottom: 40px; }
 
-/* Main Title */
 .hero-title {
     font-size: 4.2rem;
     font-weight: 800;
@@ -229,7 +180,6 @@
     letter-spacing: 1px;
 }
 
-/* Subtitle */
 .hero-subtitle {
     font-size: 3.2rem;
     font-weight: 700;
@@ -238,7 +188,6 @@
     margin-bottom: 15px;
 }
 
-/* Tagline */
 .hero-tagline {
     font-size: 1.6rem;
     font-weight: 500;
@@ -247,7 +196,6 @@
     text-shadow: 0 3px 8px rgba(0,0,0,0.45);
 }
 
-/* Brown Info Card */
 .hero-info-card {
     display: inline-block;
     background: rgba(60, 40, 25, 0.55);
@@ -258,7 +206,6 @@
     margin-top: 10px;
 }
 
-/* Info Text */
 .hero-info {
     font-size: 1.3rem;
     color: white;
@@ -266,23 +213,17 @@
     font-weight: 600;
 }
 
-/* -----------------------------------------
-   TWO-CARD LAYOUT (ABOUT + SCHEDULE)
------------------------------------------ */
-.two-cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 60px 0;
-}
 
-.card {
-    width: 45%;
+/* =========================================================
+   ABOUT THE RANGE — FULL WIDTH CARD
+========================================================= */
+.about-range {
     background: rgba(60, 40, 25, 0.45);
-    padding: 30px;
+    padding: 40px;
     border-radius: 14px;
     backdrop-filter: blur(4px);
     box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    margin: 60px 0;
     text-align: left;
 }
 
@@ -298,68 +239,28 @@
     line-height: 1.6;
 }
 
-/* -----------------------------------------
-   GREEN HIGHLIGHT TEXT (Guardian must be present)
------------------------------------------ */
+/* Guardian text — green text only */
 .green-highlight {
-    background: #2e5c2e;
-    padding: 6px 10px;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: 700;
-    color: white;
-    margin-top: 10px;
-}
-
-/* -----------------------------------------
-   SCHEDULE CARD — GREEN TIME BLOCK
------------------------------------------ */
-.schedule-time {
-    background: #2e5c2e;
-    padding: 6px 10px;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: 700;
-    color: white;
-    margin-top: 15px;
-}
-
-/* -----------------------------------------
-   WHAT TO EXPECT — RIGHT CARD
------------------------------------------ */
-.wide-card {
-    background: rgba(60, 40, 25, 0.45);
-    padding: 40px;
-    border-radius: 14px;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-    margin: 60px 0;
-    text-align: left;
-}
-
-.expect-italic-green {
     color: #7cd67c;
-    font-style: italic;
-    font-weight: 600;
-    margin: 15px 0;
+    font-weight: 700;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    display: inline;
+    margin-left: 6px;
 }
 
-/* -----------------------------------------
-   ABOUT THE RANGE — FULL WIDTH CARD
------------------------------------------ */
-.about-range {
-    background: rgba(60, 40, 25, 0.45);
-    padding: 40px;
-    border-radius: 14px;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+
+/* =========================================================
+   TWO-CARD LAYOUT (Schedule + Expect)
+========================================================= */
+.two-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     margin: 60px 0;
-    text-align: left;
 }
 
-/* -----------------------------------------
-   TWO-CARD LAYOUT BELOW (Schedule + Expect)
------------------------------------------ */
 .schedule-card,
 .expect-card {
     width: 45%;
@@ -368,51 +269,34 @@
     border-radius: 14px;
     backdrop-filter: blur(4px);
     box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-    text-align: left;
-}
-
-/* Ensure spacing between the two cards */
-.two-cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 60px 0;
-}
-
-/* Main schedule card (outer container) */
-.schedule-card {
-    background: rgba(60, 40, 25, 0.45);
-    padding: 30px;
-    border-radius: 14px;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
     text-align: center;
 }
 
-/* Wrapper for the two inner cards */
+
+/* =========================================================
+   SCHEDULE — STACKED CARDS
+========================================================= */
 .schedule-inner {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* space between the two inner cards */
+    gap: 15px;
     align-items: center;
 }
 
-/* Top brown card */
 .schedule-top-card {
     background: rgba(60, 40, 25, 0.75);
     padding: 15px 20px;
     border-radius: 10px;
-    width: 85%; /* slightly inset from the main card */
+    width: 85%;
     box-shadow: 0 3px 10px rgba(0,0,0,0.35);
 }
 
-/* Text inside top card */
 .schedule-day {
     font-size: 1.4rem;
     font-weight: 700;
     color: white;
-    margin-bottom: 2px; /* removes big gap */
+    margin-bottom: 2px;
 }
 
 .schedule-weather {
@@ -420,15 +304,14 @@
     font-style: italic;
     color: white;
     opacity: 0.9;
-    margin: 0; /* no extra spacing */
+    margin: 0;
 }
 
-/* Bottom green card */
 .schedule-time-card {
     background: #2e5c2e;
     padding: 12px 20px;
     border-radius: 10px;
-    width: 85%; /* same width as top card */
+    width: 85%;
     box-shadow: 0 3px 10px rgba(0,0,0,0.35);
 }
 
@@ -439,9 +322,21 @@
     margin: 0;
 }
 
-/* -----------------------------------------
-   PRICING SECTION — GREEN LEFT CARD, GREY RIGHT CARD
------------------------------------------ */
+
+/* =========================================================
+   WHAT TO EXPECT — RIGHT CARD
+========================================================= */
+.expect-italic-green {
+    color: #7cd67c;
+    font-style: italic;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+
+/* =========================================================
+   PRICING SECTION
+========================================================= */
 .pricing-section {
     display: flex;
     justify-content: center;
@@ -458,13 +353,8 @@
     text-align: center;
 }
 
-.price-card.green {
-    background: #2e5c2e;
-}
-
-.price-card.grey {
-    background: #4a4a4a;
-}
+.price-card.green { background: #2e5c2e; }
+.price-card.grey { background: #4a4a4a; }
 
 .price-card .card-title {
     color: white;
@@ -485,9 +375,10 @@
     color: white;
 }
 
-/* -----------------------------------------
-   RANGE DETAILS SECTION
------------------------------------------ */
+
+/* =========================================================
+   RANGE DETAILS
+========================================================= */
 .range-details {
     background: rgba(60, 40, 25, 0.45);
     padding: 40px;
@@ -520,9 +411,10 @@
     margin-bottom: 8px;
 }
 
-/* -----------------------------------------
-   GREEN EXPERIENCE BLOCK
------------------------------------------ */
+
+/* =========================================================
+   EXPERIENCE BLOCK
+========================================================= */
 .experience-green {
     background: #2e5c2e;
     padding: 20px;
@@ -533,9 +425,10 @@
     line-height: 1.6;
 }
 
-/* -----------------------------------------
-   CANCELLATIONS — RED CARD
------------------------------------------ */
+
+/* =========================================================
+   CANCELLATIONS
+========================================================= */
 .cancellations {
     background: rgba(120, 0, 0, 0.75);
     padding: 40px;
