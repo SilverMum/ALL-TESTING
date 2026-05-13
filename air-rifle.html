@@ -78,170 +78,80 @@
 <!-- ⭐ PAGE CONTENT -->
 <main class="content-section">
 
-<section class="airrifle-wrapper">
+<div class="airrifle-page">
 
-    <!-- CARD 1 — Title + Intro -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <h1 class="airrifle-title">Windsor Sportsmen's Air Rifle Range</h1>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1 class="hero-title">Air Rifle</h1>
+        <p class="hero-subtitle">Windsor Sportsmen’s Club</p>
+    </section>
 
-            <p class="airrifle-text">
-                Sharpen Your Skills, Have Some Fun!<br>
-                Windsor Sportsmen's Club, 2401 Dougall, Windsor, Ontario.<br>
-                June 3rd - September 9th.
+    <!-- TWO CARD SECTION -->
+    <section class="two-cards">
+        <div class="card">
+            <h2 class="card-title">About the Program</h2>
+            <p class="card-text">
+                The Air Rifle program provides a safe, structured environment for youth and beginners.
+                All equipment is provided, and trained volunteers supervise every session.
             </p>
         </div>
-    </div>
 
-    <!-- CARD 2 — About the Range -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <h2 class="airrifle-subheader">About the Range</h2>
-            <p class="airrifle-text">
-                Experience our exciting outdoor air rifle range! We offer a variety of paper and mechanical steel targets set at distances ranging from 10 to 20 meters. Perfect for junior shooters (10 years and up), Guardian must be present.
+        <div class="card">
+            <h2 class="card-title">Program Details</h2>
+            <p class="card-text">
+                Indoor range • Weekly sessions • Ages 8+ welcome  
+                Focus on safety, accuracy, and confidence building.
             </p>
         </div>
-    </div>
+    </section>
 
-    <!-- CARD 3 — Schedule -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <h2 class="airrifle-subheader">Schedule</h2>
-            <p class="airrifle-text">
-                Wednesdays (weather permitting)<br>
-                5:30PM - 7.00PM<br>
-            </p>
+    <!-- CALENDAR SECTION -->
+    <section class="calendar-section">
+        <h2 class="calendar-title">Air Rifle Calendar</h2>
+
+        <div class="calendar-card">
+            <iframe 
+                src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_URL"
+                class="calendar-iframe">
+            </iframe>
         </div>
-    </div>
+    </section>
 
-    <!-- CARD 4 — What to Expect -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <h2 class="airrifle-subheader">What to Expect</h2>
-            <p class="airrifle-text">
-                We provide a safe and fun environment for young shooters to learn and practice their skills. The safety lessons learned here will ensure they enjoy shooting sports responsibly.
-            </p>
+    <!-- CANCELLATIONS SECTION -->
+    <section class="cancellations">
+        <h2 class="cancel-title">Air Rifle Cancellations</h2>
+        <p class="cancel-dates">
+            May 14th 2026<br>
+            June 4th 2026
+        </p>
+    </section>
 
-            <p class="airrifle-text">
-                Participants take turns at the range. One round (20 shots) per turn.
-            </p>
-        </div>
-    </div>
+    <!-- FORM CARD -->
+    <section class="form-card">
+        <h2 class="form-title">Cancellation Form</h2>
 
-    <!-- CARD 5 — Pricing -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <h2 class="airrifle-subheader">Pricing</h2>
-            <p class="airrifle-text">
-                <strong>Club Members:</strong> $3.00 / per 20 Shots<br>
-                <strong>Non‑Club Members:</strong> $5.00 / per 20 Shots
-            </p>
-        </div>
-    </div>
+        <form class="cancel-form">
+            <label>Name</label>
+            <input type="text">
 
-    <!-- CARD 6 — Range Details (Paper Targets) -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <h2 class="airrifle-subheader">Range Details</h2>
-            <p class="airrifle-text">
-                <strong>10m Paper Targets:</strong> Shoot from bench‑rest or unsparupported positions. Analyze your results by coming point of impact and group size.
-            </p>
-        </div>
-    </div>
+            <label>Email</label>
+            <input type="email">
 
-    <!-- CARD 7 — Range Details (Knock‑Down Targets) -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <p class="airrifle-text">
-                <strong>10m‑20m Knock‑Down Targets:</strong> Steel targets with automatic reset. Practice from sitting, kneeling, prone, or standing positions. Develop core stability, controlled breathing, and target engagement skills. Challenge yourself to compensate for wind conditions!
-            </p>
-        </div>
-    </div>
+            <label>Date of Cancellation</label>
+            <input type="date">
 
-    <!-- CARD 8 — Experience the Difference -->
-    <div class="airrifle-card outer-card">
-        <div class="inner-card">
-            <p class="airrifle-text">
-                <strong>Experience the Difference:</strong> Our match‑grade air rifles provide an excellent platform for skill development. Learn while having fun at Windsor Sportsmen's Air Rifle Range!
-            </p>
-        </div>
-    </div>
+            <label>Reason</label>
+            <textarea rows="4"></textarea>
 
-</section>
+            <label class="checkbox-row">
+                <input type="checkbox"> I confirm this cancellation
+            </label>
 
-    <!-- AIR RIFLE CANCELLATIONS -->
-<section class="airrifle-cancellations">
-    <h2 class="airrifle-cancel-title">Air Rifle Cancellations</h2>
+            <button class="submit-btn">Submit</button>
+        </form>
+    </section>
 
-    <div class="airrifle-dates">
-        July 1st 2026<br>
-        July 8th 2026
-    </div>
-</section>
-
-<!-- AIR RIFLE CALENDAR (now wrapped in card) -->
-<div class="airrifle-card outer-card calendar-card">
-    <div class="inner-card">
-
-        <h2 class="airrifle-calendar-title">Air Rifle Calendar 2026</h2>
-
-        <iframe 
-            src="https://calendar.google.com/calendar/embed?src=f3b6f6b1111372d609000aec2b6287dc6f1d0ae44ccdaae4ce23d8dfacf1cb26%40group.calendar.google.com&ctz=America%2FToronto&showPrint=0&showTabs=0&showCalendars=0&showTz=0"
-            style="border:0"
-            frameborder="0"
-            scrolling="no">
-        </iframe>
-
-    </div>
 </div>
-
-<!-- CONTACT AIR-RIFLE (unchanged) -->
-<section class="airrifle-cancellations">
-    <h2 class="airrifle-cancel-title">Contact Air Rifle</h2>
-</section>
-
-<section class="airrifle-cancel">
-  <h2>Contact Air Rifle</h2>
-  <p class="airrifle-cancel-intro">
-    Have a question about Air Rifle? Send us a message below and it will be delivered directly to the coordinator.
-  </p>
-
-  <form class="airrifle-cancel-form" action="https://formsubmit.co/WSC-Air-Rifle@outlook.com" method="POST">
-    <div class="field-row">
-      <label for="ar-name">Name</label>
-      <input type="text" id="ar-name" name="name" placeholder="Your Name" required>
-    </div>
-
-    <div class="field-row">
-      <label for="ar-email">Email</label>
-      <input type="email" id="ar-email" name="email" placeholder="Your Email" required>
-    </div>
-
-    <div class="field-row">
-      <label for="ar-subject">Subject</label>
-      <input type="text" id="ar-subject" name="subject" placeholder="e.g. Question about Air Rifle" required>
-    </div>
-
-    <div class="field-row">
-      <label for="ar-message">Message</label>
-      <textarea id="ar-message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
-    </div>
-
-    <div class="field-row field-inline">
-      <label for="ar-captcha">3 + 4 = ?</label>
-      <input type="text" id="ar-captcha" name="captcha" placeholder="Your answer" required>
-    </div>
-
-    <div class="field-row field-checkbox">
-      <label>
-        <input type="checkbox" name="consent" required>
-        I agree that my information may be used to process this inquiry.
-      </label>
-    </div>
-
-    <button type="submit" class="ac-submit">Send Message</button>
-  </form>
-</section>
 
 </main>
 
