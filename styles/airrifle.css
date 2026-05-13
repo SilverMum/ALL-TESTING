@@ -219,7 +219,7 @@
    ABOUT THE RANGE — FULL WIDTH CARD
 ========================================================= */
 .about-range {
-    background: rgba(60, 40, 25, 0.45);
+    background: rgba(60, 40, 25, 0.65);
     padding: 40px;
     border-radius: 14px;
     backdrop-filter: blur(4px);
@@ -265,7 +265,7 @@
 .schedule-card,
 .expect-card {
     width: 45%;
-    background: rgba(60, 40, 25, 0.45);
+    background: rgba(60, 40, 25, 0.65);
     padding: 30px;
     border-radius: 14px;
     backdrop-filter: blur(4px);
@@ -387,7 +387,7 @@
    PRICING — FULL WIDTH WRAPPER CARD
 ----------------------------------------- */
 .pricing-wrapper {
-    background: rgba(60, 40, 25, 0.45);
+    background: rgba(60, 40, 25, 0.65);
     padding: 40px;
     border-radius: 14px;
     backdrop-filter: blur(4px);
@@ -414,7 +414,7 @@
    RANGE DETAILS
 ========================================================= */
 .range-details {
-    background: rgba(60, 40, 25, 0.45);
+    background: rgba(60, 40, 25, 0.65);
     padding: 40px;
     border-radius: 14px;
     backdrop-filter: blur(4px);
