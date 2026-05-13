@@ -1,31 +1,49 @@
-/* PAGE WRAPPER */
-.airrifle-page {
+/* -----------------------------------------
+   PAGE WRAPPER
+----------------------------------------- */
+.airrifle-desktop {
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* HERO SECTION */
-.hero-title {
+/* -----------------------------------------
+   HERO SECTION
+----------------------------------------- */
+.hero-top {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.hero-main {
     font-size: 4rem;
     font-weight: 800;
-    color: white;
     margin-bottom: 10px;
 }
 
-.hero-subtitle {
-    font-size: 1.8rem;
-    color: white;
-    margin-bottom: 50px;
+.hero-tagline {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
 }
 
-/* TWO CARD SECTION */
+.hero-location,
+.hero-dates {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+/* -----------------------------------------
+   TWO-CARD LAYOUT
+----------------------------------------- */
 .two-cards {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 60px;
+    margin: 60px 0;
 }
 
 .card {
@@ -41,45 +59,67 @@
 .card-title {
     font-size: 1.8rem;
     font-weight: 700;
-    color: white;
     margin-bottom: 15px;
 }
 
 .card-text {
     font-size: 1.2rem;
-    color: white;
     line-height: 1.6;
 }
 
-/* CALENDAR SECTION */
-.calendar-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-
-.calendar-card {
+/* -----------------------------------------
+   WIDE CARD (FULL-WIDTH CONTENT BLOCKS)
+----------------------------------------- */
+.wide-card {
     background: rgba(60, 40, 25, 0.45);
-    padding: 30px;
+    padding: 40px;
     border-radius: 14px;
     backdrop-filter: blur(4px);
     box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-    margin-bottom: 60px;
+    margin: 60px 0;
+    text-align: left;
 }
 
-.calendar-iframe {
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 10px;
+.card-subtitle {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* CANCELLATIONS */
+/* -----------------------------------------
+   BULLET LISTS
+----------------------------------------- */
+.bullet-list {
+    margin: 20px 0;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.bullet-list li {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+/* -----------------------------------------
+   PRICING CARDS
+----------------------------------------- */
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.per {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* -----------------------------------------
+   CANCELLATIONS SECTION
+----------------------------------------- */
 .cancellations {
-    margin-bottom: 60px;
+    margin: 60px 0;
 }
 
 .cancel-title {
@@ -91,65 +131,6 @@
 
 .cancel-dates {
     font-size: 22px;
-    color: white;
     line-height: 1.6;
-}
-
-/* FORM CARD */
-.form-card {
-    background: rgba(60, 40, 25, 0.45);
-    padding: 40px;
-    border-radius: 14px;
-    backdrop-filter: blur(4px);
-    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
-    text-align: left;
-}
-
-.form-title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.cancel-form label {
-    color: white;
-    font-weight: 600;
-    margin-top: 15px;
-    display: block;
-}
-
-.cancel-form input,
-.cancel-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-}
-
-.checkbox-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    color: white;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 14px;
-    background: #b30000;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    margin-top: 25px;
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    background: #8a0000;
 }
 
