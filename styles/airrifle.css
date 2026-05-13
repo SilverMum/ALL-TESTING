@@ -444,6 +444,42 @@
     margin-bottom: 8px;
 }
 
+/* -----------------------------------------
+   RANGE DETAIL SUB-CARDS (stacked inside main card)
+----------------------------------------- */
+.detail-card {
+    background: rgba(60, 40, 25, 0.55);
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.35);
+    border-left: 8px solid transparent; /* color applied per card */
+}
+
+/* Title styling */
+.detail-title {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+/* ORANGE-YELLOW TITLE + BORDER */
+.detail-title-orange {
+    color: #ffcc66; /* warm orange-yellow */
+}
+
+.detail-orange {
+    border-left-color: #ffcc66;
+}
+
+/* BLUE TITLE + BORDER */
+.detail-title-blue {
+    color: #66b3ff; /* soft bright blue */
+}
+
+.detail-blue {
+    border-left-color: #66b3ff;
+}
 
 /* =========================================================
    EXPERIENCE BLOCK
