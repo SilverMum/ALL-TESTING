@@ -211,29 +211,59 @@
 }
 
 /* -----------------------------------------
-   HERO SECTION
+   HERO SECTION (Matches reference image)
 ----------------------------------------- */
-.hero-top {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 5px;
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.hero-main {
-    font-size: 4rem;
+/* Main Title */
+.hero-title {
+    font-size: 4.2rem;
     font-weight: 800;
-    margin-bottom: 10px;
+    color: white;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.55);
+    margin-bottom: 5px;
+    letter-spacing: 1px;
 }
 
+/* Subtitle */
+.hero-subtitle {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.55);
+    margin-bottom: 15px;
+}
+
+/* Tagline */
 .hero-tagline {
     font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
     margin-bottom: 25px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.45);
 }
 
-.hero-location,
-.hero-dates {
+/* Brown Info Card */
+.hero-info-card {
+    display: inline-block;
+    background: rgba(60, 40, 25, 0.55);
+    padding: 15px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    backdrop-filter: blur(3px);
+    margin-top: 10px;
+}
+
+/* Info Text */
+.hero-info {
     font-size: 1.3rem;
-    margin-bottom: 8px;
+    color: white;
+    margin: 5px 0;
+    font-weight: 600;
 }
 
 /* -----------------------------------------
