@@ -3,13 +3,14 @@
 ========================================================= */
 .site-footer {
     width: 100%;
-    background: #0a1a3a;
+    background: #1a1a1a; /* match nav color */
     color: white;
     text-align: center;
     padding: 40px 0;
-    margin-top: 60px;
+    margin: 0; /* remove top/bottom spacing */
     font-size: 1.1rem;
     line-height: 1.5;
+    border-top: 1px solid #ddd; /* match nav bottom border */
 }
 
 .site-footer p {
