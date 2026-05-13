@@ -190,12 +190,11 @@
     background: url('../images/airriflebgnew.png') center top / cover no-repeat fixed;
 }
 
-/* Soft white wash overlay */
 .air-rifle-bg::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.30);
+    background: rgba(60, 40, 25, 0.20); /* 20% brown wash */
     z-index: -1;
 }
 
