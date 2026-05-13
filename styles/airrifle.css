@@ -70,15 +70,6 @@ iframe[src*="google.com/calendar"] {
 /* ------------------------------
    CANCELLATION FORM
 --------------------------------*/
-.airrifle-cancel-title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    color: black;
-}
-
 .airrifle-cancel {
     max-width: 700px;
     margin: 40px auto;
@@ -209,8 +200,8 @@ iframe[src*="google.com/calendar"] {
 }
 
 .airrifle-cancel-notice-title {
-    font-size: 2.2rem;      /* title size */
-    font-weight: 800;       /* bold */
+    font-size: 2.2rem;
+    font-weight: 800;
     color: white;
     text-shadow: 0 2px 6px rgba(0,0,0,0.4);
     margin-bottom: 8px;
@@ -222,7 +213,9 @@ iframe[src*="google.com/calendar"] {
     color: white;
 }
 
-/* AIR RIFLE CANCELLATIONS — MATCH ARCHERY STYLE */
+/* ------------------------------
+   AIR RIFLE CANCELLATIONS — MATCH ARCHERY STYLE
+--------------------------------*/
 .airrifle-cancellations {
     text-align: center;
     margin: 40px auto;
@@ -233,10 +226,13 @@ iframe[src*="google.com/calendar"] {
     font-size: 32px;        /* Matches Archery title size */
     font-weight: bold;
     margin-bottom: 20px;
+    color: black;           /* kept from your original */
+    margin-top: 40px;       /* kept from your original */
 }
 
 .airrifle-dates {
     font-size: 22px;        /* Matches Archery date text size */
-    line-height: 1.6;       /* Ensures vertical stacking with spacing */
-    white-space: pre-line;  /* Allows line breaks to render properly */
+    line-height: 1.6;
+    white-space: pre-line;
 }
+
