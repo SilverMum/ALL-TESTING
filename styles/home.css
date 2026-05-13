@@ -270,10 +270,8 @@ body.home-bg::before {
    MEMBERSHIP CARDS (VERTICAL STACK)
 ========================================================= */
 .membership-vertical {
-    display: flex !important;             /* override global flex */
-    flex-direction: column !important;    /* force vertical */
-    flex-wrap: nowrap !important;         /* prevent row wrapping */
-    width: 100%;
+    display: block !important;          /* override global flex */
+    width: 100% !important;
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 25px;
@@ -284,8 +282,10 @@ body.home-bg::before {
    INDIVIDUAL CARD
 ========================================================= */
 .membership-vertical-card {
-    width: 100% !important;               /* stop shrinking */
-    display: block !important;            /* override flex children */
+    display: block !important;          /* override flex children */
+    width: 100% !important;             /* stop shrinking */
+    float: none !important;             /* kill float rules */
+    clear: both !important;             /* force new row */
     background: #ffffff;
     border-radius: 14px;
     padding: 25px;
