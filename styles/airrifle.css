@@ -180,6 +180,25 @@
 .submenu-toggle {
     display: inline-block;
 }
+
+/* -----------------------------------------
+   PAGE BACKGROUND — UPDATED
+----------------------------------------- */
+.air-rifle-bg {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/airriflebgnew.png') center center / cover no-repeat fixed;
+}
+
+/* Soft white wash overlay */
+.air-rifle-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.30);
+    z-index: -1;
+}
+
 /* -----------------------------------------
    PAGE WRAPPER
 ----------------------------------------- */
@@ -413,22 +432,3 @@
     line-height: 1.6;
     color: white;
 }
-
-/* -----------------------------------------
-   PAGE BACKGROUND — UPDATED
------------------------------------------ */
-.air-rifle-bg {
-    position: relative;
-    min-height: 100vh;
-    background: url('images/airriflebgnew.png') center center / cover no-repeat fixed;
-}
-
-/* Soft white wash overlay */
-.air-rifle-bg::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(255, 255, 255, 0.30);
-    z-index: -1;
-}
-
