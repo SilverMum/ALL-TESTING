@@ -375,6 +375,33 @@
     color: white;
 }
 
+/* -----------------------------------------
+   PRICING — FULL WIDTH WRAPPER CARD
+----------------------------------------- */
+.pricing-wrapper {
+    background: rgba(60, 40, 25, 0.45);
+    padding: 40px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    margin: 60px 0;
+    text-align: center;
+}
+
+/* Title inside the wrapper */
+.pricing-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Two cards inside the wrapper */
+.pricing-inner {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
 
 /* =========================================================
    RANGE DETAILS
