@@ -513,7 +513,7 @@
    CANCELLATIONS
 ========================================================= */
 .cancellations {
-    background: rgba(120, 0, 0, 0.10);
+    background: rgba(120, 0, 0, 0.20);
     padding: 40px;
     border-radius: 14px;
     margin: 0 0 60px 0; /* removed top margin, kept bottom */
