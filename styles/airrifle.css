@@ -670,20 +670,18 @@
 /* Checkbox row */
 .field-checkbox {
     display: flex;
-    justify-content: center; /* center the whole row */
+    justify-content: center;
     width: 100%;
 }
 
 .field-checkbox label {
     display: flex;
     align-items: center;
-    gap: 0.25px; /* your exact spacing */
+    justify-content: center;
+    gap: 0.25px; /* smaller than 1px */
     color: white;
-
-    /* keep checkbox + text centered as a pair */
     width: auto;
     margin: 0 auto;
-    justify-content: center;
 }
 
 /* Submit button */
