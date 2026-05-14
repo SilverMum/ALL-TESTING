@@ -692,6 +692,13 @@
 }
 
 /* =========================================================
+   GLOBAL FONT OVERRIDE
+========================================================= */
+body, body * {
+    font-family: "Times New Roman", Times, serif !important;
+}
+
+/* =========================================================
    MOBILE OPTIMIZATION — AIR RIFLE PAGE
 ========================================================= */
 @media (max-width: 768px) {
@@ -733,20 +740,22 @@
 
     /* 3. Schedule ABOVE What to Expect */
     .two-cards {
-        display: flex !important;
-        flex-direction: column !important;
+        display: block !important;      /* override desktop flex */
         padding: 0 !important;
         gap: 20px !important;
         width: 100% !important;
         margin: 0 auto !important;
     }
 
-    /* 3b. Fix width + centering of Schedule + Expect cards */
+    /* 3b. Fix width + padding of Schedule + Expect cards */
     .schedule-card,
     .expect-card {
         width: 90% !important;
         max-width: 500px !important;
         margin: 0 auto !important;
+        display: block !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .schedule-card { order: 1; }
@@ -757,13 +766,6 @@
     .hero-subtitle {
         font-size: 3rem;
     }
-}
-
-/* =========================================================
-   GLOBAL FONT OVERRIDE
-========================================================= */
-body, body * {
-    font-family: "Times New Roman", Times, serif !important;
 }
 
 /* =========================================================
