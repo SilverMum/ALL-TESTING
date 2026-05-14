@@ -295,3 +295,45 @@
         vertical-align: middle !important;
     }
 }
+
+/* =========================================================
+   MOBILE NAV — EXTRA RULES NEEDED FOR DROPDOWN VISIBILITY
+   (These were NOT in the unified block yet)
+   ========================================================= */
+@media (max-width: 900px) {
+
+    /* Ensure nav stays above all dropdowns + content */
+    .main-nav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999 !important;
+    }
+
+    header {
+        position: relative;
+        z-index: 9998;
+    }
+
+    /* WRAPPED NAV — 3 OVER 3 (structure only, no conflicts) */
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px 6px;
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .nav-links li {
+        flex: 0 0 calc(33.33% - 6px);
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+        padding: 4px 2px;
+        white-space: nowrap;
+    }
+}
