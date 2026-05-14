@@ -737,13 +737,15 @@
         flex-direction: column !important;
         padding: 0 !important;
         gap: 20px !important;
+        width: 100% !important;
+        margin: 0 auto !important;
     }
 
-    /* 3b. Fix width of Schedule + Expect cards */
+    /* 3b. Fix width + centering of Schedule + Expect cards */
     .schedule-card,
     .expect-card {
-        order: unset; /* order is controlled above */
         width: 90% !important;
+        max-width: 500px !important;
         margin: 0 auto !important;
     }
 
@@ -757,6 +759,9 @@
     }
 }
 
+/* =========================================================
+   GLOBAL FONT OVERRIDE
+========================================================= */
 body, body * {
     font-family: "Times New Roman", Times, serif !important;
 }
