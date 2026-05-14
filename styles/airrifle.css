@@ -747,6 +747,12 @@
         order: 2;
         width: 100%;
     }
+   /* Fix width of Schedule + Expect cards on mobile */
+    .schedule-card,
+    .expect-card {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
 
     /* 4. Make page titles a little smaller */
     .hero-title,
