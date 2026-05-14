@@ -668,14 +668,18 @@
 }
 
 /* Checkbox row */
+.field-checkbox {
+    display: flex;
+    justify-content: center; /* center the whole row */
+}
+
 .field-checkbox label {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 6px; /* space between checkbox + text */
     color: white;
-
-    /* FIX: keep text beside the checkbox */
-    width: fit-content;
+    width: auto; /* allow natural width */
+    margin: 0 auto; /* center the label */
 }
 
 /* Submit button */
