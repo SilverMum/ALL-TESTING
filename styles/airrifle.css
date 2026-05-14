@@ -362,8 +362,25 @@
     text-align: center;
 }
 
-.price-card.green { background: #2e5c2e; }
-.price-card.grey { background: #4a4a4a; }
+.price-card.green {
+    background: rgba(60, 120, 60, 0.30); /* same lighter green with same opacity */
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    text-align: center;
+    border: 3px solid #7cd67c; /* same bright green border all around */
+}
+
+.price-card.grey {
+    background: rgba(120, 120, 120, 0.30); /* lighter grey with same 30% opacity feel */
+    padding: 30px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.4);
+    text-align: center;
+    border: 3px solid #cfcfcf; /* light grey border all around */
+}
 
 .price-card .card-title {
     color: white;
