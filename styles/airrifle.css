@@ -698,7 +698,8 @@
 
     /* 1. Move calendar UNDER cancellation dates */
     .cancel-calendar-row {
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 25px;
     }
 
@@ -715,7 +716,8 @@
     /* 2. Pricing cards — green ABOVE grey */
     .pricing-inner,
     .pricing-section {
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         align-items: center;
     }
 
@@ -731,7 +733,8 @@
 
     /* 3. Schedule ABOVE What to Expect */
     .two-cards {
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
         gap: 30px;
     }
 
