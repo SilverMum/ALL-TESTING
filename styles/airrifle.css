@@ -671,15 +671,17 @@
 .field-checkbox {
     display: flex;
     justify-content: center; /* center the whole row */
+    width: 100%;
 }
 
 .field-checkbox label {
     display: flex;
     align-items: center;
-    gap: 3px; /* space between checkbox + text */
+    justify-content: center; /* center checkbox + text together */
+    gap: 1px; /* adjust this to move text closer or farther */
     color: white;
-    width: auto; /* allow natural width */
-    margin: 0 auto; /* center the label */
+    width: auto; /* natural width so it doesn't stretch */
+    margin: 0 auto; /* centers the label block */
 }
 
 /* Submit button */
