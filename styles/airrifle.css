@@ -310,12 +310,12 @@
 }
 
 .schedule-time-card {
-    background: rgba(46, 92, 46, 0.30); /* lighter 30% opacity */
+    background: rgba(60, 120, 60, 0.30); /* same opacity, lighter green color */
     padding: 12px 20px;
     border-radius: 10px;
     width: 85%;
     box-shadow: 0 3px 10px rgba(0,0,0,0.35);
-    border-left: 8px solid #7cd67c; /* bright green accent bar */
+    border: 3px solid #7cd67c; /* bright green border all the way around */
 }
 
 .schedule-time {
