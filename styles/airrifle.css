@@ -673,6 +673,9 @@
     align-items: center;
     gap: 10px;
     color: white;
+
+    /* FIX: keep text beside the checkbox */
+    width: fit-content;
 }
 
 /* Submit button */
