@@ -691,3 +691,63 @@
     background: #9af59a;
 }
 
+/* =========================================================
+   MOBILE OPTIMIZATION — AIR RIFLE PAGE
+========================================================= */
+@media (max-width: 768px) {
+
+    /* 1. Move calendar UNDER cancellation dates */
+    .cancel-calendar-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .calendar-right {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cancel-left,
+    .calendar-right {
+        flex: unset;
+    }
+
+    /* 2. Pricing cards — green ABOVE grey */
+    .pricing-inner,
+    .pricing-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-card.green {
+        order: 1;
+        width: 90%;
+    }
+
+    .price-card.grey {
+        order: 2;
+        width: 90%;
+    }
+
+    /* 3. Schedule ABOVE What to Expect */
+    .two-cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .schedule-card {
+        order: 1;
+        width: 100%;
+    }
+
+    .expect-card {
+        order: 2;
+        width: 100%;
+    }
+
+    /* 4. Make page titles a little smaller */
+    .hero-title,
+    .hero-subtitle {
+        font-size: 3rem;
+    }
+}
