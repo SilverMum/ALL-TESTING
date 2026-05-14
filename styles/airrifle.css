@@ -735,7 +735,8 @@
     .two-cards {
         display: flex !important;
         flex-direction: column !important;
-        gap: 30px;
+        padding: 0 !important;
+        gap: 20px !important;
     }
 
     /* 3b. Fix width of Schedule + Expect cards */
