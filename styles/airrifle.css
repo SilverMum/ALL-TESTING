@@ -738,21 +738,16 @@
         gap: 30px;
     }
 
-    .schedule-card {
-        order: 1;
-        width: 100%;
-    }
-
-    .expect-card {
-        order: 2;
-        width: 100%;
-    }
-   /* Fix width of Schedule + Expect cards on mobile */
+    /* 3b. Fix width of Schedule + Expect cards */
     .schedule-card,
     .expect-card {
+        order: unset; /* order is controlled above */
         width: 90% !important;
         margin: 0 auto !important;
     }
+
+    .schedule-card { order: 1; }
+    .expect-card { order: 2; }
 
     /* 4. Make page titles a little smaller */
     .hero-title,
