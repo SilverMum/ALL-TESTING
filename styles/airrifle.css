@@ -677,11 +677,13 @@
 .field-checkbox label {
     display: flex;
     align-items: center;
-    justify-content: center; /* center checkbox + text together */
-    gap: 1px; /* adjust this to move text closer or farther */
+    gap: 0.25px; /* your exact spacing */
     color: white;
-    width: auto; /* natural width so it doesn't stretch */
-    margin: 0 auto; /* centers the label block */
+
+    /* keep checkbox + text centered as a pair */
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 /* Submit button */
