@@ -676,7 +676,7 @@
 .field-checkbox label {
     display: flex;
     align-items: center;
-    gap: 6px; /* space between checkbox + text */
+    gap: 3px; /* space between checkbox + text */
     color: white;
     width: auto; /* allow natural width */
     margin: 0 auto; /* center the label */
