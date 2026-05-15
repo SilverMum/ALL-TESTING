@@ -284,5 +284,23 @@
 </footer>
 
 <script src="scripts/scripts.js"></script>
+
+<!-- THANK YOU OVERLAY JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.location.hash === "#airrifle-thanks") {
+        document.getElementById("airrifle-thanks").style.display = "flex";
+    }
+
+    const closeBtn = document.getElementById("closeThanks");
+    if (closeBtn) {
+        closeBtn.addEventListener("click", function () {
+            document.getElementById("airrifle-thanks").style.display = "none";
+            history.replaceState(null, null, " "); // remove hash so it doesn't reappear
+        });
+    }
+});
+</script>
+
 </body>
 </html>
