@@ -230,7 +230,11 @@
     Have a question about Air Rifle? Send us a message below and it will be delivered directly to the coordinator.
   </p>
 
-  <form class="airrifle-contact-form" action="https://formsubmit.co/tom_the_elf@hotmail.com" method="POST">
+  <form class="airrifle-contact-form" id="airrifleForm" action="https://formsubmit.co/tom_the_elf@hotmail.com" method="POST">
+    
+    <!-- Redirect to trigger thank-you overlay -->
+    <input type="hidden" name="_redirect" value="#airrifle-thanks">
+
     <div class="field-row">
       <label for="ar-name">Name</label>
       <input type="text" id="ar-name" name="name" placeholder="Your Name" required>
@@ -260,6 +264,16 @@
 
     <button type="submit" class="ac-submit">Send Message</button>
   </form>
+
+  <!-- THANK YOU OVERLAY CARD -->
+  <div id="airrifle-thanks" class="airrifle-thanks-card">
+      <div class="airrifle-thanks-inner">
+          <h2>Thank you for your msg!</h2>
+          <p>We will contact you back as soon as possible.</p>
+          <button id="closeThanks" class="thanks-close-btn">Close</button>
+      </div>
+  </div>
+
 </section>
     
 </main>
