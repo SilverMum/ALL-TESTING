@@ -872,3 +872,12 @@ body.home-bg::before {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+.mini-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
