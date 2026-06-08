@@ -58,3 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+function openFullscreenImage(src) {
+    const overlay = document.getElementById('fullscreen-overlay');
+    const img = document.getElementById('fullscreen-img');
+    img.src = src;
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // freeze page scroll
+}
+
+function closeFullscreenImage(event) {
+    if (event) event.stopPropagation(); // prevents closing when clicking the image
+    const overlay = document.getElementById('fullscreen-overlay');
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'auto'; // restore scroll
+}
