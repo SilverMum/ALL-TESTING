@@ -864,3 +864,11 @@ body.home-bg::before {
     cursor: pointer;
     z-index: 100000;
 }
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
