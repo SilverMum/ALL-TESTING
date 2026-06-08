@@ -384,6 +384,13 @@
 
 </section>
 
+    <img 
+    src="images/FB_IMG_1780866308035.jpg" 
+    alt="Event Image" 
+    class="clickable-vertical-img"
+    onclick="openFullscreenImage('images/FB_IMG_1780866308035.jpg')"
+>
+
 <!-- =========================================================
      MAP UNDER CARDS 7 + 8
 ========================================================= -->
@@ -413,6 +420,11 @@
      JS FOR OPEN/CLOSE OVERLAYS
 ========================================================= -->
 <script src="scripts/activity.js"></script>
+
+    <div id="fullscreen-overlay" class="fullscreen-overlay" onclick="closeFullscreenImage()">
+    <span class="close-btn" onclick="closeFullscreenImage(event)">✕</span>
+    <img id="fullscreen-img" src="" alt="Full Size Image">
+</div>
 
 </body>
 </html>
