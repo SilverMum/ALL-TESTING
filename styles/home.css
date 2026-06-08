@@ -821,3 +821,46 @@ body.home-bg::before {
     float: none !important;
     clear: both !important;
 }
+
+/* Small vertical image */
+.clickable-vertical-img {
+    width: 180px;        /* vertical rectangle width */
+    height: auto;
+    max-height: 350px;   /* caps size so it never gets huge */
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Fullscreen overlay */
+.fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.fullscreen-overlay img {
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 8px;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 100000;
+}
