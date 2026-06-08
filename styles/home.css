@@ -881,3 +881,31 @@ body.home-bg::before {
     margin-bottom: 8px;
 }
 
+/* MINI‑CARD HIGHLIGHT */
+.mini-card {
+    position: relative;
+    z-index: 1;
+}
+
+.mini-card.active-highlight::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    background: var(--highlight-color);
+    border-radius: 12px;
+    z-index: -1;
+    transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+/* BIG‑CARD HIGHLIGHT */
+.big-card-highlight {
+    width: 100%;
+    height: 18px;
+    margin-bottom: -18px;
+    border-radius: 12px;
+    background: transparent;
+    transition: background 0.3s ease;
+}
