@@ -941,32 +941,40 @@ body.home-bg::before {
     }
 }
 
-/* Events Header Block */
+/* Header container (no background now) */
 .events-header {
-    max-width: 900px;              /* aligns with your cards */
-    margin: 40px auto 20px auto;   /* spacing above/below */
+    max-width: 900px;
+    margin: 40px auto 20px auto;
     text-align: center;
-    padding: 30px 20px;
-    background: #f3eee6;           /* soft beige like your image */
-    border-radius: 12px;
-    border: 2px solid #d8d2c8;     /* subtle border like the banner */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Small top text */
+/* Subtitle with lines */
 .events-subtitle {
-    font-size: 16px;
+    font-size: 16px;              /* smaller than title */
     font-weight: 700;
     letter-spacing: 2px;
-    color: #6b5e4a;                /* warm brown tone */
+    color: #ffffff;               /* white text so it pops on your background */
     text-transform: uppercase;
-    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+/* The lines on each side */
+.events-subtitle .line {
+    flex: 1;
+    height: 2px;
+    background-color: #ffffff;    /* white lines */
+    max-width: 120px;             /* keeps them from being too long */
+    opacity: 0.8;
 }
 
 /* Main title */
 .events-title {
-    font-size: 36px;
+    font-size: 40px;              /* bigger than subtitle */
     font-weight: 800;
-    color: #3a3328;                /* darker brown */
+    color: #ffffff;               /* white so it stands out */
     letter-spacing: 1px;
 }
