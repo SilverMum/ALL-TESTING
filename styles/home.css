@@ -978,3 +978,7 @@ body.home-bg::before {
     color: #ffffff;               /* white so it stands out */
     letter-spacing: 1px;
 }
+
+html {
+    scroll-behavior: smooth;
+}
