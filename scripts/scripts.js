@@ -59,6 +59,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+/* =========================================================
+   FULLSCREEN IMAGE VIEWER
+   ========================================================= */
+
 function openFullscreenImage(src) {
     const overlay = document.getElementById('fullscreen-overlay');
     const img = document.getElementById('fullscreen-img');
@@ -74,7 +78,10 @@ function closeFullscreenImage(event) {
     document.body.style.overflow = 'auto'; // restore scroll
 }
 
-// MINI‑CARD CLICK HANDLER (for both sections)
+/* =========================================================
+   MINI‑CARD CLICK HANDLER (for both sections)
+   ========================================================= */
+
 document.querySelectorAll('.mini-card').forEach(card => {
     card.addEventListener('click', function () {
 
